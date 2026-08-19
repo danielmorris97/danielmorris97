@@ -2,43 +2,760 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
     <title>Research | Daniel Jacob Morris</title>
 
-    <link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Research by Daniel Jacob Morris on sleep, dreaming, lucid dreaming, consciousness, and dream engineering.">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+
+    <style>
+
+        /* =========================================================
+           RESEARCH PAGE
+           ========================================================= */
+
+        .research-page {
+            width: calc(100% - 96px);
+            max-width: 1180px;
+
+            margin: 80px auto 130px;
+        }
+
+
+        /* =========================================================
+           RESEARCH INTRO
+           ========================================================= */
+
+        .research-header {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 0.85fr)
+                minmax(0, 1.15fr);
+
+            gap: 85px;
+
+            align-items: start;
+
+            padding-bottom: 75px;
+
+            border-bottom: 1px solid rgba(31, 41, 43, 0.25);
+        }
+
+
+        .research-title {
+            margin: 0;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: clamp(60px, 7vw, 88px);
+            font-weight: 600;
+
+            line-height: 0.98;
+
+            letter-spacing: -2.6px;
+
+            color: #1f292b;
+        }
+
+
+        .research-intro {
+            max-width: 650px;
+
+            padding-top: 6px;
+        }
+
+
+        .research-intro p {
+            margin: 0 0 24px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 21px;
+            line-height: 1.65;
+
+            color: #314348;
+        }
+
+
+        .research-intro p:first-child {
+            font-size: 24px;
+
+            line-height: 1.55;
+        }
+
+
+        .lab-link {
+            display: inline-block;
+
+            margin-top: 6px;
+
+            color: #253235;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 18px;
+
+            text-decoration: none;
+
+            border-bottom: 1px solid #253235;
+
+            padding-bottom: 3px;
+
+            transition: opacity 0.2s ease;
+        }
+
+
+        .lab-link:hover {
+            opacity: 0.58;
+        }
+
+
+        /* =========================================================
+           LAB / COLLABORATORS
+           ========================================================= */
+
+        .research-team-section {
+            padding: 65px 0 80px;
+
+            border-bottom: 1px solid rgba(31, 41, 43, 0.25);
+        }
+
+
+        .research-section-title {
+            margin: 0 0 18px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: clamp(38px, 5vw, 52px);
+            font-weight: 600;
+
+            line-height: 1.05;
+
+            letter-spacing: -1.3px;
+
+            color: #1f292b;
+        }
+
+
+        .research-section-intro {
+            max-width: 720px;
+
+            margin: 0 0 42px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            color: #40585c;
+        }
+
+
+        .team-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 24px;
+        }
+
+
+        .team-card {
+            padding: 28px 24px;
+
+            background: rgba(255, 255, 255, 0.35);
+
+            border: 1px solid rgba(31, 41, 43, 0.15);
+            border-radius: 6px;
+        }
+
+
+        .team-card h3 {
+            margin: 0 0 8px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 22px;
+            font-weight: 600;
+
+            color: #1f292b;
+        }
+
+
+        .team-card p {
+            margin: 0 0 18px;
+
+            color: #4f6468;
+
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+
+        .team-card a {
+            color: #253235;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 15px;
+
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+
+        .team-card a:hover {
+            opacity: 0.6;
+        }
+
+
+        /* =========================================================
+           RESEARCH AREAS
+           ========================================================= */
+
+        .research-projects-section {
+            padding: 70px 0 20px;
+        }
+
+
+        .research-project-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 30px;
+
+            margin-top: 40px;
+        }
+
+
+        .research-project-card {
+            padding: 34px;
+
+            background: rgba(255, 255, 255, 0.30);
+
+            border: 1px solid rgba(31, 41, 43, 0.15);
+            border-radius: 6px;
+        }
+
+
+        .research-project-card h3 {
+            margin: 0 0 14px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 26px;
+            font-weight: 600;
+
+            color: #1f292b;
+        }
+
+
+        .research-project-card p {
+            margin: 0;
+
+            font-size: 17px;
+            line-height: 1.7;
+
+            color: #40585c;
+        }
+
+
+        /* =========================================================
+           TABLET
+           ========================================================= */
+
+        @media (max-width: 950px) {
+
+            .research-page {
+                width: calc(100% - 64px);
+
+                margin-top: 65px;
+            }
+
+
+            .research-header {
+                grid-template-columns: 1fr;
+
+                gap: 38px;
+            }
+
+
+            .team-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+        }
+
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
+
+        @media (max-width: 750px) {
+
+            .research-page {
+                width: calc(100% - 44px);
+
+                margin-top: 45px;
+                margin-bottom: 90px;
+            }
+
+
+            .research-header {
+                padding-bottom: 55px;
+            }
+
+
+            .research-title {
+                font-size: 56px;
+
+                letter-spacing: -1.8px;
+            }
+
+
+            .research-intro p:first-child {
+                font-size: 21px;
+            }
+
+
+            .research-intro p {
+                font-size: 18px;
+            }
+
+
+            .research-team-section {
+                padding: 52px 0 62px;
+            }
+
+
+            .research-section-title {
+                font-size: 39px;
+            }
+
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .research-project-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+
+        /* =========================================================
+           VERY SMALL PHONES
+           ========================================================= */
+
+        @media (max-width: 420px) {
+
+            .research-title {
+                font-size: 48px;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
+
+<a
+    class="skip-link"
+    href="#main-content">
+
+    Skip to main content
+
+</a>
+
+
 <header class="site-header">
 
-    <a class="site-name" href="index.html">
+
+    <a
+        class="site-name"
+        href="index.html">
+
         Daniel Jacob Morris
+
     </a>
 
-    <nav>
-        <a href="index.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="media.html">Media</a>
-        <a href="cv.html">CV</a>
+
+    <nav aria-label="Main navigation">
+
+
+        <a href="index.html">
+            About
+        </a>
+
+
+        <a
+            href="research.html"
+            aria-current="page">
+
+            Research
+
+        </a>
+
+
+        <a href="publications.html">
+            Publications
+        </a>
+
+
+        <a href="media.html">
+            Media
+        </a>
+
+
+        <a href="cv.html">
+            CV
+        </a>
+
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+
     </nav>
+
 
 </header>
 
 
-<main class="page">
+<main
+    id="main-content"
+    class="research-page">
 
-    <h1>Research</h1>
 
-    <p>
-        Research page coming soon.
-    </p>
+    <!-- =====================================================
+         INTRO
+         ===================================================== -->
+
+    <section class="research-header">
+
+
+        <div>
+
+            <h1 class="research-title">
+                Research
+            </h1>
+
+        </div>
+
+
+        <div class="research-intro">
+
+
+            <p>
+                I study sleep, dreaming, lucid dreaming,
+                and consciousness using behavioral and
+                neuroscientific approaches.
+            </p>
+
+
+            <p>
+                My research explores how we can interact with
+                the sleeping brain, influence ongoing dreams,
+                and use lucid dreaming as a tool for studying
+                cognition and consciousness.
+            </p>
+
+
+            <p>
+                I conduct my doctoral research in the
+                Cognitive Neuroscience Laboratory at
+                Northwestern University.
+            </p>
+
+
+            <a
+                class="lab-link"
+                href="https://sites.northwestern.edu/pallerlab/"
+                target="_blank"
+                rel="noopener">
+
+                Visit the Paller Lab website →
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         LAB & COLLABORATORS
+         ===================================================== -->
+
+    <section class="research-team-section">
+
+
+        <h2 class="research-section-title">
+            Lab &amp; Collaborators
+        </h2>
+
+
+        <p class="research-section-intro">
+            Much of my research is conducted collaboratively
+            with researchers studying sleep, dreaming,
+            memory, and consciousness.
+        </p>
+
+
+        <div class="team-grid">
+
+
+            <article class="team-card">
+
+                <h3>
+                    Ken Paller
+                </h3>
+
+                <p>
+                    Northwestern University
+                </p>
+
+                <a
+                    href="https://faculty.wcas.northwestern.edu/paller/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Website →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="team-card">
+
+                <h3>
+                    Karen Konkoly
+                </h3>
+
+                <p>
+                    Dream and sleep researcher
+                </p>
+
+                <a
+                    href="https://www.karenkonkoly.com/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Website →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="team-card">
+
+                <h3>
+                    Gaby Torres-Platas
+                </h3>
+
+                <p>
+                    Neuroscience researcher
+                </p>
+
+                <a
+                    href="https://www.sgtorresplatas.com/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Website →
+
+                </a>
+
+            </article>
+
+
+
+            <article class="team-card">
+
+                <h3>
+                    Remington Mallett
+                </h3>
+
+                <p>
+                    Dream and sleep researcher
+                </p>
+
+                <a
+                    href="https://www.remrama.com/home"
+                    target="_blank"
+                    rel="noopener">
+
+                    Website →
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESEARCH AREAS
+         ===================================================== -->
+
+    <section class="research-projects-section">
+
+
+        <h2 class="research-section-title">
+            Research Areas
+        </h2>
+
+
+        <p class="research-section-intro">
+            Selected areas of my current research.
+        </p>
+
+
+        <div class="research-project-grid">
+
+
+            <article class="research-project-card">
+
+                <h3>
+                    Lucid Dreaming
+                </h3>
+
+                <p>
+                    Studying awareness, communication,
+                    cognition, and volitional control during
+                    ongoing dreams.
+                </p>
+
+            </article>
+
+
+
+            <article class="research-project-card">
+
+                <h3>
+                    Dream Engineering
+                </h3>
+
+                <p>
+                    Investigating how sensory stimulation and
+                    waking experiences can influence dreams
+                    during sleep.
+                </p>
+
+            </article>
+
+
+
+            <article class="research-project-card">
+
+                <h3>
+                    Dream Yoga &amp; Contemplative Science
+                </h3>
+
+                <p>
+                    Exploring lucid dreaming and related
+                    contemplative practices through
+                    interdisciplinary research.
+                </p>
+
+            </article>
+
+
+
+            <article class="research-project-card">
+
+                <h3>
+                    Clinical Applications
+                </h3>
+
+                <p>
+                    Examining how lucid dreaming and targeted
+                    interventions may be useful for nightmares
+                    and other sleep-related challenges.
+                </p>
+
+            </article>
+
+
+        </div>
+
+
+    </section>
+
 
 </main>
 
 
+<footer>
+
+    <p>
+        © Daniel Jacob Morris
+    </p>
+
+</footer>
+
+
 </body>
+
 </html>
