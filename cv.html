@@ -2,43 +2,159 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Research | Daniel Jacob Morris</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <title>
+        CV | Daniel Jacob Morris
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
 </head>
+
 
 <body>
 
+
+<a
+    class="skip-link"
+    href="#main-content">
+
+    Skip to main content
+
+</a>
+
+
 <header class="site-header">
 
-    <a class="site-name" href="index.html">
+    <a
+        class="site-name"
+        href="index.html">
+
         Daniel Jacob Morris
+
     </a>
 
-    <nav>
-        <a href="index.html">About</a>
-        <a href="research.html">Research</a>
-        <a href="publications.html">Publications</a>
-        <a href="media.html">Media</a>
-        <a href="cv.html">CV</a>
+
+    <nav aria-label="Main navigation">
+
+        <a href="index.html">
+            About
+        </a>
+
+        <a href="research.html">
+            Research
+        </a>
+
+        <a href="publications.html">
+            Publications
+        </a>
+
+        <a
+            href="cv.html"
+            aria-current="page">
+
+            CV
+
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
     </nav>
 
 </header>
 
 
-<main class="page">
+<main
+    id="main-content"
+    class="cv-page">
 
-    <h1>Research</h1>
 
-    <p>
-        Research page coming soon.
+    <div class="cv-heading">
+
+
+        <div>
+
+            <h1>
+                Curriculum Vitae
+            </h1>
+
+            <p>
+                View my current academic CV below.
+            </p>
+
+        </div>
+
+
+        <div class="cv-actions">
+
+            <a
+                class="button"
+                href="files/Daniel_Morris_CV.pdf"
+                target="_blank"
+                rel="noopener">
+
+                Open PDF
+
+            </a>
+
+            <a
+                class="button button-secondary"
+                href="files/Daniel_Morris_CV.pdf"
+                download>
+
+                Download PDF
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="cv-viewer">
+
+        <iframe
+            src="files/Daniel_Morris_CV.pdf"
+            title="Daniel Morris curriculum vitae">
+
+        </iframe>
+
+    </div>
+
+
+    <p class="pdf-fallback">
+
+        If the CV does not display in your browser,
+        <a href="files/Daniel_Morris_CV.pdf">
+            open the PDF directly.
+        </a>
+
     </p>
+
 
 </main>
 
 
+<footer>
+
+    <p>
+        © Daniel Jacob Morris
+    </p>
+
+</footer>
+
+
 </body>
+
 </html>
