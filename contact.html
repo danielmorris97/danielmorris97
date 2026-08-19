@@ -14,7 +14,7 @@
 </head>
 
 
-<body>
+<body class="contact-body">
 
 <a
     class="skip-link"
@@ -23,16 +23,17 @@
 </a>
 
 
-<header class="site-header">
+<header class="site-header contact-header">
 
     <a
-        class="site-name"
+        class="site-name contact-site-name"
         href="index.html">
         Daniel Jacob Morris
     </a>
 
-
-    <nav aria-label="Main navigation">
+    <nav
+        class="contact-nav"
+        aria-label="Main navigation">
 
         <a href="index.html">
             About
@@ -72,11 +73,10 @@
 
     <section class="contact-intro">
 
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
 
         <p>
-            For research, collaboration, or other inquiries,
-            feel free to get in touch.
+            Feel free to send me an email!
         </p>
 
         <p class="contact-email">
@@ -90,14 +90,10 @@
 
     <section class="contact-form-section">
 
-        <h2>Send a message</h2>
-
-
         <form
             class="contact-form"
             action="https://formspree.io/f/xvkpdbyy"
             method="POST">
-
 
             <input
                 type="hidden"
@@ -105,46 +101,55 @@
                 value="New message from danieljacobmorris.com">
 
 
-            <div class="form-row">
+            <fieldset class="name-fieldset">
 
-                <div class="form-field">
+                <legend>Name</legend>
 
-                    <label for="first-name">
-                        First name
-                    </label>
+                <div class="form-row">
 
-                    <input
-                        type="text"
-                        id="first-name"
-                        name="firstName"
-                        autocomplete="given-name"
-                        required>
+                    <div class="form-field">
+
+                        <label for="first-name">
+                            First Name
+                            <span class="required-text">(required)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="firstName"
+                            autocomplete="given-name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="last-name">
+                            Last Name
+                            <span class="required-text">(required)</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="lastName"
+                            autocomplete="family-name"
+                            required>
+
+                    </div>
 
                 </div>
 
-
-                <div class="form-field">
-
-                    <label for="last-name">
-                        Last name
-                    </label>
-
-                    <input
-                        type="text"
-                        id="last-name"
-                        name="lastName"
-                        autocomplete="family-name"
-                        required>
-
-                </div>
-
-            </div>
+            </fieldset>
 
 
             <div class="form-field">
 
                 <label for="email">
                     Email
+                    <span class="required-text">(required)</span>
                 </label>
 
                 <input
@@ -161,6 +166,7 @@
 
                 <label for="message">
                     Message
+                    <span class="required-text">(required)</span>
                 </label>
 
                 <textarea
@@ -175,20 +181,17 @@
             <button
                 class="form-submit"
                 type="submit">
-
-                Send message
-
+                SEND
             </button>
 
         </form>
 
     </section>
 
-
 </main>
 
 
-<footer>
+<footer class="contact-footer">
 
     <p>
         © Daniel Jacob Morris
@@ -198,5 +201,4 @@
 
 
 </body>
-
 </html>
