@@ -9,13 +9,269 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Publications | Daniel Jacob Morris
-    </title>
+    <title>Publications | Daniel Jacob Morris</title>
+
+    <meta
+        name="description"
+        content="Peer-reviewed publications by Daniel Jacob Morris on sleep, dreaming, lucid dreaming, and consciousness.">
 
     <link
         rel="stylesheet"
         href="style.css">
+
+
+    <style>
+
+        /* =========================================================
+           PUBLICATIONS PAGE
+           ========================================================= */
+
+        .publications-page {
+            width: calc(100% - 96px);
+            max-width: 1180px;
+
+            margin: 90px auto 130px;
+        }
+
+
+        /* ---------- PAGE TITLE ---------- */
+
+        .publications-title {
+            margin: 0 0 28px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: clamp(58px, 7vw, 86px);
+            font-weight: 600;
+
+            line-height: 1;
+
+            letter-spacing: -2.5px;
+
+            color: #1f292b;
+        }
+
+
+        .publications-intro {
+            max-width: 700px;
+
+            margin: 0 0 70px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 19px;
+            font-style: italic;
+
+            line-height: 1.65;
+
+            color: #40585c;
+        }
+
+
+        /* ---------- YEAR SECTIONS ---------- */
+
+        .publication-year-section {
+            margin-bottom: 52px;
+        }
+
+
+        .publication-year-heading {
+            margin: 0 0 20px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 30px;
+            font-weight: 700;
+
+            line-height: 1.2;
+
+            color: #1f292b;
+        }
+
+
+        /* ---------- NUMBERED PUBLICATIONS ---------- */
+
+        .publication-entries {
+            margin: 0;
+
+            padding-left: 32px;
+        }
+
+
+        .publication-entries li {
+            margin: 0 0 22px;
+
+            padding-left: 8px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+            line-height: 1.65;
+
+            color: #253235;
+        }
+
+
+        .publication-entries li::marker {
+            font-weight: 700;
+        }
+
+
+        /* ---------- AUTHOR NAME ---------- */
+
+        .my-name {
+            font-weight: 700;
+        }
+
+
+        /* ---------- PAPER TITLE ---------- */
+
+        .paper-title {
+            color: #253235;
+
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+
+            transition: opacity 0.2s ease;
+        }
+
+
+        .paper-title:hover {
+            opacity: 0.58;
+        }
+
+
+        /* ---------- JOURNAL ---------- */
+
+        .journal {
+            font-style: italic;
+        }
+
+
+        /* ---------- PDF LINK ---------- */
+
+        .pdf-link {
+            display: inline-block;
+
+            margin-left: 5px;
+
+            color: #253235;
+
+            font-weight: 400;
+
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+
+            white-space: nowrap;
+
+            transition: opacity 0.2s ease;
+        }
+
+
+        .pdf-link:hover {
+            opacity: 0.58;
+        }
+
+
+        /* ---------- DIVIDERS ---------- */
+
+        .publication-year-section + .publication-year-section {
+            padding-top: 8px;
+        }
+
+
+        /* =========================================================
+           TABLET
+           ========================================================= */
+
+        @media (max-width: 950px) {
+
+            .publications-page {
+                width: calc(100% - 64px);
+
+                margin-top: 70px;
+            }
+
+        }
+
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
+
+        @media (max-width: 750px) {
+
+            .publications-page {
+                width: calc(100% - 44px);
+
+                margin-top: 50px;
+                margin-bottom: 90px;
+            }
+
+
+            .publications-title {
+                font-size: 56px;
+
+                letter-spacing: -1.7px;
+            }
+
+
+            .publications-intro {
+                margin-bottom: 55px;
+
+                font-size: 18px;
+            }
+
+
+            .publication-year-heading {
+                font-size: 27px;
+            }
+
+
+            .publication-entries {
+                padding-left: 26px;
+            }
+
+
+            .publication-entries li {
+                padding-left: 4px;
+
+                font-size: 16px;
+                line-height: 1.65;
+
+                margin-bottom: 24px;
+            }
+
+        }
+
+
+        /* =========================================================
+           VERY SMALL PHONES
+           ========================================================= */
+
+        @media (max-width: 420px) {
+
+            .publications-title {
+                font-size: 48px;
+            }
+
+        }
+
+    </style>
 
 </head>
 
@@ -34,6 +290,7 @@
 
 <header class="site-header">
 
+
     <a
         class="site-name"
         href="index.html">
@@ -45,13 +302,20 @@
 
     <nav aria-label="Main navigation">
 
+
         <a href="index.html">
+
             About
+
         </a>
 
+
         <a href="research.html">
+
             Research
+
         </a>
+
 
         <a
             href="publications.html"
@@ -61,71 +325,506 @@
 
         </a>
 
+
         <a href="media.html">
+
             Media
+
         </a>
+
 
         <a href="cv.html">
+
             CV
+
         </a>
+
 
         <a href="contact.html">
+
             Contact
+
         </a>
 
+
     </nav>
+
 
 </header>
 
 
 <main
     id="main-content"
-    class="page">
+    class="publications-page">
 
 
-    <div class="page-header">
+    <h1 class="publications-title">
 
-        <h1>
-            Publications
-        </h1>
+        Publications
 
-        <p class="page-description">
-            Peer-reviewed publications and selected academic work.
-        </p>
-
-    </div>
+    </h1>
 
 
-    <section class="content-section">
+    <p class="publications-intro">
 
-        <div class="publication-list">
+        Peer-reviewed publications on sleep, dreaming,
+        lucid dreaming, and consciousness.
 
-            <article class="publication">
-
-                <div class="publication-year">
-                    2026
-                </div>
-
-                <p>
-                    Publication information coming soon.
-                </p>
-
-            </article>
+    </p>
 
 
-            <article class="publication">
 
-                <div class="publication-year">
-                    2025
-                </div>
+    <!-- =====================================================
+         2026
+         ===================================================== -->
 
-                <p>
-                    Publication information coming soon.
-                </p>
+    <section class="publication-year-section">
 
-            </article>
 
-        </div>
+        <h2 class="publication-year-heading">
+
+            2026
+
+        </h2>
+
+
+        <ol
+            class="publication-entries"
+            start="1">
+
+
+            <li>
+
+                <span class="my-name">
+                    Morris, D.J.
+                </span>,
+                Torres-Platas, S.G.,
+                Konkoly, K.R.,
+                Hirschle, J.,
+                Sangpo, L.,
+                Lodroe, T.,
+                Legden, T.,
+                Pelmo, L.,
+                Pasang, T.,
+                Grabowecky, M.,
+                Nusslock, R.,
+                &amp; Paller, K.A.
+                (2026).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.3390/brainsci16030315"
+                    target="_blank"
+                    rel="noopener">
+
+                    Inducing lucid dreaming based on a contemplative practice of compassion.
+
+                </a>
+
+                <span class="journal">
+                    Brain Sciences,
+                </span>
+
+                16(3), 315.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Inducing_a_lucid_dream_based_on_a_contemplative_practice_of_compassion.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                Konkoly, K.R.,
+                <span class="my-name">
+                    Morris, D.J.
+                </span>,
+                Hurka, K.,
+                Martinez, A.M.,
+                Sanders, K.E.G.,
+                &amp; Paller, K.A.
+                (2026).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.1093/nc/niaf067"
+                    target="_blank"
+                    rel="noopener">
+
+                    Creative problem-solving after experimentally provoking dreams of unsolved puzzles during REM sleep.
+
+                </a>
+
+                <span class="journal">
+                    Neuroscience of Consciousness,
+                </span>
+
+                2026(1), niaf067.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Creative_problem-solving_after_experimentally_provoking_dreams_of_unsolved_puzzles_during_REM_sleep.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                Konkoly, K.R.,
+                Al-Youssef, S.,
+                Mazurek, C.,
+                Mallett, R.,
+                <span class="my-name">
+                    Morris, D.
+                </span>,
+                Gales, A.,
+                Arnulf, I.,
+                Oudiette, D.,
+                &amp; Paller, K.A.
+                (2026).
+
+                <a
+                    class="paper-title"
+                    href="https://direct.mit.edu/jocn/article/38/2/365/133380/Using-Real-time-Reporting-to-Investigate-Visual"
+                    target="_blank"
+                    rel="noopener">
+
+                    Using real-time reporting to investigate visual experiences in dreams.
+
+                </a>
+
+                <span class="journal">
+                    Journal of Cognitive Neuroscience,
+                </span>
+
+                38(2), 365–380.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Using_real-time_reporting_to_investigate_visual_experiences_in_dreams.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+        </ol>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         2025
+         ===================================================== -->
+
+    <section class="publication-year-section">
+
+
+        <h2 class="publication-year-heading">
+
+            2025
+
+        </h2>
+
+
+        <ol
+            class="publication-entries"
+            start="4">
+
+
+            <li>
+
+                Konkoly, K.R.,
+                <span class="my-name">
+                    Morris, D.
+                </span>,
+                Cho, M.,
+                Hurka, K.,
+                Torres-Platas, S.G.,
+                Baehr, L.,
+                &amp; Paller, K.A.
+                (2025).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.1016/j.neuropsychologia.2025.109229"
+                    target="_blank"
+                    rel="noopener">
+
+                    Investigating dreams by strategically presenting sounds during REM sleep to reactivate waking experiences.
+
+                </a>
+
+                <span class="journal">
+                    Neuropsychologia,
+                </span>
+
+                217, 109229.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Investigating_dreams_by_strategically_presenting_sounds_during_REM_sleep_to_reactivate_waking_experiences.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                <span class="my-name">
+                    Morris, D.J.
+                </span>,
+                Elliott, D.B.,
+                Torres-Platas, S.G.,
+                Wall, J.,
+                Demšar, E.,
+                Konkoly, K.R.,
+                Rosman, E.,
+                Grabowecky, M.,
+                Glowacki, D.R.,
+                &amp; Paller, K.A.
+                (2025).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.1093/nc/niaf017"
+                    target="_blank"
+                    rel="noopener">
+
+                    Lucid dreaming of a prior virtual-reality experience with ego-transcendent qualities: A proof-of-concept study.
+
+                </a>
+
+                <span class="journal">
+                    Neuroscience of Consciousness,
+                </span>
+
+                2025(1), niaf017.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Lucid_dreaming_of_a_prior_virtual-reality_experience_with_ego-transcendent_qualities_A_proof-of-concept_study.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+        </ol>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         2024
+         ===================================================== -->
+
+    <section class="publication-year-section">
+
+
+        <h2 class="publication-year-heading">
+
+            2024
+
+        </h2>
+
+
+        <ol
+            class="publication-entries"
+            start="6">
+
+
+            <li>
+
+                Mundt, J.M.,
+                Pruiksma, K.E.,
+                Konkoly, K.R.,
+                Casiello-Robbins, C.,
+                Nadorff, M.R.,
+                Franklin, R.C.,
+                Karanth, S.,
+                Byskosh, N.,
+                <span class="my-name">
+                    Morris, D.J.
+                </span>,
+                Torres-Platas, S.G.,
+                Mallett, R.,
+                Maski, K.,
+                &amp; Paller, K.A.
+                (2024).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.1111/jsr.14384"
+                    target="_blank"
+                    rel="noopener">
+
+                    Treating narcolepsy-related nightmares with cognitive behavioural therapy and targeted lucidity reactivation: A pilot study.
+
+                </a>
+
+                <span class="journal">
+                    Journal of Sleep Research,
+                </span>
+
+                e14384.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Treating_narcolepsy-related_nightmares_with_cognitive_behavioral_therapy_and_targeted_lucidity_reactivation_A_pilot_study.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+
+            <li>
+
+                Wolk, N.,
+                <span class="my-name">
+                    Morris, D.
+                </span>,
+                Nahas, Y.,
+                Konkoly, K.R.,
+                Carr, M.,
+                Paller, K.A.,
+                &amp; Mallett, R.
+                (2024).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.11588/ijodr.2024.2.98233"
+                    target="_blank"
+                    rel="noopener">
+
+                    Lucid dreams from reactivating mindfulness during REM sleep: A pilot study.
+
+                </a>
+
+                <span class="journal">
+                    International Journal of Dream Research,
+                </span>
+
+                17(2), 224–227.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Lucid_dreams_from_reactivating_breath-counting_during_REM_sleep.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+        </ol>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         2023
+         ===================================================== -->
+
+    <section class="publication-year-section">
+
+
+        <h2 class="publication-year-heading">
+
+            2023
+
+        </h2>
+
+
+        <ol
+            class="publication-entries"
+            start="8">
+
+
+            <li>
+
+                Konkoly, K.R.,
+                Picard-Deland, C.,
+                <span class="my-name">
+                    Morris, D.
+                </span>,
+                &amp; Mallett, R.
+                (2023).
+
+                <a
+                    class="paper-title"
+                    href="https://doi.org/10.1523/JNEUROSCI.1374-23.2023"
+                    target="_blank"
+                    rel="noopener">
+
+                    Dreaming outside the box: Evidence for memory abstraction in REM sleep.
+
+                </a>
+
+                <span class="journal">
+                    Journal of Neuroscience,
+                </span>
+
+                43(42), 6952–6953.
+
+                <a
+                    class="pdf-link"
+                    href="files/publications/Dreaming_outside_the_box_Evidence_for_memory_abstraction_in_REM_sleep.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    [PDF]
+
+                </a>
+
+            </li>
+
+
+        </ol>
+
 
     </section>
 
