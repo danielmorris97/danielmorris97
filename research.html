@@ -13,7 +13,7 @@
 
     <meta
         name="description"
-        content="Research by Daniel Jacob Morris on sleep, dreaming, lucid dreaming, consciousness, and dream engineering.">
+        content="Research by Daniel Jacob Morris on sleep, lucid dreaming, contemplative practices, and consciousness.">
 
     <link
         rel="stylesheet"
@@ -82,31 +82,24 @@
 
 
         .research-intro p {
-            margin: 0 0 24px;
+            margin: 0 0 26px;
 
             font-family:
                 Georgia,
                 "Times New Roman",
                 serif;
 
-            font-size: 21px;
-            line-height: 1.65;
+            font-size: 24px;
+            line-height: 1.6;
 
             color: #314348;
-        }
-
-
-        .research-intro p:first-child {
-            font-size: 24px;
-
-            line-height: 1.55;
         }
 
 
         .lab-link {
             display: inline-block;
 
-            margin-top: 6px;
+            margin-top: 4px;
 
             color: #253235;
 
@@ -133,7 +126,7 @@
 
 
         /* =========================================================
-           LAB / COLLABORATORS
+           LAB & COLLABORATORS
            ========================================================= */
 
         .research-team-section {
@@ -144,7 +137,7 @@
 
 
         .research-section-title {
-            margin: 0 0 18px;
+            margin: 0 0 40px;
 
             font-family:
                 Georgia,
@@ -162,10 +155,101 @@
         }
 
 
-        .research-section-intro {
+        .team-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, minmax(0, 1fr));
+
+            gap: 26px;
+        }
+
+
+        .team-card {
+            min-width: 0;
+        }
+
+
+        .team-image-link {
+            display: block;
+
+            margin-bottom: 16px;
+
+            overflow: hidden;
+
+            border-radius: 5px;
+
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+
+        .team-image {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            object-fit: cover;
+            object-position: center;
+
+            display: block;
+
+            transition:
+                transform 0.25s ease,
+                opacity 0.25s ease;
+        }
+
+
+        .team-image-link:hover .team-image {
+            transform: scale(1.02);
+            opacity: 0.9;
+        }
+
+
+        .team-name {
+            margin: 0;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 22px;
+            font-weight: 600;
+
+            line-height: 1.3;
+
+            color: #1f292b;
+        }
+
+
+        .team-name a {
+            color: inherit;
+
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+
+            transition: opacity 0.2s ease;
+        }
+
+
+        .team-name a:hover {
+            opacity: 0.58;
+        }
+
+
+        /* =========================================================
+           RESEARCH AREAS
+           ========================================================= */
+
+        .research-projects-section {
+            padding: 70px 0 20px;
+        }
+
+
+        .research-projects-intro {
             max-width: 720px;
 
-            margin: 0 0 42px;
+            margin: -20px 0 40px;
 
             font-family:
                 Georgia,
@@ -179,81 +263,6 @@
         }
 
 
-        .team-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(4, minmax(0, 1fr));
-
-            gap: 24px;
-        }
-
-
-        .team-card {
-            padding: 28px 24px;
-
-            background: rgba(255, 255, 255, 0.35);
-
-            border: 1px solid rgba(31, 41, 43, 0.15);
-            border-radius: 6px;
-        }
-
-
-        .team-card h3 {
-            margin: 0 0 8px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 22px;
-            font-weight: 600;
-
-            color: #1f292b;
-        }
-
-
-        .team-card p {
-            margin: 0 0 18px;
-
-            color: #4f6468;
-
-            font-size: 15px;
-            line-height: 1.55;
-        }
-
-
-        .team-card a {
-            color: #253235;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 15px;
-
-            text-decoration: underline;
-            text-decoration-thickness: 1px;
-            text-underline-offset: 4px;
-        }
-
-
-        .team-card a:hover {
-            opacity: 0.6;
-        }
-
-
-        /* =========================================================
-           RESEARCH AREAS
-           ========================================================= */
-
-        .research-projects-section {
-            padding: 70px 0 20px;
-        }
-
-
         .research-project-grid {
             display: grid;
 
@@ -261,8 +270,6 @@
                 repeat(2, minmax(0, 1fr));
 
             gap: 30px;
-
-            margin-top: 40px;
         }
 
 
@@ -355,13 +362,8 @@
             }
 
 
-            .research-intro p:first-child {
-                font-size: 21px;
-            }
-
-
             .research-intro p {
-                font-size: 18px;
+                font-size: 21px;
             }
 
 
@@ -376,7 +378,15 @@
 
 
             .team-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+
+                gap: 30px 18px;
+            }
+
+
+            .team-name {
+                font-size: 19px;
             }
 
 
@@ -395,6 +405,16 @@
 
             .research-title {
                 font-size: 48px;
+            }
+
+
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .team-name {
+                font-size: 21px;
             }
 
         }
@@ -496,24 +516,9 @@
 
 
             <p>
-                I study sleep, dreaming, lucid dreaming,
-                and consciousness using behavioral and
-                neuroscientific approaches.
-            </p>
-
-
-            <p>
-                My research explores how we can interact with
-                the sleeping brain, influence ongoing dreams,
-                and use lucid dreaming as a tool for studying
-                cognition and consciousness.
-            </p>
-
-
-            <p>
-                I conduct my doctoral research in the
-                Cognitive Neuroscience Laboratory at
-                Northwestern University.
+                I study sleep, lucid dreaming, and contemplative
+                practices. I am a PhD candidate in cognitive
+                neuroscience at Northwestern University.
             </p>
 
 
@@ -547,103 +552,144 @@
         </h2>
 
 
-        <p class="research-section-intro">
-            Much of my research is conducted collaboratively
-            with researchers studying sleep, dreaming,
-            memory, and consciousness.
-        </p>
-
-
         <div class="team-grid">
 
 
+            <!-- KEN PALLER -->
+
             <article class="team-card">
 
-                <h3>
-                    Ken Paller
-                </h3>
-
-                <p>
-                    Northwestern University
-                </p>
-
                 <a
+                    class="team-image-link"
                     href="https://faculty.wcas.northwestern.edu/paller/"
                     target="_blank"
                     rel="noopener">
 
-                    Website →
+                    <img
+                        class="team-image"
+                        src="images/KenPaller.jpg"
+                        alt="Ken Paller">
 
                 </a>
+
+
+                <h3 class="team-name">
+
+                    <a
+                        href="https://faculty.wcas.northwestern.edu/paller/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Ken Paller
+
+                    </a>
+
+                </h3>
 
             </article>
 
 
 
+            <!-- KAREN KONKOLY -->
+
             <article class="team-card">
 
-                <h3>
-                    Karen Konkoly
-                </h3>
-
-                <p>
-                    Dream and sleep researcher
-                </p>
-
                 <a
+                    class="team-image-link"
                     href="https://www.karenkonkoly.com/"
                     target="_blank"
                     rel="noopener">
 
-                    Website →
+                    <img
+                        class="team-image"
+                        src="images/KarenKonkoly.jpg"
+                        alt="Karen Konkoly">
 
                 </a>
+
+
+                <h3 class="team-name">
+
+                    <a
+                        href="https://www.karenkonkoly.com/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Karen Konkoly
+
+                    </a>
+
+                </h3>
 
             </article>
 
 
 
+            <!-- GABY TORRES-PLATAS -->
+
             <article class="team-card">
 
-                <h3>
-                    Gaby Torres-Platas
-                </h3>
-
-                <p>
-                    Neuroscience researcher
-                </p>
-
                 <a
+                    class="team-image-link"
                     href="https://www.sgtorresplatas.com/"
                     target="_blank"
                     rel="noopener">
 
-                    Website →
+                    <img
+                        class="team-image"
+                        src="images/GabyTorresPlatas.jpg"
+                        alt="Gaby Torres-Platas">
 
                 </a>
+
+
+                <h3 class="team-name">
+
+                    <a
+                        href="https://www.sgtorresplatas.com/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Gaby Torres-Platas
+
+                    </a>
+
+                </h3>
 
             </article>
 
 
 
+            <!-- REMINGTON MALLETT -->
+
             <article class="team-card">
 
-                <h3>
-                    Remington Mallett
-                </h3>
-
-                <p>
-                    Dream and sleep researcher
-                </p>
-
                 <a
+                    class="team-image-link"
                     href="https://www.remrama.com/home"
                     target="_blank"
                     rel="noopener">
 
-                    Website →
+                    <img
+                        class="team-image"
+                        src="images/RemingtonMallett.jpg"
+                        alt="Remington Mallett">
 
                 </a>
+
+
+                <h3 class="team-name">
+
+                    <a
+                        href="https://www.remrama.com/home"
+                        target="_blank"
+                        rel="noopener">
+
+                        Remington Mallett
+
+                    </a>
+
+                </h3>
 
             </article>
 
@@ -667,7 +713,7 @@
         </h2>
 
 
-        <p class="research-section-intro">
+        <p class="research-projects-intro">
             Selected areas of my current research.
         </p>
 
