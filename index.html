@@ -45,6 +45,18 @@
 
 
     <!-- =========================================================
+         FAVICON
+
+         Upload favicon.png to the root of your GitHub repository.
+         ========================================================= -->
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/favicon.png">
+
+
+    <!-- =========================================================
          SOCIAL SHARING INFORMATION
          ========================================================= -->
 
@@ -70,7 +82,29 @@
 
 
     <!-- =========================================================
-         STRUCTURED DATA
+         WEBSITE STRUCTURED DATA
+
+         Helps search engines understand the identity and
+         preferred name of the overall website.
+         ========================================================= -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://danieljacobmorris.com/#website",
+        "url": "https://danieljacobmorris.com/",
+        "name": "Daniel Morris",
+        "alternateName": [
+            "Daniel Jacob Morris",
+            "Daniel Morris | Lucid Dreaming & Sleep Research"
+        ]
+    }
+    </script>
+
+
+    <!-- =========================================================
+         PROFILE / PERSON STRUCTURED DATA
 
          Connects this website with Daniel Morris's
          academic and professional profiles.
@@ -83,6 +117,10 @@
         "@id": "https://danieljacobmorris.com/#profilepage",
         "url": "https://danieljacobmorris.com/",
         "name": "Daniel Morris | Lucid Dreaming & Sleep Research",
+
+        "isPartOf": {
+            "@id": "https://danieljacobmorris.com/#website"
+        },
 
         "mainEntity": {
 
@@ -255,8 +293,8 @@
 
 
             <p>
-                I also collaborate with Tibetan monastic scholars 
-                to study advanced contemplative practices.
+                I also teach science and collaborate with Tibetan monastic scholars
+                through the Emory-Tibet Science Initiative.
             </p>
 
 
