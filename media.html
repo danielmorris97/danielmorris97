@@ -13,7 +13,7 @@
 
     <meta
         name="description"
-        content="Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.">
+        content="Articles, videos, interviews, public discussions, and media featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, problem solving, and contemplative science.">
 
     <meta
         name="robots"
@@ -38,7 +38,7 @@
 
     <meta
         property="og:description"
-        content="Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.">
+        content="Articles, videos, interviews, and public discussions featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, and contemplative science.">
 
     <meta
         property="og:url"
@@ -64,7 +64,7 @@
         "@id": "https://danieljacobmorris.com/media.html#webpage",
         "url": "https://danieljacobmorris.com/media.html",
         "name": "Media | Daniel Morris",
-        "description": "Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.",
+        "description": "Articles, videos, interviews, public discussions, and media featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, problem solving, and contemplative science.",
 
         "isPartOf": {
             "@id": "https://danieljacobmorris.com/#website"
@@ -84,12 +84,19 @@
 
     <style>
 
+        /* =========================================================
+           MEDIA PAGE
+           ========================================================= */
+
         .media-page {
             width: 100%;
-
             margin: 0;
         }
 
+
+        /* =========================================================
+           INTRO
+           ========================================================= */
 
         .media-intro {
             width: calc(100% - 96px);
@@ -133,7 +140,7 @@
 
 
         .media-intro-text {
-            max-width: 650px;
+            max-width: 680px;
         }
 
 
@@ -152,13 +159,17 @@
         }
 
 
+        /* =========================================================
+           GENERAL SECTIONS
+           ========================================================= */
+
         .media-section {
             width: calc(100% - 96px);
             max-width: 1180px;
 
             margin: 0 auto;
 
-            padding: 65px 0 85px;
+            padding: 70px 0 85px;
         }
 
 
@@ -168,7 +179,7 @@
 
 
         .media-section-title {
-            margin: 0 0 42px;
+            margin: 0 0 18px;
 
             font-family:
                 Georgia,
@@ -178,13 +189,411 @@
             font-size: clamp(42px, 5vw, 58px);
             font-weight: 600;
 
-            line-height: 1;
+            line-height: 1.05;
 
             letter-spacing: -1.5px;
 
             color: var(--text);
         }
 
+
+        .media-section-intro {
+            max-width: 780px;
+
+            margin: 0 0 42px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 18px;
+            line-height: 1.7;
+
+            color: var(--muted-text);
+        }
+
+
+        /* =========================================================
+           ARTICLE CARDS
+           ========================================================= */
+
+        .article-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 24px;
+        }
+
+
+        .article-card {
+            display: flex;
+            flex-direction: column;
+
+            min-height: 220px;
+
+            padding: 30px;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 6px;
+
+            transition:
+                background 0.2s ease,
+                transform 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+
+        .article-card:hover {
+            background: var(--panel-hover);
+
+            border-color: rgba(139, 203, 243, 0.30);
+
+            transform: translateY(-2px);
+        }
+
+
+        .article-outlet {
+            margin: 0 0 12px;
+
+            color: var(--accent);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+
+        .article-card h3 {
+            margin: 0 0 14px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 25px;
+            font-weight: 600;
+
+            line-height: 1.25;
+
+            color: var(--text);
+        }
+
+
+        .article-card h3 a {
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+
+        .article-card h3 a:hover {
+            color: var(--accent-soft);
+        }
+
+
+        .article-description {
+            margin: 0 0 24px;
+
+            color: var(--muted-text);
+
+            font-size: 16px;
+            line-height: 1.65;
+        }
+
+
+        .article-link {
+            display: inline-block;
+
+            margin-top: auto;
+
+            align-self: flex-start;
+
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 16px;
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid
+                rgba(139, 203, 243, 0.6);
+
+            padding-bottom: 2px;
+        }
+
+
+        .article-link:hover {
+            color: var(--accent-soft);
+
+            border-color: var(--accent-soft);
+        }
+
+
+        /* =========================================================
+           PROBLEM SOLVING FEATURE CARDS
+           ========================================================= */
+
+        .problem-feature-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, minmax(0, 1fr));
+
+            gap: 22px;
+
+            margin-bottom: 38px;
+        }
+
+
+        .problem-feature {
+            padding: 26px;
+
+            background:
+                rgba(139, 203, 243, 0.045);
+
+            border:
+                1px solid
+                rgba(139, 203, 243, 0.16);
+
+            border-radius: 6px;
+        }
+
+
+        .problem-feature-outlet {
+            margin: 0 0 10px;
+
+            color: var(--accent);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            letter-spacing: 0.06em;
+
+            text-transform: uppercase;
+        }
+
+
+        .problem-feature h3 {
+            margin: 0;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 21px;
+            font-weight: 600;
+
+            line-height: 1.4;
+        }
+
+
+        .problem-feature h3 a {
+            color: var(--text);
+
+            text-decoration: underline;
+
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+
+
+        .problem-feature h3 a:hover {
+            color: var(--accent);
+        }
+
+
+        /* =========================================================
+           EXPANDABLE PRESS DROPDOWN
+           ========================================================= */
+
+        .press-dropdown {
+            margin-top: 32px;
+
+            overflow: hidden;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 7px;
+        }
+
+
+        .press-dropdown summary {
+            position: relative;
+
+            padding: 23px 64px 23px 25px;
+
+            color: var(--text);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 19px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            list-style: none;
+
+            transition:
+                background 0.2s ease,
+                color 0.2s ease;
+        }
+
+
+        .press-dropdown summary::-webkit-details-marker {
+            display: none;
+        }
+
+
+        .press-dropdown summary::after {
+            content: "+";
+
+            position: absolute;
+
+            top: 50%;
+            right: 26px;
+
+            transform: translateY(-52%);
+
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 30px;
+            font-weight: 400;
+
+            line-height: 1;
+        }
+
+
+        .press-dropdown[open] summary::after {
+            content: "−";
+        }
+
+
+        .press-dropdown summary:hover {
+            background: var(--panel-hover);
+
+            color: var(--accent-soft);
+        }
+
+
+        .press-dropdown-content {
+            padding: 8px 26px 32px;
+
+            border-top: 1px solid var(--line);
+        }
+
+
+        .press-roundup-link {
+            margin: 24px 0 32px;
+        }
+
+
+        .press-roundup-link a {
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+
+            text-decoration: underline;
+
+            text-underline-offset: 4px;
+        }
+
+
+        .press-group {
+            margin-top: 34px;
+        }
+
+
+        .press-group:first-of-type {
+            margin-top: 0;
+        }
+
+
+        .press-group h3 {
+            margin: 0 0 16px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 23px;
+            font-weight: 600;
+
+            color: var(--text);
+        }
+
+
+        .press-list {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            border-top: 1px solid var(--line);
+        }
+
+
+        .press-list li {
+            padding: 15px 0;
+
+            border-bottom: 1px solid var(--line);
+
+            line-height: 1.55;
+        }
+
+
+        .press-list a {
+            color: var(--text);
+
+            text-decoration: none;
+
+            transition: color 0.2s ease;
+        }
+
+
+        .press-list a:hover {
+            color: var(--accent);
+        }
+
+
+        .press-outlet {
+            color: var(--accent);
+
+            font-weight: 600;
+        }
+
+
+        /* =========================================================
+           VIDEOS
+           ========================================================= */
 
         .video-grid {
             display: grid;
@@ -251,10 +660,9 @@
             color: var(--accent);
 
             text-decoration: underline;
+
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
-
-            transition: color 0.2s ease;
         }
 
 
@@ -262,6 +670,10 @@
             color: var(--accent-soft);
         }
 
+
+        /* =========================================================
+           REDDIT
+           ========================================================= */
 
         .reddit-feature {
             display: grid;
@@ -273,6 +685,8 @@
             gap: 70px;
 
             align-items: center;
+
+            margin-top: 70px;
         }
 
 
@@ -346,8 +760,6 @@
 
             text-decoration-thickness: 1.5px;
             text-underline-offset: 6px;
-
-            transition: color 0.2s ease;
         }
 
 
@@ -385,13 +797,11 @@
 
             text-decoration: none;
 
-            border-bottom: 1px solid rgba(139, 203, 243, 0.65);
+            border-bottom:
+                1px solid
+                rgba(139, 203, 243, 0.65);
 
             padding-bottom: 3px;
-
-            transition:
-                color 0.2s ease,
-                border-color 0.2s ease;
         }
 
 
@@ -401,6 +811,10 @@
             border-color: var(--accent-soft);
         }
 
+
+        /* =========================================================
+           TABLET
+           ========================================================= */
 
         @media (max-width: 950px) {
 
@@ -422,12 +836,22 @@
             }
 
 
+            .problem-feature-grid {
+                grid-template-columns:
+                    repeat(2, minmax(0, 1fr));
+            }
+
+
             .reddit-feature {
                 gap: 45px;
             }
 
         }
 
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
 
         @media (max-width: 750px) {
 
@@ -464,14 +888,43 @@
 
 
             .media-section-title {
-                margin-bottom: 32px;
-
                 font-size: 42px;
             }
 
 
+            .article-grid,
+            .problem-feature-grid,
             .video-grid {
                 grid-template-columns: 1fr;
+            }
+
+
+            .article-card {
+                min-height: auto;
+            }
+
+
+            .press-dropdown summary {
+                padding:
+                    20px
+                    56px
+                    20px
+                    20px;
+
+                font-size: 17px;
+            }
+
+
+            .press-dropdown summary::after {
+                right: 20px;
+            }
+
+
+            .press-dropdown-content {
+                padding:
+                    5px
+                    20px
+                    28px;
             }
 
 
@@ -479,6 +932,8 @@
                 grid-template-columns: 1fr;
 
                 gap: 35px;
+
+                margin-top: 55px;
             }
 
 
@@ -493,6 +948,10 @@
 
         }
 
+
+        /* =========================================================
+           VERY SMALL PHONES
+           ========================================================= */
 
         @media (max-width: 420px) {
 
@@ -575,13 +1034,16 @@
     class="media-page">
 
 
-    <section class="media-intro">
+    <!-- =========================================================
+         INTRO
+         ========================================================= -->
 
+    <section class="media-intro">
 
         <div>
 
             <h1>
-                Featured
+                Media
             </h1>
 
         </div>
@@ -590,28 +1052,857 @@
         <div class="media-intro-text">
 
             <p>
-                Learn more about my research through
-                videos, articles, and outreach.
+                Selected articles, videos, interviews, and public
+                discussions about my research on dreaming,
+                sleep, consciousness, and contemplative science.
             </p>
 
         </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FEATURED COVERAGE
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <h2 class="media-section-title">
+            Featured Coverage
+        </h2>
+
+        <p class="media-section-intro">
+            Selected features covering dream science, sleep learning,
+            contemplative research, and my work.
+        </p>
+
+
+        <div class="article-grid">
+
+
+            <!-- THE NEW YORKER -->
+
+            <article class="article-card">
+
+                <p class="article-outlet">
+                    The New Yorker
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+                        target="_blank"
+                        rel="noopener">
+
+                        It’s Possible to Learn in Our Sleep. Should We?
+
+                    </a>
+
+                </h3>
+
+                <p class="article-description">
+                    A feature on sleep learning, dream communication,
+                    lucid dreaming, and research exploring what the
+                    sleeping mind can learn and accomplish.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+                    target="_blank"
+                    rel="noopener">
+
+                    Read article →
+
+                </a>
+
+            </article>
+
+
+            <!-- TIME -->
+
+            <article class="article-card">
+
+                <p class="article-outlet">
+                    TIME
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Can Dreams Help You Solve Problems?
+
+                    </a>
+
+                </h3>
+
+                <p class="article-description">
+                    A feature examining experimental evidence that
+                    dreaming about unsolved problems may improve
+                    subsequent problem solving.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Read article →
+
+                </a>
+
+            </article>
+
+
+            <!-- MIND & LIFE -->
+
+            <article class="article-card">
+
+                <p class="article-outlet">
+                    Mind &amp; Life Institute
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
+
+                    </a>
+
+                </h3>
+
+                <p class="article-description">
+                    A feature on the dialogue between Buddhist
+                    contemplative traditions and scientific research.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Read article →
+
+                </a>
+
+            </article>
+
+
+            <!-- BETWEEN TWO WORLDS -->
+
+            <article class="article-card">
+
+                <p class="article-outlet">
+                    Between Two Worlds
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://betweentwoworlds.tv/experts/daniel-morris"
+                        target="_blank"
+                        rel="noopener">
+
+                        Daniel Morris — Lucid Dreaming Researcher
+
+                    </a>
+
+                </h3>
+
+                <p class="article-description">
+                    Expert profile highlighting research on lucid
+                    dreaming, contemplative sleep practices, and the
+                    dialogue between science and Buddhism.
+                </p>
+
+                <a
+                    class="article-link"
+                    href="https://betweentwoworlds.tv/experts/daniel-morris"
+                    target="_blank"
+                    rel="noopener">
+
+                    View profile →
+
+                </a>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         DREAM ENGINEERING & PROBLEM SOLVING
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <h2 class="media-section-title">
+            Dream Engineering &amp; Problem Solving
+        </h2>
+
+        <p class="media-section-intro">
+            Media coverage of research testing whether targeted
+            dream incorporation during REM sleep can promote
+            creative problem solving.
+        </p>
+
+
+        <!-- SELECTED MAJOR COVERAGE -->
+
+        <div class="problem-feature-grid">
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    The Washington Post
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Why your most creative ideas may come after a night of sleep
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    Northwestern Now
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
+                        target="_blank"
+                        rel="noopener">
+
+                        Dream engineering can help solve ‘puzzling’ questions
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    NPR
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
+                        target="_blank"
+                        rel="noopener">
+
+                        Can’t solve a puzzle? Sleep on it, a new study suggests
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    FOX 32 Chicago
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+                        target="_blank"
+                        rel="noopener">
+
+                        Northwestern study reveals how sleep can boost creativity
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    Gizmodo
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
+                        target="_blank"
+                        rel="noopener">
+
+                        Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+            <article class="problem-feature">
+
+                <p class="problem-feature-outlet">
+                    TIME
+                </p>
+
+                <h3>
+
+                    <a
+                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Can Dreams Help You Solve Problems?
+
+                    </a>
+
+                </h3>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- COMPLETE PRESS DROPDOWN -->
+
+        <details class="press-dropdown">
+
+            <summary>
+                View all media coverage of the February 2026 study
+            </summary>
+
+
+            <div class="press-dropdown-content">
+
+
+                <p class="press-roundup-link">
+
+                    <a
+                        href="https://sites.northwestern.edu/pallerlab/popular-press/"
+                        target="_blank"
+                        rel="noopener">
+
+                        View the Paller Lab’s full popular-press roundup →
+
+                    </a>
+
+                </p>
+
+
+                <!-- MAJOR / BROADCAST -->
+
+                <div class="press-group">
+
+                    <h3>
+                        Major &amp; Broadcast Coverage
+                    </h3>
+
+
+                    <ul class="press-list">
+
+
+                        <li>
+
+                            <a
+                                href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    NPR:
+                                </span>
+
+                                Can’t solve a puzzle? Sleep on it, a new study suggests
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    The Washington Post:
+                                </span>
+
+                                Why your most creative ideas may come after a night of sleep
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    TIME:
+                                </span>
+
+                                Can Dreams Help You Solve Problems?
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    FOX 32 Chicago:
+                                </span>
+
+                                Northwestern study reveals how sleep can boost creativity
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Northwestern Now:
+                                </span>
+
+                                Dream engineering can help solve ‘puzzling’ questions
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+                <!-- SCIENCE & TECH -->
+
+                <div class="press-group">
+
+                    <h3>
+                        Science &amp; Technology Coverage
+                    </h3>
+
+
+                    <ul class="press-list">
+
+
+                        <li>
+
+                            <a
+                                href="https://www.vice.com/en/article/how-scientists-hacked-peoples-dreams-to-help-them-solve-real-life-puzzles/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Vice:
+                                </span>
+
+                                How Scientists Hacked People’s Dreams to Help Them Solve Real-Life Puzzles
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://nautil.us/dream-engineering-could-help-you-solve-problems-while-you-sleep-1265958"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Nautilus:
+                                </span>
+
+                                Dream Engineering Could Help You Solve Problems While You Sleep
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.livescience.com/health/sleep/scientists-infiltrated-volunteers-dreams-to-boost-their-creative-thinking"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    LiveScience:
+                                </span>
+
+                                ‘Dream engineering’ experiment hints at why ‘sleeping on it’ helps with problem-solving
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.psypost.org/scientists-use-dream-engineering-to-boost-creative-problem-solving-during-rem-sleep/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    PsyPost:
+                                </span>
+
+                                Scientists use “dream engineering” to boost creative problem-solving during REM sleep
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://thefreesheet.com/2026/02/05/real-life-inception-study-uses-sound-to-hack-dreams-and-help-solve-problems/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    The Free Sheet:
+                                </span>
+
+                                Real-life Inception study uses sound to hack dreams and help solve problems
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.thebrighterside.news/post/guided-dreams-during-rem-sleep-can-boost-problem-solving/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    The Brighter Side:
+                                </span>
+
+                                Guided dreams during REM sleep can boost problem solving
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.techexplorist.com/dream-engineering-improve-creative-problem-solving/102072/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Tech Explorist:
+                                </span>
+
+                                Dream engineering may improve creative problem-solving
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Gizmodo:
+                                </span>
+
+                                Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.sciencealert.com/dream-engineering-can-boost-your-puzzle-solving-study-suggests"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    ScienceAlert:
+                                </span>
+
+                                ‘Dream Engineering’ Can Boost Your Puzzle-Solving, Study Suggests
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://thedebrief.org/did-scientists-just-achieve-inception-experiments-show-dream-engineering-may-be-a-reality/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    The Debrief:
+                                </span>
+
+                                Did Scientists Just Achieve “Inception”? Experiments Show “Dream Engineering” May Be a Reality
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+                <!-- INTERNATIONAL -->
+
+                <div class="press-group">
+
+                    <h3>
+                        International Coverage
+                    </h3>
+
+
+                    <ul class="press-list">
+
+
+                        <li>
+
+                            <a
+                                href="https://www.thetimes.com/uk/science/article/dream-engineering-solve-problems-sleep-jj8j958n8"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    The Times (UK):
+                                </span>
+
+                                Could dream engineering help you solve problems while you sleep?
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.express.co.uk/news/weird/2171523/scientists-crack-dream-hacking-boost-creativity-solve-problems"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Express (UK):
+                                </span>
+
+                                Scientists crack Inception ‘dream hacking’ and can now plant ideas in your sleep
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.mirror.co.uk/news/us-news/inception-style-dream-hacking-helps-36729654"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Mirror (UK):
+                                </span>
+
+                                Inception-style ‘dream hacking’ helps people solve life’s hardest problems
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://sciencepost.fr/inception-pour-moins-de-10-euros-lexperience-qui-prouve-quon-peut-pirater-vos-reves-avec-un-simple-bruit-de-fond/"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Science Post (France):
+                                </span>
+
+                                « Inception pour moins de 10 euros » : l’expérience qui prouve qu’on peut pirater vos rêves avec un simple bruit de fond
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.science-et-vie.com/cerveau-et-intelligence/inception-nest-plus-seulement-de-la-fiction-des-scientifiques-parviennent-a-orienter-certains-contenus-des-reves-pendant-le-sommeil-226921.html"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Science &amp; Vie (France):
+                                </span>
+
+                                Inception n’est plus seulement de la fiction… des scientifiques parviennent à orienter certains contenus des rêves pendant le sommeil
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://www.spiegel.de/wissenschaft/mensch/luzides-traeumen-probleme-im-schlaf-loesen-laut-studie-klappt-das-a-49a78125-a7e7-4974-b9b2-9702500c79df"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Der Spiegel (Germany):
+                                </span>
+
+                                Träumen hilft, Probleme zu lösen
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                href="https://timesofindia.indiatimes.com/science/stuck-on-a-puzzle-sleeping-may-help-you-solve-it-study-finds/articleshow/128143685.cms"
+                                target="_blank"
+                                rel="noopener">
+
+                                <span class="press-outlet">
+                                    Times of India:
+                                </span>
+
+                                Stuck on a puzzle? Sleeping may help you solve it, study finds
+
+                            </a>
+
+                        </li>
+
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </details>
 
 
     </section>
 
 
+    <!-- =========================================================
+         VIDEOS & PUBLIC DISCUSSIONS
+         ========================================================= -->
+
     <section class="media-section">
 
         <h2 class="media-section-title">
-            Videos
+            Videos &amp; Public Discussions
         </h2>
+
+        <p class="media-section-intro">
+            Selected video appearances and public conversations
+            about dreaming and dream research.
+        </p>
 
 
         <div class="video-grid">
 
 
             <article class="video-card">
-
 
                 <div class="video-embed">
 
@@ -639,23 +1930,47 @@
 
                 </h3>
 
+            </article>
+
+
+            <article class="video-card">
+
+                <div class="video-embed">
+
+                    <iframe
+                        src="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+                        title="Northwestern study reveals how sleep can boost creativity"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+
+
+                <h3>
+
+                    <a
+                        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+                        target="_blank"
+                        rel="noopener">
+
+                        FOX 32 Chicago: Northwestern study reveals how sleep can boost creativity
+
+                    </a>
+
+                </h3>
 
             </article>
 
 
         </div>
 
-    </section>
 
-
-    <section class="media-section">
-
+        <!-- REDDIT AMA -->
 
         <div class="reddit-feature">
 
 
             <div>
-
 
                 <a
                     class="reddit-image-link"
@@ -670,12 +1985,10 @@
 
                 </a>
 
-
             </div>
 
 
             <div class="reddit-copy">
-
 
                 <p class="reddit-label">
                     Public Q&amp;A
@@ -713,7 +2026,6 @@
                     View the Reddit AMA →
 
                 </a>
-
 
             </div>
 
