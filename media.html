@@ -13,11 +13,15 @@
 
     <meta
         name="description"
-        content="Articles, videos, interviews, public discussions, and media featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, problem solving, and contemplative science.">
+        content="Selected articles, videos, interviews, and public discussions about Daniel Morris's research.">
 
     <meta
         name="robots"
         content="index, follow">
+
+    <meta
+        name="theme-color"
+        content="#0B2233">
 
     <link
         rel="canonical"
@@ -38,7 +42,7 @@
 
     <meta
         property="og:description"
-        content="Articles, videos, interviews, and public discussions featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, and contemplative science.">
+        content="Selected articles, videos, interviews, and public discussions about Daniel Morris's research.">
 
     <meta
         property="og:url"
@@ -64,12 +68,10 @@
         "@id": "https://danieljacobmorris.com/media.html#webpage",
         "url": "https://danieljacobmorris.com/media.html",
         "name": "Media | Daniel Morris",
-        "description": "Articles, videos, interviews, public discussions, and media featuring Daniel Morris and research on sleep, dreaming, lucid dreaming, dream engineering, problem solving, and contemplative science.",
-
+        "description": "Selected articles, videos, interviews, and public discussions about Daniel Morris's research.",
         "isPartOf": {
             "@id": "https://danieljacobmorris.com/#website"
         },
-
         "about": {
             "@id": "https://danieljacobmorris.com/#person"
         }
@@ -200,7 +202,7 @@
         .media-section-intro {
             max-width: 780px;
 
-            margin: 0 0 42px;
+            margin: 0 0 38px;
 
             font-family:
                 Georgia,
@@ -215,49 +217,235 @@
 
 
         /* =========================================================
-           ARTICLE CARDS
+           REDDIT AMA
            ========================================================= */
 
-        .article-grid {
+        .reddit-feature {
             display: grid;
 
             grid-template-columns:
-                repeat(2, minmax(0, 1fr));
+                minmax(0, 1.05fr)
+                minmax(0, 0.95fr);
 
-            gap: 24px;
+            gap: 70px;
+
+            align-items: center;
         }
 
 
-        .article-card {
-            display: flex;
-            flex-direction: column;
+        .reddit-image-link {
+            display: block;
+        }
 
-            min-height: 220px;
 
-            padding: 30px;
+        .reddit-image {
+            width: 100%;
 
-            background: var(--panel);
+            display: block;
 
             border: 1px solid var(--line);
-            border-radius: 6px;
+            border-radius: 5px;
 
             transition:
-                background 0.2s ease,
-                transform 0.2s ease,
-                border-color 0.2s ease;
+                opacity 0.2s ease,
+                transform 0.2s ease;
         }
 
 
-        .article-card:hover {
-            background: var(--panel-hover);
-
-            border-color: rgba(139, 203, 243, 0.30);
+        .reddit-image-link:hover .reddit-image {
+            opacity: 0.88;
 
             transform: translateY(-2px);
         }
 
 
-        .article-outlet {
+        .reddit-copy {
+            max-width: 530px;
+        }
+
+
+        .reddit-label {
+            margin: 0 0 15px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 16px;
+            font-style: italic;
+
+            color: var(--muted-text);
+        }
+
+
+        .reddit-title {
+            margin: 0 0 22px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: clamp(38px, 5vw, 57px);
+            font-weight: 600;
+
+            line-height: 1.08;
+
+            letter-spacing: -1.5px;
+        }
+
+
+        .reddit-title a {
+            color: var(--text);
+
+            text-decoration: underline;
+
+            text-decoration-thickness: 1.5px;
+            text-underline-offset: 6px;
+        }
+
+
+        .reddit-title a:hover {
+            color: var(--accent);
+        }
+
+
+        .reddit-description {
+            margin: 0 0 24px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 18px;
+            line-height: 1.65;
+
+            color: var(--muted-text);
+        }
+
+
+        .reddit-link {
+            display: inline-block;
+
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid
+                rgba(139, 203, 243, 0.65);
+
+            padding-bottom: 3px;
+        }
+
+
+        .reddit-link:hover {
+            color: var(--accent-soft);
+
+            border-color: var(--accent-soft);
+        }
+
+
+        /* =========================================================
+           FEATURED COVERAGE
+           ========================================================= */
+
+        .featured-grid {
+            display: grid;
+
+            grid-template-columns: 1fr;
+
+            gap: 24px;
+        }
+
+
+        .featured-card {
+            display: grid;
+
+            grid-template-columns:
+                minmax(260px, 0.8fr)
+                minmax(0, 1.2fr);
+
+            min-height: 250px;
+
+            overflow: hidden;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 7px;
+
+            transition:
+                background 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.2s ease;
+        }
+
+
+        .featured-card:hover {
+            background: var(--panel-hover);
+
+            border-color:
+                rgba(139, 203, 243, 0.30);
+
+            transform: translateY(-2px);
+        }
+
+
+        .featured-image-link {
+            display: block;
+
+            min-height: 250px;
+
+            overflow: hidden;
+
+            background: var(--deep);
+        }
+
+
+        .featured-image {
+            width: 100%;
+            height: 100%;
+
+            min-height: 250px;
+
+            display: block;
+
+            object-fit: cover;
+            object-position: center;
+
+            transition:
+                transform 0.25s ease,
+                opacity 0.25s ease;
+        }
+
+
+        .featured-image-link:hover .featured-image {
+            transform: scale(1.015);
+
+            opacity: 0.92;
+        }
+
+
+        .featured-copy {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 32px 36px;
+        }
+
+
+        .featured-outlet {
             margin: 0 0 12px;
 
             color: var(--accent);
@@ -266,19 +454,20 @@
             font-weight: 600;
 
             letter-spacing: 0.08em;
+
             text-transform: uppercase;
         }
 
 
-        .article-card h3 {
-            margin: 0 0 14px;
+        .featured-copy h3 {
+            margin: 0 0 22px;
 
             font-family:
                 Georgia,
                 "Times New Roman",
                 serif;
 
-            font-size: 25px;
+            font-size: clamp(24px, 3vw, 31px);
             font-weight: 600;
 
             line-height: 1.25;
@@ -287,32 +476,22 @@
         }
 
 
-        .article-card h3 a {
+        .featured-copy h3 a {
             color: inherit;
 
             text-decoration: none;
+
+            transition: color 0.2s ease;
         }
 
 
-        .article-card h3 a:hover {
+        .featured-copy h3 a:hover {
             color: var(--accent-soft);
         }
 
 
-        .article-description {
-            margin: 0 0 24px;
-
-            color: var(--muted-text);
-
-            font-size: 16px;
-            line-height: 1.65;
-        }
-
-
-        .article-link {
+        .featured-link {
             display: inline-block;
-
-            margin-top: auto;
 
             align-self: flex-start;
 
@@ -329,13 +508,13 @@
 
             border-bottom:
                 1px solid
-                rgba(139, 203, 243, 0.6);
+                rgba(139, 203, 243, 0.60);
 
             padding-bottom: 2px;
         }
 
 
-        .article-link:hover {
+        .featured-link:hover {
             color: var(--accent-soft);
 
             border-color: var(--accent-soft);
@@ -592,7 +771,7 @@
 
 
         /* =========================================================
-           VIDEOS
+           VIDEO
            ========================================================= */
 
         .video-grid {
@@ -672,147 +851,6 @@
 
 
         /* =========================================================
-           REDDIT
-           ========================================================= */
-
-        .reddit-feature {
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1.05fr)
-                minmax(0, 0.95fr);
-
-            gap: 70px;
-
-            align-items: center;
-
-            margin-top: 70px;
-        }
-
-
-        .reddit-image-link {
-            display: block;
-        }
-
-
-        .reddit-image {
-            width: 100%;
-
-            display: block;
-
-            border: 1px solid var(--line);
-            border-radius: 4px;
-
-            transition:
-                opacity 0.2s ease,
-                transform 0.2s ease;
-        }
-
-
-        .reddit-image-link:hover .reddit-image {
-            opacity: 0.88;
-
-            transform: translateY(-2px);
-        }
-
-
-        .reddit-copy {
-            max-width: 530px;
-        }
-
-
-        .reddit-label {
-            margin: 0 0 15px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 16px;
-            font-style: italic;
-
-            color: var(--muted-text);
-        }
-
-
-        .reddit-title {
-            margin: 0 0 25px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(38px, 5vw, 57px);
-            font-weight: 600;
-
-            line-height: 1.08;
-
-            letter-spacing: -1.5px;
-        }
-
-
-        .reddit-title a {
-            color: var(--text);
-
-            text-decoration: underline;
-
-            text-decoration-thickness: 1.5px;
-            text-underline-offset: 6px;
-        }
-
-
-        .reddit-title a:hover {
-            color: var(--accent);
-        }
-
-
-        .reddit-description {
-            margin: 0 0 25px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 18px;
-            line-height: 1.65;
-
-            color: var(--muted-text);
-        }
-
-
-        .reddit-link {
-            display: inline-block;
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-
-            text-decoration: none;
-
-            border-bottom:
-                1px solid
-                rgba(139, 203, 243, 0.65);
-
-            padding-bottom: 3px;
-        }
-
-
-        .reddit-link:hover {
-            color: var(--accent-soft);
-
-            border-color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
            TABLET
            ========================================================= */
 
@@ -833,6 +871,13 @@
 
             .media-intro-text {
                 max-width: 720px;
+            }
+
+
+            .featured-card {
+                grid-template-columns:
+                    minmax(220px, 0.8fr)
+                    minmax(0, 1.2fr);
             }
 
 
@@ -892,15 +937,31 @@
             }
 
 
-            .article-grid,
-            .problem-feature-grid,
-            .video-grid {
+            .featured-card {
                 grid-template-columns: 1fr;
             }
 
 
-            .article-card {
-                min-height: auto;
+            .featured-image-link {
+                min-height: 220px;
+
+                aspect-ratio: 16 / 9;
+            }
+
+
+            .featured-image {
+                min-height: 220px;
+            }
+
+
+            .featured-copy {
+                padding: 26px 24px 30px;
+            }
+
+
+            .problem-feature-grid,
+            .video-grid {
+                grid-template-columns: 1fr;
             }
 
 
@@ -932,8 +993,6 @@
                 grid-template-columns: 1fr;
 
                 gap: 35px;
-
-                margin-top: 55px;
             }
 
 
@@ -948,10 +1007,6 @@
 
         }
 
-
-        /* =========================================================
-           VERY SMALL PHONES
-           ========================================================= */
 
         @media (max-width: 420px) {
 
@@ -1052,10 +1107,81 @@
         <div class="media-intro-text">
 
             <p>
-                Selected articles, videos, interviews, and public
-                discussions about my research on dreaming,
-                sleep, consciousness, and contemplative science.
+                Selected articles, videos, interviews, and public discussions about my research.
             </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         REDDIT AMA
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <div class="reddit-feature">
+
+
+            <div>
+
+                <a
+                    class="reddit-image-link"
+                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+                    target="_blank"
+                    rel="noopener">
+
+                    <img
+                        class="reddit-image"
+                        src="images/reddit.jpg"
+                        alt="DUST Reddit Ask Me Anything with Karen Konkoly and Daniel Morris">
+
+                </a>
+
+            </div>
+
+
+            <div class="reddit-copy">
+
+                <p class="reddit-label">
+                    Public Q&amp;A
+                </p>
+
+
+                <h2 class="reddit-title">
+
+                    <a
+                        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Ask Me Anything Reddit event
+
+                    </a>
+
+                </h2>
+
+
+                <p class="reddit-description">
+                    Public Q&amp;A about dreaming, lucid dreaming,
+                    sleep learning, dream communication, and
+                    dream engineering.
+                </p>
+
+
+                <a
+                    class="reddit-link"
+                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+                    target="_blank"
+                    rel="noopener">
+
+                    View the Reddit AMA →
+
+                </a>
+
+            </div>
+
 
         </div>
 
@@ -1072,170 +1198,222 @@
             Featured Coverage
         </h2>
 
-        <p class="media-section-intro">
-            Selected features covering dream science, sleep learning,
-            contemplative research, and my work.
-        </p>
+
+        <div class="featured-grid">
 
 
-        <div class="article-grid">
+            <!-- NEW YORKER -->
 
-
-            <!-- THE NEW YORKER -->
-
-            <article class="article-card">
-
-                <p class="article-outlet">
-                    The New Yorker
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
-                        target="_blank"
-                        rel="noopener">
-
-                        It’s Possible to Learn in Our Sleep. Should We?
-
-                    </a>
-
-                </h3>
-
-                <p class="article-description">
-                    A feature on sleep learning, dream communication,
-                    lucid dreaming, and research exploring what the
-                    sleeping mind can learn and accomplish.
-                </p>
+            <article class="featured-card">
 
                 <a
-                    class="article-link"
+                    class="featured-image-link"
                     href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
                     target="_blank"
                     rel="noopener">
 
-                    Read article →
+                    <img
+                        class="featured-image"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fannals-of-inquiry%2Fits-possible-to-learn-in-our-sleep-should-we&amp;embed=image.url"
+                        alt="The New Yorker article illustration"
+                        loading="lazy"
+                        decoding="async">
 
                 </a>
+
+
+                <div class="featured-copy">
+
+                    <p class="featured-outlet">
+                        The New Yorker
+                    </p>
+
+                    <h3>
+
+                        <a
+                            href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+                            target="_blank"
+                            rel="noopener">
+
+                            It’s Possible to Learn in Our Sleep. Should We?
+
+                        </a>
+
+                    </h3>
+
+                    <a
+                        class="featured-link"
+                        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+                        target="_blank"
+                        rel="noopener">
+
+                        Read article →
+
+                    </a>
+
+                </div>
 
             </article>
 
 
             <!-- TIME -->
 
-            <article class="article-card">
-
-                <p class="article-outlet">
-                    TIME
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Can Dreams Help You Solve Problems?
-
-                    </a>
-
-                </h3>
-
-                <p class="article-description">
-                    A feature examining experimental evidence that
-                    dreaming about unsolved problems may improve
-                    subsequent problem solving.
-                </p>
+            <article class="featured-card">
 
                 <a
-                    class="article-link"
+                    class="featured-image-link"
                     href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
                     target="_blank"
                     rel="noopener">
 
-                    Read article →
+                    <img
+                        class="featured-image"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Ftime.com%2F7381398%2Fcan-dreams-help-you-solve-problems%2F&amp;embed=image.url"
+                        alt="TIME article illustration"
+                        loading="lazy"
+                        decoding="async">
 
                 </a>
+
+
+                <div class="featured-copy">
+
+                    <p class="featured-outlet">
+                        TIME
+                    </p>
+
+                    <h3>
+
+                        <a
+                            href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                            target="_blank"
+                            rel="noopener">
+
+                            Can Dreams Help You Solve Problems?
+
+                        </a>
+
+                    </h3>
+
+                    <a
+                        class="featured-link"
+                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Read article →
+
+                    </a>
+
+                </div>
 
             </article>
 
 
             <!-- MIND & LIFE -->
 
-            <article class="article-card">
-
-                <p class="article-outlet">
-                    Mind &amp; Life Institute
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
-
-                    </a>
-
-                </h3>
-
-                <p class="article-description">
-                    A feature on the dialogue between Buddhist
-                    contemplative traditions and scientific research.
-                </p>
+            <article class="featured-card">
 
                 <a
-                    class="article-link"
+                    class="featured-image-link"
                     href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
                     target="_blank"
                     rel="noopener">
 
-                    Read article →
+                    <img
+                        class="featured-image"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.mindandlife.org%2Finsight%2Fbridging-science-and-buddhism-the-dalai-lamas-100-year-vision%2F&amp;embed=image.url"
+                        alt="Mind and Life article image"
+                        loading="lazy"
+                        decoding="async">
 
                 </a>
+
+
+                <div class="featured-copy">
+
+                    <p class="featured-outlet">
+                        Mind &amp; Life Institute
+                    </p>
+
+                    <h3>
+
+                        <a
+                            href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                            target="_blank"
+                            rel="noopener">
+
+                            Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
+
+                        </a>
+
+                    </h3>
+
+                    <a
+                        class="featured-link"
+                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Read article →
+
+                    </a>
+
+                </div>
 
             </article>
 
 
             <!-- BETWEEN TWO WORLDS -->
 
-            <article class="article-card">
-
-                <p class="article-outlet">
-                    Between Two Worlds
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://betweentwoworlds.tv/experts/daniel-morris"
-                        target="_blank"
-                        rel="noopener">
-
-                        Daniel Morris — Lucid Dreaming Researcher
-
-                    </a>
-
-                </h3>
-
-                <p class="article-description">
-                    Expert profile highlighting research on lucid
-                    dreaming, contemplative sleep practices, and the
-                    dialogue between science and Buddhism.
-                </p>
+            <article class="featured-card">
 
                 <a
-                    class="article-link"
+                    class="featured-image-link"
                     href="https://betweentwoworlds.tv/experts/daniel-morris"
                     target="_blank"
                     rel="noopener">
 
-                    View profile →
+                    <img
+                        class="featured-image"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fbetweentwoworlds.tv%2Fexperts%2Fdaniel-morris&amp;embed=image.url"
+                        alt="Daniel Morris on Between Two Worlds"
+                        loading="lazy"
+                        decoding="async">
 
                 </a>
+
+
+                <div class="featured-copy">
+
+                    <p class="featured-outlet">
+                        Between Two Worlds
+                    </p>
+
+                    <h3>
+
+                        <a
+                            href="https://betweentwoworlds.tv/experts/daniel-morris"
+                            target="_blank"
+                            rel="noopener">
+
+                            Daniel Morris
+
+                        </a>
+
+                    </h3>
+
+                    <a
+                        class="featured-link"
+                        href="https://betweentwoworlds.tv/experts/daniel-morris"
+                        target="_blank"
+                        rel="noopener">
+
+                        View profile →
+
+                    </a>
+
+                </div>
 
             </article>
 
@@ -1256,13 +1434,9 @@
         </h2>
 
         <p class="media-section-intro">
-            Media coverage of research testing whether targeted
-            dream incorporation during REM sleep can promote
-            creative problem solving.
+            Coverage of our February 2026 study on dreaming and creative problem solving.
         </p>
 
-
-        <!-- SELECTED MAJOR COVERAGE -->
 
         <div class="problem-feature-grid">
 
@@ -1377,32 +1551,12 @@
             </article>
 
 
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    TIME
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Can Dreams Help You Solve Problems?
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
         </div>
 
 
-        <!-- COMPLETE PRESS DROPDOWN -->
+        <!-- =====================================================
+             FULL PRESS DROPDOWN
+             ===================================================== -->
 
         <details class="press-dropdown">
 
@@ -1421,19 +1575,19 @@
                         target="_blank"
                         rel="noopener">
 
-                        View the Paller Lab’s full popular-press roundup →
+                        More media from the Paller Lab →
 
                     </a>
 
                 </p>
 
 
-                <!-- MAJOR / BROADCAST -->
+                <!-- MAJOR & BROADCAST -->
 
                 <div class="press-group">
 
                     <h3>
-                        Major &amp; Broadcast Coverage
+                        Major &amp; Broadcast
                     </h3>
 
 
@@ -1535,12 +1689,12 @@
                 </div>
 
 
-                <!-- SCIENCE & TECH -->
+                <!-- SCIENCE & TECHNOLOGY -->
 
                 <div class="press-group">
 
                     <h3>
-                        Science &amp; Technology Coverage
+                        Science &amp; Technology
                     </h3>
 
 
@@ -1594,7 +1748,7 @@
                                     LiveScience:
                                 </span>
 
-                                ‘Dream engineering’ experiment hints at why ‘sleeping on it’ helps with problem-solving
+                                Scientists infiltrated volunteers’ dreams to boost their creative thinking
 
                             </a>
 
@@ -1737,7 +1891,7 @@
                 <div class="press-group">
 
                     <h3>
-                        International Coverage
+                        International
                     </h3>
 
 
@@ -1879,24 +2033,18 @@
 
         </details>
 
-
     </section>
 
 
     <!-- =========================================================
-         VIDEOS & PUBLIC DISCUSSIONS
+         VIDEO
          ========================================================= -->
 
     <section class="media-section">
 
         <h2 class="media-section-title">
-            Videos &amp; Public Discussions
+            Video
         </h2>
-
-        <p class="media-section-intro">
-            Selected video appearances and public conversations
-            about dreaming and dream research.
-        </p>
 
 
         <div class="video-grid">
@@ -1933,105 +2081,7 @@
             </article>
 
 
-            <article class="video-card">
-
-                <div class="video-embed">
-
-                    <iframe
-                        src="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
-                        title="Northwestern study reveals how sleep can boost creativity"
-                        loading="lazy">
-                    </iframe>
-
-                </div>
-
-
-                <h3>
-
-                    <a
-                        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
-                        target="_blank"
-                        rel="noopener">
-
-                        FOX 32 Chicago: Northwestern study reveals how sleep can boost creativity
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
         </div>
-
-
-        <!-- REDDIT AMA -->
-
-        <div class="reddit-feature">
-
-
-            <div>
-
-                <a
-                    class="reddit-image-link"
-                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="reddit-image"
-                        src="images/reddit.jpg"
-                        alt="Screenshot of the DUST Reddit Ask Me Anything with Karen Konkoly and Daniel Morris">
-
-                </a>
-
-            </div>
-
-
-            <div class="reddit-copy">
-
-                <p class="reddit-label">
-                    Public Q&amp;A
-                </p>
-
-
-                <h2 class="reddit-title">
-
-                    <a
-                        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Ask Me Anything Reddit event
-
-                    </a>
-
-                </h2>
-
-
-                <p class="reddit-description">
-                    A public discussion with Karen Konkoly and me
-                    about dreaming, lucid dreaming, dream recall,
-                    sleep learning, dream communication, and
-                    dream engineering.
-                </p>
-
-
-                <a
-                    class="reddit-link"
-                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                    target="_blank"
-                    rel="noopener">
-
-                    View the Reddit AMA →
-
-                </a>
-
-            </div>
-
-
-        </div>
-
 
     </section>
 
