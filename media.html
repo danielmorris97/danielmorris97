@@ -297,33 +297,76 @@
 
 
         /* =========================================================
-           VIDEO BLOG
+           KDLABS VIDEO BLOG
            ========================================================= */
 
         .video-blog-promo {
-            margin-top: 30px;
-            padding: 24px 28px;
+            display: grid;
 
-            display: flex;
+            grid-template-columns:
+                minmax(220px, 0.72fr)
+                minmax(0, 1.1fr)
+                auto;
+
             align-items: center;
-            justify-content: space-between;
 
-            gap: 28px;
+            gap: 30px;
+
+            overflow: hidden;
 
             background: var(--panel);
 
             border: 1px solid var(--line);
-            border-radius: 6px;
+            border-radius: 7px;
+        }
+
+
+        .video-blog-image-link {
+            display: block;
+
+            align-self: stretch;
+
+            min-height: 220px;
+
+            overflow: hidden;
+
+            background: var(--deep);
+        }
+
+
+        .video-blog-image {
+            width: 100%;
+            height: 100%;
+
+            min-height: 220px;
+
+            display: block;
+
+            object-fit: cover;
+            object-position: center;
+
+            transition:
+                opacity 0.2s ease,
+                transform 0.2s ease;
+        }
+
+
+        .video-blog-image-link:hover .video-blog-image {
+            opacity: 0.9;
+
+            transform: scale(1.015);
         }
 
 
         .video-blog-copy {
             min-width: 0;
+
+            padding: 26px 0;
         }
 
 
         .video-blog-label {
-            margin: 0 0 6px;
+            margin: 0 0 8px;
 
             color: var(--accent);
 
@@ -337,17 +380,17 @@
 
 
         .video-blog-promo h3 {
-            margin: 0 0 5px;
+            margin: 0 0 10px;
 
             font-family:
                 Georgia,
                 "Times New Roman",
                 serif;
 
-            font-size: 22px;
+            font-size: 27px;
             font-weight: 600;
 
-            line-height: 1.35;
+            line-height: 1.3;
 
             color: var(--text);
         }
@@ -363,13 +406,20 @@
                 "Times New Roman",
                 serif;
 
-            font-size: 16px;
-            line-height: 1.5;
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+
+        .video-blog-action {
+            padding-right: 30px;
         }
 
 
         .video-blog-link {
-            flex: 0 0 auto;
+            display: inline-block;
+
+            white-space: nowrap;
 
             color: var(--accent);
 
@@ -703,6 +753,103 @@
 
 
         /* =========================================================
+           FIRST-AUTHOR RESEARCH COVERAGE
+           ========================================================= */
+
+        .research-coverage-group {
+            margin-top: 46px;
+        }
+
+
+        .research-coverage-group:first-of-type {
+            margin-top: 0;
+        }
+
+
+        .research-coverage-title {
+            max-width: 900px;
+
+            margin: 0 0 8px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 27px;
+            font-weight: 600;
+
+            line-height: 1.35;
+
+            color: var(--text);
+        }
+
+
+        .research-coverage-meta {
+            margin: 0 0 20px;
+
+            color: var(--muted-text);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 15px;
+            font-style: italic;
+
+            line-height: 1.5;
+        }
+
+
+        .research-coverage-list {
+            margin: 0;
+            padding: 0;
+
+            list-style: none;
+
+            border-top: 1px solid var(--line);
+        }
+
+
+        .research-coverage-list li {
+            padding: 18px 0;
+
+            border-bottom: 1px solid var(--line);
+
+            line-height: 1.55;
+        }
+
+
+        .research-coverage-list a {
+            color: var(--text);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+
+            text-decoration: none;
+
+            transition: color 0.2s ease;
+        }
+
+
+        .research-coverage-list a:hover {
+            color: var(--accent);
+        }
+
+
+        .research-coverage-outlet {
+            color: var(--accent);
+
+            font-weight: 600;
+        }
+
+
+        /* =========================================================
            PROBLEM SOLVING COVERAGE
            ========================================================= */
 
@@ -974,6 +1121,27 @@
             }
 
 
+            .video-blog-promo {
+                grid-template-columns:
+                    minmax(190px, 0.7fr)
+                    minmax(0, 1.3fr);
+
+                gap: 25px;
+            }
+
+
+            .video-blog-action {
+                grid-column: 2;
+
+                padding: 0 25px 25px 0;
+            }
+
+
+            .video-blog-image-link {
+                grid-row: 1 / span 2;
+            }
+
+
             .featured-card {
                 grid-template-columns:
                     minmax(220px, 0.8fr)
@@ -1044,10 +1212,35 @@
 
 
             .video-blog-promo {
-                align-items: flex-start;
-                flex-direction: column;
+                grid-template-columns: 1fr;
 
-                gap: 16px;
+                gap: 0;
+            }
+
+
+            .video-blog-image-link {
+                grid-row: auto;
+
+                min-height: 0;
+
+                aspect-ratio: 16 / 10;
+            }
+
+
+            .video-blog-image {
+                min-height: 0;
+            }
+
+
+            .video-blog-copy {
+                padding: 24px 24px 15px;
+            }
+
+
+            .video-blog-action {
+                grid-column: auto;
+
+                padding: 0 24px 26px;
             }
 
 
@@ -1087,6 +1280,11 @@
 
             .featured-copy {
                 padding: 26px 24px 30px;
+            }
+
+
+            .research-coverage-title {
+                font-size: 23px;
             }
 
 
@@ -1298,38 +1496,6 @@
 
             </article>
 
-
-        </div>
-
-
-        <div class="video-blog-promo">
-
-            <div class="video-blog-copy">
-
-                <p class="video-blog-label">
-                    Video blog
-                </p>
-
-                <h3>
-                    KDLabs
-                </h3>
-
-                <p>
-                    Karen &amp; Dash’s video blog.
-                </p>
-
-            </div>
-
-
-            <a
-                class="video-blog-link"
-                href="https://kdlabs.substack.com/"
-                target="_blank"
-                rel="noopener">
-
-                Visit KDLabs on Substack →
-
-            </a>
 
         </div>
 
@@ -1646,6 +1812,161 @@
 
             </article>
 
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         FIRST-AUTHOR RESEARCH COVERAGE
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <h2 class="media-section-title">
+            First-Author Research Coverage
+        </h2>
+
+
+        <div class="research-coverage-group">
+
+            <h3 class="research-coverage-title">
+                Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+            </h3>
+
+            <p class="research-coverage-meta">
+                Brain Sciences · 2026
+            </p>
+
+
+            <ul class="research-coverage-list">
+
+                <li>
+
+                    <a
+                        href="https://visualize.jove.com/41892658-inducing-lucid-dreaming-based-on-a-contemplative-practice-of-compassion"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            JoVE Visualize:
+                        </span>
+
+                        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://synapsesocial.com/papers/69ba425c4e9516ffd37a282b"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            Synapse:
+                        </span>
+
+                        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="research-coverage-group">
+
+            <h3 class="research-coverage-title">
+                Lucid Dreaming of a Prior Virtual-Reality Experience with Ego-Transcendent Qualities
+            </h3>
+
+            <p class="research-coverage-meta">
+                Neuroscience of Consciousness · 2025
+            </p>
+
+
+            <ul class="research-coverage-list">
+
+                <li>
+
+                    <a
+                        href="https://phasetoday.com/how-can-you-program-a-ld-in-vr/"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            Phase Today:
+                        </span>
+
+                        How Can You Program a Lucid Dream in VR?
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.iflscience.com/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat-80345"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            IFLScience:
+                        </span>
+
+                        Scientists Used Virtual Reality To Alter People’s Lucid Dreams In Mindboggling Feat
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://ispr.info/2025/08/12/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat/"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            ISPR:
+                        </span>
+
+                        Scientists used virtual reality to alter people’s lucid dreams in mindboggling feat
+
+                    </a>
+
+                </li>
+
+
+                <li>
+
+                    <a
+                        href="https://www.xrom.in/post/scientists-used-virtual-reality-to-alter-people-s-lucid-dreams"
+                        target="_blank"
+                        rel="noopener">
+
+                        <span class="research-coverage-outlet">
+                            XROM:
+                        </span>
+
+                        Scientists Used Virtual Reality To Alter People’s Lucid Dreams
+
+                    </a>
+
+                </li>
+
+            </ul>
 
         </div>
 
@@ -2252,6 +2573,69 @@
             </div>
 
         </details>
+
+    </section>
+
+
+    <!-- =========================================================
+         KDLABS VIDEO BLOG
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <div class="video-blog-promo">
+
+
+            <a
+                class="video-blog-image-link"
+                href="https://kdlabs.substack.com/"
+                target="_blank"
+                rel="noopener">
+
+                <img
+                    class="video-blog-image"
+                    src="/images/kdlabs-video-blog.png"
+                    alt="Group photo associated with the KDLabs video blog"
+                    loading="lazy">
+
+            </a>
+
+
+            <div class="video-blog-copy">
+
+                <p class="video-blog-label">
+                    Video blog
+                </p>
+
+
+                <h3>
+                    KDLabs
+                </h3>
+
+
+                <p>
+                    Karen Konkoly and Dashiell Bark-Huss's informal video blog where I am a frequent collaborator!
+                </p>
+
+            </div>
+
+
+            <div class="video-blog-action">
+
+                <a
+                    class="video-blog-link"
+                    href="https://kdlabs.substack.com/"
+                    target="_blank"
+                    rel="noopener">
+
+                    Visit KDLabs on Substack →
+
+                </a>
+
+            </div>
+
+
+        </div>
 
     </section>
 
