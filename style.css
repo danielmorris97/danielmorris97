@@ -1,11 +1,6 @@
 /* =========================================================
-   DANIEL JACOB MORRIS
+   DANIEL MORRIS
    Personal Academic Website
-   ========================================================= */
-
-
-/* =========================================================
-   COLOR VARIABLES
    ========================================================= */
 
 :root {
@@ -13,10 +8,8 @@
     --text: #1f292b;
     --muted-text: #4f6468;
     --line: rgba(31, 41, 43, 0.25);
-
     --panel: rgba(255, 255, 255, 0.42);
     --field: rgba(255, 255, 255, 0.70);
-
     --dark: #1f292b;
 }
 
@@ -37,7 +30,6 @@ html {
 
 body {
     margin: 0;
-
     min-height: 100vh;
 
     background: var(--background);
@@ -77,10 +69,8 @@ main {
 
 .skip-link {
     position: absolute;
-
     top: 12px;
     left: -9999px;
-
     z-index: 1000;
 
     padding: 10px 15px;
@@ -129,10 +119,17 @@ textarea:focus-visible {
 
     text-decoration: none;
 
-    font-size: 21px;
-    font-weight: 650;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-    letter-spacing: -0.3px;
+    font-size: 32px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    letter-spacing: -0.8px;
 
     white-space: nowrap;
 }
@@ -273,80 +270,6 @@ nav a[aria-current="page"]::after {
 
 
 /* =========================================================
-   HOMEPAGE RESEARCH SECTION
-   ========================================================= */
-
-.intro {
-    width: calc(100% - 96px);
-    max-width: 1180px;
-
-    margin: 0 auto;
-    padding: 80px 0 120px;
-
-    border-top: 1px solid var(--line);
-}
-
-.intro h2 {
-    margin: 0 0 20px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 40px;
-    font-weight: 600;
-
-    letter-spacing: -0.8px;
-}
-
-.section-intro {
-    max-width: 680px;
-
-    margin: 0 0 60px;
-
-    color: var(--muted-text);
-
-    font-size: 19px;
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   RESEARCH GRID
-   ========================================================= */
-
-.research-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-
-    gap: 50px;
-}
-
-.research-grid h3 {
-    margin: 0 0 12px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.research-grid p {
-    margin: 0;
-
-    color: var(--muted-text);
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
    STANDARD INTERIOR PAGES
    ========================================================= */
 
@@ -414,98 +337,6 @@ nav a[aria-current="page"]::after {
 
     font-size: 18px;
     line-height: 1.75;
-}
-
-
-/* =========================================================
-   CONTENT SECTIONS
-   ========================================================= */
-
-.content-section {
-    margin-bottom: 80px;
-}
-
-.content-section + .content-section {
-    padding-top: 65px;
-
-    border-top: 1px solid var(--line);
-}
-
-
-/* =========================================================
-   RESEARCH PROJECTS
-   ========================================================= */
-
-.project-list {
-    display: grid;
-
-    gap: 70px;
-}
-
-.project-card {
-    display: grid;
-
-    grid-template-columns:
-        minmax(220px, 0.8fr)
-        minmax(0, 1.2fr);
-
-    gap: 50px;
-
-    align-items: start;
-}
-
-.project-card img {
-    width: 100%;
-
-    aspect-ratio: 4 / 3;
-
-    object-fit: cover;
-
-    border-radius: 3px;
-}
-
-
-/* =========================================================
-   PUBLICATIONS
-   ========================================================= */
-
-.publication-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.publication {
-    padding: 27px 0;
-
-    border-top: 1px solid var(--line);
-}
-
-.publication:last-child {
-    border-bottom: 1px solid var(--line);
-}
-
-.publication-year {
-    margin-bottom: 6px;
-
-    color: var(--muted-text);
-
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.publication p {
-    max-width: 850px;
-
-    margin: 0 0 10px;
-
-    font-size: 16px;
-}
-
-.publication-links {
-    display: flex;
-    flex-wrap: wrap;
-
-    gap: 14px;
 }
 
 
@@ -635,31 +466,12 @@ nav a[aria-current="page"]::after {
     color: var(--text);
 }
 
-
-/* Contact header uses slightly more elegant typography */
-
-.contact-header .site-name {
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size: 23px;
-    font-weight: 600;
-}
-
-
-/* ---------- CONTACT MAIN CONTAINER ---------- */
-
 .contact-page {
     width: calc(100% - 96px);
     max-width: 980px;
 
     margin: 65px auto 120px;
 }
-
-
-/* ---------- CONTACT INTRO ---------- */
 
 .contact-intro {
     max-width: 760px;
@@ -726,9 +538,6 @@ nav a[aria-current="page"]::after {
     opacity: 0.55;
 }
 
-
-/* ---------- FORM CONTAINER ---------- */
-
 .contact-form-section {
     width: 100%;
     max-width: 820px;
@@ -762,9 +571,6 @@ nav a[aria-current="page"]::after {
     font-weight: 400;
 }
 
-
-/* ---------- FIELDSET RESET ---------- */
-
 .name-fieldset {
     margin: 0 0 23px;
     padding: 0;
@@ -783,9 +589,6 @@ nav a[aria-current="page"]::after {
     font-size: 17px;
 }
 
-
-/* ---------- NAME ROW ---------- */
-
 .form-row {
     display: grid;
 
@@ -793,9 +596,6 @@ nav a[aria-current="page"]::after {
 
     gap: 20px;
 }
-
-
-/* ---------- FORM FIELDS ---------- */
 
 .form-field {
     margin-bottom: 25px;
@@ -882,9 +682,6 @@ nav a[aria-current="page"]::after {
         0 0 0 3px rgba(31, 41, 43, 0.12);
 }
 
-
-/* ---------- SUBMIT BUTTON ---------- */
-
 .form-submit {
     display: inline-flex;
 
@@ -957,7 +754,6 @@ footer p {
 
     .site-header,
     .hero,
-    .intro,
     footer {
         width: calc(100% - 64px);
     }
@@ -974,10 +770,6 @@ footer p {
 
     .hero-image img {
         height: 520px;
-    }
-
-    .research-grid {
-        gap: 35px;
     }
 
 }
@@ -1000,6 +792,10 @@ footer p {
         gap: 16px;
     }
 
+    .site-name {
+        font-size: 30px;
+    }
+
     nav {
         width: 100%;
 
@@ -1011,9 +807,6 @@ footer p {
     nav a {
         font-size: 14px;
     }
-
-
-    /* HOMEPAGE */
 
     .hero {
         width: calc(100% - 44px);
@@ -1038,36 +831,12 @@ footer p {
         font-size: 18px;
     }
 
-    .intro {
-        width: calc(100% - 44px);
-
-        padding: 60px 0 85px;
-    }
-
-    .research-grid {
-        grid-template-columns: 1fr;
-
-        gap: 38px;
-    }
-
-
-    /* INTERIOR */
-
     .page {
         width: calc(100% - 44px);
 
         margin-top: 45px;
         margin-bottom: 85px;
     }
-
-    .project-card {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-    }
-
-
-    /* CV */
 
     .cv-page {
         width: calc(100% - 44px);
@@ -1091,9 +860,6 @@ footer p {
 
         min-height: 520px;
     }
-
-
-    /* CONTACT */
 
     .contact-page {
         width: calc(100% - 44px);
@@ -1130,7 +896,6 @@ footer p {
         width: 100%;
     }
 
-
     footer {
         width: calc(100% - 44px);
     }
@@ -1143,6 +908,10 @@ footer p {
    ========================================================= */
 
 @media (max-width: 420px) {
+
+    .site-name {
+        font-size: 28px;
+    }
 
     nav {
         gap: 8px 15px;
