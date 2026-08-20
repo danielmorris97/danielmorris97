@@ -56,6 +56,7 @@
         property="og:image"
         content="https://danieljacobmorris.com/images/profile.jpg">
 
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -75,6 +76,7 @@
     }
     </script>
 
+
     <link
         rel="stylesheet"
         href="/style.css">
@@ -85,19 +87,27 @@
         .research-page {
             width: calc(100% - 96px);
             max-width: 1180px;
+
             margin: 80px auto 130px;
         }
 
+
         .research-header {
             display: grid;
+
             grid-template-columns:
                 minmax(0, 0.85fr)
                 minmax(0, 1.15fr);
+
             gap: 85px;
+
             align-items: start;
+
             padding-bottom: 75px;
-            border-bottom: 1px solid rgba(31, 41, 43, 0.25);
+
+            border-bottom: 1px solid var(--line);
         }
+
 
         .research-title {
             margin: 0;
@@ -109,15 +119,21 @@
 
             font-size: clamp(60px, 7vw, 88px);
             font-weight: 600;
+
             line-height: 0.98;
+
             letter-spacing: -2.6px;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .research-intro {
             max-width: 650px;
+
             padding-top: 6px;
         }
+
 
         .research-intro p {
             margin: 0 0 26px;
@@ -129,13 +145,17 @@
 
             font-size: 24px;
             line-height: 1.6;
-            color: #314348;
+
+            color: var(--text);
         }
+
 
         .lab-link {
             display: inline-block;
+
             margin-top: 4px;
-            color: #253235;
+
+            color: var(--accent);
 
             font-family:
                 Georgia,
@@ -143,20 +163,32 @@
                 serif;
 
             font-size: 18px;
+
             text-decoration: none;
-            border-bottom: 1px solid #253235;
+
+            border-bottom: 1px solid rgba(139, 203, 243, 0.65);
+
             padding-bottom: 3px;
-            transition: opacity 0.2s ease;
+
+            transition:
+                color 0.2s ease,
+                border-color 0.2s ease;
         }
 
+
         .lab-link:hover {
-            opacity: 0.58;
+            color: var(--accent-soft);
+
+            border-color: var(--accent-soft);
         }
+
 
         .research-team-section {
             padding: 65px 0 80px;
-            border-bottom: 1px solid rgba(31, 41, 43, 0.25);
+
+            border-bottom: 1px solid var(--line);
         }
+
 
         .research-section-title {
             margin: 0 0 40px;
@@ -168,35 +200,53 @@
 
             font-size: clamp(38px, 5vw, 52px);
             font-weight: 600;
+
             line-height: 1.05;
+
             letter-spacing: -1.3px;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .team-grid {
             display: grid;
+
             grid-template-columns:
                 repeat(4, minmax(0, 1fr));
+
             gap: 26px;
         }
+
 
         .team-card {
             min-width: 0;
         }
 
+
         .team-image-link {
             display: block;
+
             margin-bottom: 16px;
+
             overflow: hidden;
+
             border-radius: 5px;
-            background: rgba(255, 255, 255, 0.3);
+
+            background: rgba(255, 255, 255, 0.05);
+
+            border: 1px solid rgba(244, 246, 247, 0.08);
         }
+
 
         .team-image {
             width: 100%;
+
             aspect-ratio: 1 / 1;
+
             object-fit: cover;
             object-position: center;
+
             display: block;
 
             transition:
@@ -204,10 +254,13 @@
                 opacity 0.25s ease;
         }
 
+
         .team-image-link:hover .team-image {
             transform: scale(1.02);
+
             opacity: 0.9;
         }
+
 
         .team-name {
             margin: 0 0 5px;
@@ -219,21 +272,29 @@
 
             font-size: 22px;
             font-weight: 600;
+
             line-height: 1.3;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .team-name a {
             color: inherit;
+
             text-decoration: underline;
+
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
-            transition: opacity 0.2s ease;
+
+            transition: color 0.2s ease;
         }
 
+
         .team-name a:hover {
-            opacity: 0.58;
+            color: var(--accent);
         }
+
 
         .team-affiliation {
             margin: 0;
@@ -245,15 +306,19 @@
 
             font-size: 15px;
             line-height: 1.5;
-            color: #4f6468;
+
+            color: var(--muted-text);
         }
+
 
         .research-projects-section {
             padding: 70px 0 20px;
         }
 
+
         .research-projects-intro {
             max-width: 720px;
+
             margin: -20px 0 40px;
 
             font-family:
@@ -263,22 +328,41 @@
 
             font-size: 18px;
             line-height: 1.7;
-            color: #40585c;
+
+            color: var(--muted-text);
         }
+
 
         .research-project-grid {
             display: grid;
+
             grid-template-columns:
                 repeat(2, minmax(0, 1fr));
+
             gap: 30px;
         }
 
+
         .research-project-card {
             padding: 34px;
-            background: rgba(255, 255, 255, 0.30);
-            border: 1px solid rgba(31, 41, 43, 0.15);
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
             border-radius: 6px;
+
+            transition:
+                background 0.2s ease,
+                transform 0.2s ease;
         }
+
+
+        .research-project-card:hover {
+            background: var(--panel-hover);
+
+            transform: translateY(-2px);
+        }
+
 
         .research-project-card h3 {
             margin: 0 0 14px;
@@ -290,27 +374,36 @@
 
             font-size: 26px;
             font-weight: 600;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .research-project-card p {
             margin: 0;
+
             font-size: 17px;
             line-height: 1.7;
-            color: #40585c;
+
+            color: var(--muted-text);
         }
+
 
         @media (max-width: 950px) {
 
             .research-page {
                 width: calc(100% - 64px);
+
                 margin-top: 65px;
             }
 
+
             .research-header {
                 grid-template-columns: 1fr;
+
                 gap: 38px;
             }
+
 
             .team-grid {
                 grid-template-columns:
@@ -319,48 +412,61 @@
 
         }
 
+
         @media (max-width: 750px) {
 
             .research-page {
                 width: calc(100% - 44px);
+
                 margin-top: 45px;
                 margin-bottom: 90px;
             }
+
 
             .research-header {
                 padding-bottom: 55px;
             }
 
+
             .research-title {
                 font-size: 56px;
+
                 letter-spacing: -1.8px;
             }
+
 
             .research-intro p {
                 font-size: 21px;
             }
 
+
             .research-team-section {
                 padding: 52px 0 62px;
             }
+
 
             .research-section-title {
                 font-size: 39px;
             }
 
+
             .team-grid {
                 grid-template-columns:
                     repeat(2, minmax(0, 1fr));
+
                 gap: 30px 18px;
             }
+
 
             .team-name {
                 font-size: 19px;
             }
 
+
             .team-affiliation {
                 font-size: 14px;
             }
+
 
             .research-project-grid {
                 grid-template-columns: 1fr;
@@ -368,15 +474,18 @@
 
         }
 
+
         @media (max-width: 420px) {
 
             .research-title {
                 font-size: 48px;
             }
 
+
             .team-grid {
                 grid-template-columns: 1fr;
             }
+
 
             .team-name {
                 font-size: 21px;
@@ -454,6 +563,7 @@
 
     <section class="research-header">
 
+
         <div>
 
             <h1 class="research-title">
@@ -471,6 +581,7 @@
                 neuroscience at Northwestern University.
             </p>
 
+
             <a
                 class="lab-link"
                 href="https://sites.northwestern.edu/pallerlab/"
@@ -483,6 +594,7 @@
 
         </div>
 
+
     </section>
 
 
@@ -491,6 +603,7 @@
         <h2 class="research-section-title">
             Lab &amp; Collaborators
         </h2>
+
 
         <div class="team-grid">
 
@@ -510,6 +623,7 @@
 
                 </a>
 
+
                 <h3 class="team-name">
 
                     <a
@@ -522,6 +636,7 @@
                     </a>
 
                 </h3>
+
 
                 <p class="team-affiliation">
                     Northwestern University
@@ -545,6 +660,7 @@
 
                 </a>
 
+
                 <h3 class="team-name">
 
                     <a
@@ -557,6 +673,7 @@
                     </a>
 
                 </h3>
+
 
                 <p class="team-affiliation">
                     Northwestern University
@@ -580,6 +697,7 @@
 
                 </a>
 
+
                 <h3 class="team-name">
 
                     <a
@@ -592,6 +710,7 @@
                     </a>
 
                 </h3>
+
 
                 <p class="team-affiliation">
                     University of Cambridge
@@ -615,6 +734,7 @@
 
                 </a>
 
+
                 <h3 class="team-name">
 
                     <a
@@ -628,11 +748,13 @@
 
                 </h3>
 
+
                 <p class="team-affiliation">
                     &nbsp;
                 </p>
 
             </article>
+
 
         </div>
 
@@ -645,11 +767,14 @@
             Research Areas
         </h2>
 
+
         <p class="research-projects-intro">
             Selected areas of my current research.
         </p>
 
+
         <div class="research-project-grid">
+
 
             <article class="research-project-card">
 
@@ -710,9 +835,11 @@
 
             </article>
 
+
         </div>
 
     </section>
+
 
 </main>
 
