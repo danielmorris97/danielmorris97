@@ -9,51 +9,95 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>Research | Daniel Jacob Morris</title>
+    <title>Research | Daniel Morris</title>
 
     <meta
         name="description"
-        content="Research by Daniel Jacob Morris on sleep, lucid dreaming, contemplative practices, and consciousness.">
+        content="Research by Daniel Morris on sleep, lucid dreaming, dream engineering, contemplative practices, and consciousness.">
+
+    <meta
+        name="robots"
+        content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://danieljacobmorris.com/research.html">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/favicon.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/favicon.png">
+
+    <meta
+        property="og:title"
+        content="Research | Daniel Morris">
+
+    <meta
+        property="og:description"
+        content="Research by Daniel Morris on sleep, lucid dreaming, dream engineering, contemplative practices, and consciousness.">
+
+    <meta
+        property="og:url"
+        content="https://danieljacobmorris.com/research.html">
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:site_name"
+        content="Daniel Morris">
+
+    <meta
+        property="og:image"
+        content="https://danieljacobmorris.com/images/profile.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danieljacobmorris.com/research.html#webpage",
+        "url": "https://danieljacobmorris.com/research.html",
+        "name": "Research | Daniel Morris",
+        "description": "Research by Daniel Morris on sleep, lucid dreaming, dream engineering, contemplative practices, and consciousness.",
+
+        "isPartOf": {
+            "@id": "https://danieljacobmorris.com/#website"
+        },
+
+        "about": {
+            "@id": "https://danieljacobmorris.com/#person"
+        }
+    }
+    </script>
 
     <link
         rel="stylesheet"
-        href="style.css">
+        href="/style.css">
 
 
     <style>
 
-        /* =========================================================
-           RESEARCH PAGE
-           ========================================================= */
-
         .research-page {
             width: calc(100% - 96px);
             max-width: 1180px;
-
             margin: 80px auto 130px;
         }
 
-
-        /* =========================================================
-           RESEARCH INTRO
-           ========================================================= */
-
         .research-header {
             display: grid;
-
             grid-template-columns:
                 minmax(0, 0.85fr)
                 minmax(0, 1.15fr);
-
             gap: 85px;
-
             align-items: start;
-
             padding-bottom: 75px;
-
             border-bottom: 1px solid rgba(31, 41, 43, 0.25);
         }
-
 
         .research-title {
             margin: 0;
@@ -65,21 +109,15 @@
 
             font-size: clamp(60px, 7vw, 88px);
             font-weight: 600;
-
             line-height: 0.98;
-
             letter-spacing: -2.6px;
-
             color: #1f292b;
         }
 
-
         .research-intro {
             max-width: 650px;
-
             padding-top: 6px;
         }
-
 
         .research-intro p {
             margin: 0 0 26px;
@@ -91,16 +129,12 @@
 
             font-size: 24px;
             line-height: 1.6;
-
             color: #314348;
         }
 
-
         .lab-link {
             display: inline-block;
-
             margin-top: 4px;
-
             color: #253235;
 
             font-family:
@@ -109,32 +143,20 @@
                 serif;
 
             font-size: 18px;
-
             text-decoration: none;
-
             border-bottom: 1px solid #253235;
-
             padding-bottom: 3px;
-
             transition: opacity 0.2s ease;
         }
-
 
         .lab-link:hover {
             opacity: 0.58;
         }
 
-
-        /* =========================================================
-           LAB & COLLABORATORS
-           ========================================================= */
-
         .research-team-section {
             padding: 65px 0 80px;
-
             border-bottom: 1px solid rgba(31, 41, 43, 0.25);
         }
-
 
         .research-section-title {
             margin: 0 0 40px;
@@ -146,50 +168,35 @@
 
             font-size: clamp(38px, 5vw, 52px);
             font-weight: 600;
-
             line-height: 1.05;
-
             letter-spacing: -1.3px;
-
             color: #1f292b;
         }
 
-
         .team-grid {
             display: grid;
-
             grid-template-columns:
                 repeat(4, minmax(0, 1fr));
-
             gap: 26px;
         }
-
 
         .team-card {
             min-width: 0;
         }
 
-
         .team-image-link {
             display: block;
-
             margin-bottom: 16px;
-
             overflow: hidden;
-
             border-radius: 5px;
-
             background: rgba(255, 255, 255, 0.3);
         }
-
 
         .team-image {
             width: 100%;
             aspect-ratio: 1 / 1;
-
             object-fit: cover;
             object-position: center;
-
             display: block;
 
             transition:
@@ -197,12 +204,10 @@
                 opacity 0.25s ease;
         }
 
-
         .team-image-link:hover .team-image {
             transform: scale(1.02);
             opacity: 0.9;
         }
-
 
         .team-name {
             margin: 0 0 5px;
@@ -214,28 +219,21 @@
 
             font-size: 22px;
             font-weight: 600;
-
             line-height: 1.3;
-
             color: #1f292b;
         }
 
-
         .team-name a {
             color: inherit;
-
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
-
             transition: opacity 0.2s ease;
         }
-
 
         .team-name a:hover {
             opacity: 0.58;
         }
-
 
         .team-affiliation {
             margin: 0;
@@ -247,23 +245,15 @@
 
             font-size: 15px;
             line-height: 1.5;
-
             color: #4f6468;
         }
-
-
-        /* =========================================================
-           RESEARCH AREAS
-           ========================================================= */
 
         .research-projects-section {
             padding: 70px 0 20px;
         }
 
-
         .research-projects-intro {
             max-width: 720px;
-
             margin: -20px 0 40px;
 
             font-family:
@@ -273,30 +263,22 @@
 
             font-size: 18px;
             line-height: 1.7;
-
             color: #40585c;
         }
 
-
         .research-project-grid {
             display: grid;
-
             grid-template-columns:
                 repeat(2, minmax(0, 1fr));
-
             gap: 30px;
         }
 
-
         .research-project-card {
             padding: 34px;
-
             background: rgba(255, 255, 255, 0.30);
-
             border: 1px solid rgba(31, 41, 43, 0.15);
             border-radius: 6px;
         }
-
 
         .research-project-card h3 {
             margin: 0 0 14px;
@@ -308,40 +290,27 @@
 
             font-size: 26px;
             font-weight: 600;
-
             color: #1f292b;
         }
 
-
         .research-project-card p {
             margin: 0;
-
             font-size: 17px;
             line-height: 1.7;
-
             color: #40585c;
         }
-
-
-        /* =========================================================
-           TABLET
-           ========================================================= */
 
         @media (max-width: 950px) {
 
             .research-page {
                 width: calc(100% - 64px);
-
                 margin-top: 65px;
             }
 
-
             .research-header {
                 grid-template-columns: 1fr;
-
                 gap: 38px;
             }
-
 
             .team-grid {
                 grid-template-columns:
@@ -350,65 +319,48 @@
 
         }
 
-
-        /* =========================================================
-           MOBILE
-           ========================================================= */
-
         @media (max-width: 750px) {
 
             .research-page {
                 width: calc(100% - 44px);
-
                 margin-top: 45px;
                 margin-bottom: 90px;
             }
-
 
             .research-header {
                 padding-bottom: 55px;
             }
 
-
             .research-title {
                 font-size: 56px;
-
                 letter-spacing: -1.8px;
             }
-
 
             .research-intro p {
                 font-size: 21px;
             }
 
-
             .research-team-section {
                 padding: 52px 0 62px;
             }
-
 
             .research-section-title {
                 font-size: 39px;
             }
 
-
             .team-grid {
                 grid-template-columns:
                     repeat(2, minmax(0, 1fr));
-
                 gap: 30px 18px;
             }
-
 
             .team-name {
                 font-size: 19px;
             }
 
-
             .team-affiliation {
                 font-size: 14px;
             }
-
 
             .research-project-grid {
                 grid-template-columns: 1fr;
@@ -416,22 +368,15 @@
 
         }
 
-
-        /* =========================================================
-           VERY SMALL PHONES
-           ========================================================= */
-
         @media (max-width: 420px) {
 
             .research-title {
                 font-size: 48px;
             }
 
-
             .team-grid {
                 grid-template-columns: 1fr;
             }
-
 
             .team-name {
                 font-size: 21px;
@@ -458,10 +403,9 @@
 
 <header class="site-header">
 
-
     <a
         class="site-name"
-        href="index.html">
+        href="/">
 
         Daniel Morris
 
@@ -470,43 +414,35 @@
 
     <nav aria-label="Main navigation">
 
-
-        <a href="index.html">
+        <a href="/">
             About
         </a>
 
-
         <a
-            href="research.html"
+            href="/research.html"
             aria-current="page">
 
             Research
 
         </a>
 
-
-        <a href="publications.html">
+        <a href="/publications.html">
             Publications
         </a>
 
-
-        <a href="media.html">
+        <a href="/media.html">
             Media
         </a>
 
-
-        <a href="cv.html">
+        <a href="/cv.html">
             CV
         </a>
 
-
-        <a href="contact.html">
+        <a href="/contact.html">
             Contact
         </a>
 
-
     </nav>
-
 
 </header>
 
@@ -516,12 +452,7 @@
     class="research-page">
 
 
-    <!-- =====================================================
-         INTRO
-         ===================================================== -->
-
     <section class="research-header">
-
 
         <div>
 
@@ -534,13 +465,11 @@
 
         <div class="research-intro">
 
-
             <p>
                 I study sleep, lucid dreaming, and contemplative
                 practices. I am a PhD candidate in cognitive
                 neuroscience at Northwestern University.
             </p>
-
 
             <a
                 class="lab-link"
@@ -552,30 +481,19 @@
 
             </a>
 
-
         </div>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         LAB & COLLABORATORS
-         ===================================================== -->
-
     <section class="research-team-section">
-
 
         <h2 class="research-section-title">
             Lab &amp; Collaborators
         </h2>
 
-
         <div class="team-grid">
 
-
-            <!-- KEN PALLER -->
 
             <article class="team-card">
 
@@ -592,7 +510,6 @@
 
                 </a>
 
-
                 <h3 class="team-name">
 
                     <a
@@ -606,16 +523,12 @@
 
                 </h3>
 
-
                 <p class="team-affiliation">
                     Northwestern University
                 </p>
 
             </article>
 
-
-
-            <!-- GABRIELA TORRES-PLATAS -->
 
             <article class="team-card">
 
@@ -632,7 +545,6 @@
 
                 </a>
 
-
                 <h3 class="team-name">
 
                     <a
@@ -646,16 +558,12 @@
 
                 </h3>
 
-
                 <p class="team-affiliation">
                     Northwestern University
                 </p>
 
             </article>
 
-
-
-            <!-- KAREN KONKOLY -->
 
             <article class="team-card">
 
@@ -672,7 +580,6 @@
 
                 </a>
 
-
                 <h3 class="team-name">
 
                     <a
@@ -686,16 +593,12 @@
 
                 </h3>
 
-
                 <p class="team-affiliation">
                     University of Cambridge
                 </p>
 
             </article>
 
-
-
-            <!-- REMINGTON MALLETT -->
 
             <article class="team-card">
 
@@ -712,7 +615,6 @@
 
                 </a>
 
-
                 <h3 class="team-name">
 
                     <a
@@ -726,40 +628,28 @@
 
                 </h3>
 
-
                 <p class="team-affiliation">
                     &nbsp;
                 </p>
 
             </article>
 
-
         </div>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         RESEARCH AREAS
-         ===================================================== -->
-
     <section class="research-projects-section">
-
 
         <h2 class="research-section-title">
             Research Areas
         </h2>
 
-
         <p class="research-projects-intro">
             Selected areas of my current research.
         </p>
 
-
         <div class="research-project-grid">
-
 
             <article class="research-project-card">
 
@@ -774,7 +664,6 @@
                 </p>
 
             </article>
-
 
 
             <article class="research-project-card">
@@ -792,7 +681,6 @@
             </article>
 
 
-
             <article class="research-project-card">
 
                 <h3>
@@ -806,7 +694,6 @@
                 </p>
 
             </article>
-
 
 
             <article class="research-project-card">
@@ -823,12 +710,9 @@
 
             </article>
 
-
         </div>
 
-
     </section>
-
 
 </main>
 
@@ -836,7 +720,7 @@
 <footer>
 
     <p>
-        © Daniel Jacob Morris
+        © Daniel Morris
     </p>
 
 </footer>
