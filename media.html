@@ -9,50 +9,98 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>Media | Daniel Jacob Morris</title>
+    <title>Media | Daniel Morris</title>
 
     <meta
         name="description"
-        content="Videos, interviews, public outreach, and media featuring Daniel Jacob Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.">
+        content="Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.">
+
+    <meta
+        name="robots"
+        content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://danieljacobmorris.com/media.html">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/favicon.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/favicon.png">
+
+    <meta
+        property="og:title"
+        content="Media | Daniel Morris">
+
+    <meta
+        property="og:description"
+        content="Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.">
+
+    <meta
+        property="og:url"
+        content="https://danieljacobmorris.com/media.html">
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:site_name"
+        content="Daniel Morris">
+
+    <meta
+        property="og:image"
+        content="https://danieljacobmorris.com/images/profile.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danieljacobmorris.com/media.html#webpage",
+        "url": "https://danieljacobmorris.com/media.html",
+        "name": "Media | Daniel Morris",
+        "description": "Videos, public discussions, and media featuring Daniel Morris and his research on sleep, dreaming, lucid dreaming, and consciousness.",
+
+        "isPartOf": {
+            "@id": "https://danieljacobmorris.com/#website"
+        },
+
+        "about": {
+            "@id": "https://danieljacobmorris.com/#person"
+        }
+    }
+    </script>
 
     <link
         rel="stylesheet"
-        href="style.css">
+        href="/style.css">
 
 
     <style>
-
-        /* =========================================================
-           MEDIA PAGE
-           ========================================================= */
 
         .media-page {
             width: 100%;
             margin: 0;
         }
 
-
-        /* =========================================================
-           FEATURED INTRO
-           ========================================================= */
-
         .media-intro {
             width: calc(100% - 96px);
             max-width: 1180px;
-
             margin: 70px auto 0;
             padding: 65px 0 75px;
 
             display: grid;
             grid-template-columns: 0.8fr 1.2fr;
-
             gap: 85px;
             align-items: center;
 
             border-top: 1px solid rgba(31, 41, 43, 0.18);
             border-bottom: 1px solid rgba(31, 41, 43, 0.28);
         }
-
 
         .media-intro h1 {
             margin: 0;
@@ -64,19 +112,14 @@
 
             font-size: clamp(60px, 7vw, 88px);
             font-weight: 600;
-
             line-height: 0.98;
-
             letter-spacing: -2.8px;
-
             color: #1f292b;
         }
-
 
         .media-intro-text {
             max-width: 650px;
         }
-
 
         .media-intro-text p {
             margin: 0;
@@ -88,29 +131,19 @@
 
             font-size: 24px;
             line-height: 1.55;
-
             color: #314348;
         }
-
-
-        /* =========================================================
-           GENERAL MEDIA SECTIONS
-           ========================================================= */
 
         .media-section {
             width: calc(100% - 96px);
             max-width: 1180px;
-
             margin: 0 auto;
-
             padding: 65px 0 85px;
         }
-
 
         .media-section + .media-section {
             border-top: 1px solid rgba(31, 41, 43, 0.25);
         }
-
 
         .media-section-title {
             margin: 0 0 42px;
@@ -122,58 +155,38 @@
 
             font-size: clamp(42px, 5vw, 58px);
             font-weight: 600;
-
             line-height: 1;
-
             letter-spacing: -1.5px;
-
             color: #1f292b;
         }
-
-
-        /* =========================================================
-           VIDEO GRID
-           ========================================================= */
 
         .video-grid {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
-
             gap: 38px;
         }
-
 
         .video-card {
             max-width: 720px;
         }
 
-
         .video-embed {
             position: relative;
-
             width: 100%;
             aspect-ratio: 16 / 9;
-
             overflow: hidden;
-
             background: #d8ecef;
-
             border: 1px solid rgba(31, 41, 43, 0.2);
         }
 
-
         .video-embed iframe {
             position: absolute;
-
             top: 0;
             left: 0;
-
             width: 100%;
             height: 100%;
-
             border: 0;
         }
-
 
         .video-card h3 {
             margin: 15px 0 0;
@@ -185,54 +198,37 @@
 
             font-size: 19px;
             font-weight: 600;
-
             line-height: 1.45;
-
             color: #253235;
         }
 
-
         .video-card h3 a {
             color: inherit;
-
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 4px;
         }
 
-
         .video-card h3 a:hover {
             opacity: 0.6;
         }
 
-
-        /* =========================================================
-           REDDIT FEATURE
-           ========================================================= */
-
         .reddit-feature {
             display: grid;
-
             grid-template-columns:
                 minmax(0, 1.05fr)
                 minmax(0, 0.95fr);
-
             gap: 70px;
-
             align-items: center;
         }
-
 
         .reddit-image-link {
             display: block;
         }
 
-
         .reddit-image {
             width: 100%;
-
             display: block;
-
             border: 1px solid rgba(31, 41, 43, 0.18);
 
             transition:
@@ -240,18 +236,14 @@
                 transform 0.2s ease;
         }
 
-
         .reddit-image-link:hover .reddit-image {
             opacity: 0.9;
-
             transform: translateY(-2px);
         }
-
 
         .reddit-copy {
             max-width: 530px;
         }
-
 
         .reddit-label {
             margin: 0 0 15px;
@@ -263,10 +255,8 @@
 
             font-size: 16px;
             font-style: italic;
-
             color: #4f6468;
         }
-
 
         .reddit-title {
             margin: 0 0 25px;
@@ -278,28 +268,21 @@
 
             font-size: clamp(38px, 5vw, 57px);
             font-weight: 600;
-
             line-height: 1.08;
-
             letter-spacing: -1.5px;
         }
 
-
         .reddit-title a {
             color: #1f292b;
-
             text-decoration: underline;
             text-decoration-thickness: 1.5px;
             text-underline-offset: 6px;
-
             transition: opacity 0.2s ease;
         }
-
 
         .reddit-title a:hover {
             opacity: 0.58;
         }
-
 
         .reddit-description {
             margin: 0 0 25px;
@@ -311,14 +294,11 @@
 
             font-size: 18px;
             line-height: 1.65;
-
             color: #40585c;
         }
 
-
         .reddit-link {
             display: inline-block;
-
             color: #253235;
 
             font-family:
@@ -327,23 +307,14 @@
                 serif;
 
             font-size: 17px;
-
             text-decoration: none;
-
             border-bottom: 1px solid #253235;
-
             padding-bottom: 3px;
         }
-
 
         .reddit-link:hover {
             opacity: 0.6;
         }
-
-
-        /* =========================================================
-           TABLET
-           ========================================================= */
 
         @media (max-width: 950px) {
 
@@ -352,29 +323,20 @@
                 width: calc(100% - 64px);
             }
 
-
             .media-intro {
                 grid-template-columns: 1fr;
-
                 gap: 35px;
             }
-
 
             .media-intro-text {
                 max-width: 720px;
             }
-
 
             .reddit-feature {
                 gap: 45px;
             }
 
         }
-
-
-        /* =========================================================
-           MOBILE
-           ========================================================= */
 
         @media (max-width: 750px) {
 
@@ -383,56 +345,42 @@
                 width: calc(100% - 44px);
             }
 
-
             .media-intro {
                 margin-top: 35px;
-
                 padding: 45px 0 55px;
-
                 gap: 28px;
             }
 
-
             .media-intro h1 {
                 font-size: 56px;
-
                 letter-spacing: -1.8px;
             }
-
 
             .media-intro-text p {
                 font-size: 20px;
             }
 
-
             .media-section {
                 padding: 50px 0 65px;
             }
 
-
             .media-section-title {
                 margin-bottom: 32px;
-
                 font-size: 42px;
             }
-
 
             .video-grid {
                 grid-template-columns: 1fr;
             }
 
-
             .reddit-feature {
                 grid-template-columns: 1fr;
-
                 gap: 35px;
             }
-
 
             .reddit-copy {
                 max-width: none;
             }
-
 
             .reddit-title {
                 font-size: 39px;
@@ -440,17 +388,11 @@
 
         }
 
-
-        /* =========================================================
-           VERY SMALL PHONES
-           ========================================================= */
-
         @media (max-width: 420px) {
 
             .media-intro h1 {
                 font-size: 48px;
             }
-
 
             .reddit-title {
                 font-size: 34px;
@@ -477,10 +419,9 @@
 
 <header class="site-header">
 
-
     <a
         class="site-name"
-        href="index.html">
+        href="/">
 
         Daniel Morris
 
@@ -489,43 +430,35 @@
 
     <nav aria-label="Main navigation">
 
-
-        <a href="index.html">
+        <a href="/">
             About
         </a>
 
-
-        <a href="research.html">
+        <a href="/research.html">
             Research
         </a>
 
-
-        <a href="publications.html">
+        <a href="/publications.html">
             Publications
         </a>
 
-
         <a
-            href="media.html"
+            href="/media.html"
             aria-current="page">
 
             Media
 
         </a>
 
-
-        <a href="cv.html">
+        <a href="/cv.html">
             CV
         </a>
 
-
-        <a href="contact.html">
+        <a href="/contact.html">
             Contact
         </a>
 
-
     </nav>
-
 
 </header>
 
@@ -535,17 +468,12 @@
     class="media-page">
 
 
-    <!-- =====================================================
-         FEATURED INTRO
-         ===================================================== -->
-
     <section class="media-intro">
-
 
         <div>
 
             <h1>
-                Featured
+                Media
             </h1>
 
         </div>
@@ -554,34 +482,24 @@
         <div class="media-intro-text">
 
             <p>
-                Learn more about my research through selected
-                videos, public discussions, and outreach.
+                Featured videos, public discussions, and outreach
+                related to my research on dreams and sleep.
             </p>
 
         </div>
 
-
     </section>
 
 
-
-    <!-- =====================================================
-         VIDEOS
-         ===================================================== -->
-
     <section class="media-section">
-
 
         <h2 class="media-section-title">
             Videos
         </h2>
 
-
         <div class="video-grid">
 
-
             <article class="video-card">
-
 
                 <div class="video-embed">
 
@@ -609,29 +527,18 @@
 
                 </h3>
 
-
             </article>
 
-
         </div>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         REDDIT AMA
-         ===================================================== -->
-
     <section class="media-section">
-
 
         <div class="reddit-feature">
 
-
             <div>
-
 
                 <a
                     class="reddit-image-link"
@@ -646,12 +553,10 @@
 
                 </a>
 
-
             </div>
 
 
             <div class="reddit-copy">
-
 
                 <p class="reddit-label">
                     Public Q&amp;A
@@ -690,15 +595,11 @@
 
                 </a>
 
-
             </div>
-
 
         </div>
 
-
     </section>
-
 
 </main>
 
@@ -706,7 +607,7 @@
 <footer>
 
     <p>
-        © Daniel Jacob Morris
+        © Daniel Morris
     </p>
 
 </footer>
