@@ -9,32 +9,84 @@
         name="viewport"
         content="width=device-width, initial-scale=1.0">
 
-    <title>Publications | Daniel Jacob Morris</title>
+    <title>Publications | Daniel Morris</title>
 
     <meta
         name="description"
-        content="Peer-reviewed publications by Daniel Morris.">
+        content="Peer-reviewed publications by Daniel Morris on sleep, dreaming, lucid dreaming, neuroscience, and consciousness.">
+
+    <meta
+        name="robots"
+        content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://danieljacobmorris.com/publications.html">
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="/favicon.png">
+
+    <link
+        rel="apple-touch-icon"
+        href="/favicon.png">
+
+    <meta
+        property="og:title"
+        content="Publications | Daniel Morris">
+
+    <meta
+        property="og:description"
+        content="Peer-reviewed publications by Daniel Morris on sleep, dreaming, lucid dreaming, neuroscience, and consciousness.">
+
+    <meta
+        property="og:url"
+        content="https://danieljacobmorris.com/publications.html">
+
+    <meta
+        property="og:type"
+        content="website">
+
+    <meta
+        property="og:site_name"
+        content="Daniel Morris">
+
+    <meta
+        property="og:image"
+        content="https://danieljacobmorris.com/images/profile.jpg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://danieljacobmorris.com/publications.html#webpage",
+        "url": "https://danieljacobmorris.com/publications.html",
+        "name": "Publications | Daniel Morris",
+        "description": "Peer-reviewed publications by Daniel Morris on sleep, dreaming, lucid dreaming, neuroscience, and consciousness.",
+
+        "isPartOf": {
+            "@id": "https://danieljacobmorris.com/#website"
+        },
+
+        "about": {
+            "@id": "https://danieljacobmorris.com/#person"
+        }
+    }
+    </script>
 
     <link
         rel="stylesheet"
-        href="style.css">
+        href="/style.css">
 
 
     <style>
 
-        /* =========================================================
-           PUBLICATIONS PAGE
-           ========================================================= */
-
         .publications-page {
             width: calc(100% - 96px);
             max-width: 1180px;
-
             margin: 85px auto 130px;
         }
-
-
-        /* ---------- PAGE TITLE ---------- */
 
         .publications-title {
             margin: 0 0 24px;
@@ -46,18 +98,13 @@
 
             font-size: clamp(58px, 7vw, 86px);
             font-weight: 600;
-
             line-height: 1;
-
             letter-spacing: -2.5px;
-
             color: #1f292b;
         }
 
-
         .publications-intro {
             max-width: 720px;
-
             margin: 0 0 65px;
 
             font-family:
@@ -67,19 +114,13 @@
 
             font-size: 19px;
             font-style: italic;
-
             line-height: 1.65;
-
             color: #40585c;
         }
-
-
-        /* ---------- YEAR SECTIONS ---------- */
 
         .publication-year-section {
             margin-bottom: 48px;
         }
-
 
         .publication-year-heading {
             margin: 0 0 20px;
@@ -91,25 +132,17 @@
 
             font-size: 29px;
             font-weight: 700;
-
             line-height: 1.2;
-
             color: #1f292b;
         }
 
-
-        /* ---------- PUBLICATION LIST ---------- */
-
         .publication-entries {
             margin: 0;
-
             padding-left: 34px;
         }
 
-
         .publication-entries li {
             margin: 0 0 22px;
-
             padding-left: 8px;
 
             font-family:
@@ -119,140 +152,91 @@
 
             font-size: 17px;
             line-height: 1.65;
-
             color: #253235;
         }
-
 
         .publication-entries li::marker {
             font-weight: 700;
         }
 
-
-        /* ---------- MY NAME ---------- */
-
         .my-name {
             font-weight: 700;
         }
 
-
-        /* ---------- PAPER TITLE LINKS ---------- */
-
         .paper-title {
             color: #253235;
-
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
-
             transition: opacity 0.2s ease;
         }
-
 
         .paper-title:hover {
             opacity: 0.58;
         }
 
-
-        /* ---------- JOURNAL ---------- */
-
         .journal {
             font-style: italic;
         }
 
-
-        /* ---------- PDF LINKS ---------- */
-
         .pdf-link {
             display: inline-block;
-
             margin-left: 5px;
-
             color: #253235;
-
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
-
             white-space: nowrap;
-
             transition: opacity 0.2s ease;
         }
-
 
         .pdf-link:hover {
             opacity: 0.58;
         }
 
-
-        /* =========================================================
-           TABLET
-           ========================================================= */
-
         @media (max-width: 950px) {
 
             .publications-page {
                 width: calc(100% - 64px);
-
                 margin-top: 65px;
             }
 
         }
 
-
-        /* =========================================================
-           MOBILE
-           ========================================================= */
-
         @media (max-width: 750px) {
 
             .publications-page {
                 width: calc(100% - 44px);
-
                 margin-top: 48px;
                 margin-bottom: 90px;
             }
 
-
             .publications-title {
                 font-size: 56px;
-
                 letter-spacing: -1.7px;
             }
 
-
             .publications-intro {
                 margin-bottom: 52px;
-
                 font-size: 18px;
             }
-
 
             .publication-year-heading {
                 font-size: 27px;
             }
 
-
             .publication-entries {
                 padding-left: 26px;
             }
 
-
             .publication-entries li {
                 padding-left: 4px;
-
                 margin-bottom: 24px;
-
                 font-size: 16px;
                 line-height: 1.65;
             }
 
         }
-
-
-        /* =========================================================
-           VERY SMALL PHONES
-           ========================================================= */
 
         @media (max-width: 420px) {
 
@@ -281,10 +265,9 @@
 
 <header class="site-header">
 
-
     <a
         class="site-name"
-        href="index.html">
+        href="/">
 
         Daniel Morris
 
@@ -293,43 +276,35 @@
 
     <nav aria-label="Main navigation">
 
-
-        <a href="index.html">
+        <a href="/">
             About
         </a>
 
-
-        <a href="research.html">
+        <a href="/research.html">
             Research
         </a>
 
-
         <a
-            href="publications.html"
+            href="/publications.html"
             aria-current="page">
 
             Publications
 
         </a>
 
-
-        <a href="media.html">
+        <a href="/media.html">
             Media
         </a>
 
-
-        <a href="cv.html">
+        <a href="/cv.html">
             CV
         </a>
 
-
-        <a href="contact.html">
+        <a href="/contact.html">
             Contact
         </a>
 
-
     </nav>
-
 
 </header>
 
@@ -338,36 +313,24 @@
     id="main-content"
     class="publications-page">
 
-
     <h1 class="publications-title">
         Publications
     </h1>
 
-
     <p class="publications-intro">
-
         Peer-reviewed publications by Daniel Morris.
-
     </p>
 
 
-
-    <!-- =====================================================
-         2026
-         ===================================================== -->
-
     <section class="publication-year-section">
-
 
         <h2 class="publication-year-heading">
             2026
         </h2>
 
-
         <ol
             class="publication-entries"
             start="1">
-
 
             <li>
 
@@ -416,7 +379,6 @@
             </li>
 
 
-
             <li>
 
                 Konkoly, K. R.,
@@ -456,7 +418,6 @@
                 </a>
 
             </li>
-
 
 
             <li>
@@ -502,30 +463,20 @@
 
             </li>
 
-
         </ol>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         2025
-         ===================================================== -->
-
     <section class="publication-year-section">
-
 
         <h2 class="publication-year-heading">
             2025
         </h2>
 
-
         <ol
             class="publication-entries"
             start="4">
-
 
             <li>
 
@@ -572,7 +523,6 @@
             </li>
 
 
-
             <li>
 
                 Konkoly, K. R.,
@@ -613,7 +563,6 @@
                 </a>
 
             </li>
-
 
 
             <li>
@@ -663,7 +612,6 @@
             </li>
 
 
-
             <li>
 
                 Mundt, J. M.,
@@ -711,30 +659,20 @@
 
             </li>
 
-
         </ol>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         2024
-         ===================================================== -->
-
     <section class="publication-year-section">
-
 
         <h2 class="publication-year-heading">
             2024
         </h2>
 
-
         <ol
             class="publication-entries"
             start="8">
-
 
             <li>
 
@@ -777,30 +715,20 @@
 
             </li>
 
-
         </ol>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         2023
-         ===================================================== -->
-
     <section class="publication-year-section">
-
 
         <h2 class="publication-year-heading">
             2023
         </h2>
 
-
         <ol
             class="publication-entries"
             start="9">
-
 
             <li>
 
@@ -840,30 +768,20 @@
 
             </li>
 
-
         </ol>
-
 
     </section>
 
 
-
-    <!-- =====================================================
-         2021
-         ===================================================== -->
-
     <section class="publication-year-section">
-
 
         <h2 class="publication-year-heading">
             2021
         </h2>
 
-
         <ol
             class="publication-entries"
             start="10">
-
 
             <li>
 
@@ -904,12 +822,9 @@
 
             </li>
 
-
         </ol>
 
-
     </section>
-
 
 </main>
 
@@ -917,7 +832,7 @@
 <footer>
 
     <p>
-        © Daniel Jacob Morris
+        © Daniel Morris
     </p>
 
 </footer>
