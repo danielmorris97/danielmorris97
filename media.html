@@ -297,6 +297,107 @@
 
 
         /* =========================================================
+           VIDEO BLOG
+           ========================================================= */
+
+        .video-blog-promo {
+            margin-top: 30px;
+            padding: 24px 28px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            gap: 28px;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 6px;
+        }
+
+
+        .video-blog-copy {
+            min-width: 0;
+        }
+
+
+        .video-blog-label {
+            margin: 0 0 6px;
+
+            color: var(--accent);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            letter-spacing: 0.08em;
+
+            text-transform: uppercase;
+        }
+
+
+        .video-blog-promo h3 {
+            margin: 0 0 5px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 22px;
+            font-weight: 600;
+
+            line-height: 1.35;
+
+            color: var(--text);
+        }
+
+
+        .video-blog-promo p {
+            margin: 0;
+
+            color: var(--muted-text);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+
+        .video-blog-link {
+            flex: 0 0 auto;
+
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 16px;
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid
+                rgba(139, 203, 243, 0.60);
+
+            padding-bottom: 2px;
+        }
+
+
+        .video-blog-link:hover {
+            color: var(--accent-soft);
+
+            border-color: var(--accent-soft);
+        }
+
+
+        /* =========================================================
            REDDIT AMA
            ========================================================= */
 
@@ -942,6 +1043,14 @@
             }
 
 
+            .video-blog-promo {
+                align-items: flex-start;
+                flex-direction: column;
+
+                gap: 16px;
+            }
+
+
             .reddit-feature {
                 grid-template-columns: 1fr;
 
@@ -1192,6 +1301,38 @@
 
         </div>
 
+
+        <div class="video-blog-promo">
+
+            <div class="video-blog-copy">
+
+                <p class="video-blog-label">
+                    Video blog
+                </p>
+
+                <h3>
+                    KDLabs
+                </h3>
+
+                <p>
+                    Karen &amp; Dash’s video blog.
+                </p>
+
+            </div>
+
+
+            <a
+                class="video-blog-link"
+                href="https://kdlabs.substack.com/"
+                target="_blank"
+                rel="noopener">
+
+                Visit KDLabs on Substack →
+
+            </a>
+
+        </div>
+
     </section>
 
 
@@ -1282,6 +1423,62 @@
         <div class="featured-grid">
 
 
+            <!-- MIND & LIFE -->
+
+            <article class="featured-card">
+
+                <a
+                    class="featured-image-link"
+                    href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                    target="_blank"
+                    rel="noopener">
+
+                    <img
+                        class="featured-image"
+                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.mindandlife.org%2Finsight%2Fbridging-science-and-buddhism-the-dalai-lamas-100-year-vision%2F&amp;embed=image.url"
+                        alt="Mind and Life article image"
+                        loading="lazy"
+                        decoding="async">
+
+                </a>
+
+
+                <div class="featured-copy">
+
+                    <p class="featured-outlet">
+                        Mind &amp; Life Institute
+                    </p>
+
+
+                    <h3>
+
+                        <a
+                            href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                            target="_blank"
+                            rel="noopener">
+
+                            Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
+
+                        </a>
+
+                    </h3>
+
+
+                    <a
+                        class="featured-link"
+                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+                        target="_blank"
+                        rel="noopener">
+
+                        Read article →
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
             <!-- NEW YORKER -->
 
             <article class="featured-card">
@@ -1308,6 +1505,7 @@
                         The New Yorker
                     </p>
 
+
                     <h3>
 
                         <a
@@ -1320,6 +1518,7 @@
                         </a>
 
                     </h3>
+
 
                     <a
                         class="featured-link"
@@ -1362,6 +1561,7 @@
                         TIME
                     </p>
 
+
                     <h3>
 
                         <a
@@ -1375,63 +1575,10 @@
 
                     </h3>
 
+
                     <a
                         class="featured-link"
                         href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Read article →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- MIND & LIFE -->
-
-            <article class="featured-card">
-
-                <a
-                    class="featured-image-link"
-                    href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="featured-image"
-                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.mindandlife.org%2Finsight%2Fbridging-science-and-buddhism-the-dalai-lamas-100-year-vision%2F&amp;embed=image.url"
-                        alt="Mind and Life article image"
-                        loading="lazy"
-                        decoding="async">
-
-                </a>
-
-
-                <div class="featured-copy">
-
-                    <p class="featured-outlet">
-                        Mind &amp; Life Institute
-                    </p>
-
-                    <h3>
-
-                        <a
-                            href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                            target="_blank"
-                            rel="noopener">
-
-                            Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
-
-                        </a>
-
-                    </h3>
-
-                    <a
-                        class="featured-link"
-                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
                         target="_blank"
                         rel="noopener">
 
@@ -1470,6 +1617,7 @@
                         Between Two Worlds
                     </p>
 
+
                     <h3>
 
                         <a
@@ -1482,6 +1630,7 @@
                         </a>
 
                     </h3>
+
 
                     <a
                         class="featured-link"
@@ -1512,6 +1661,7 @@
         <h2 class="media-section-title">
             Dream Engineering &amp; Problem Solving
         </h2>
+
 
         <p class="media-section-intro">
             Coverage of our February 2026 study on dreaming and creative problem solving.
@@ -1634,10 +1784,6 @@
         </div>
 
 
-        <!-- =====================================================
-             FULL PRESS DROPDOWN
-             ===================================================== -->
-
         <details class="press-dropdown">
 
             <summary>
@@ -1661,8 +1807,6 @@
 
                 </p>
 
-
-                <!-- MAJOR & BROADCAST -->
 
                 <div class="press-group">
 
@@ -1768,8 +1912,6 @@
 
                 </div>
 
-
-                <!-- SCIENCE & TECHNOLOGY -->
 
                 <div class="press-group">
 
@@ -1965,8 +2107,6 @@
 
                 </div>
 
-
-                <!-- INTERNATIONAL -->
 
                 <div class="press-group">
 
