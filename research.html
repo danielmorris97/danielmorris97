@@ -65,11 +65,9 @@
         "url": "https://danieljacobmorris.com/research.html",
         "name": "Research | Daniel Morris",
         "description": "Research by Daniel Morris on sleep, lucid dreaming, dream engineering, contemplative practices, and consciousness.",
-
         "isPartOf": {
             "@id": "https://danieljacobmorris.com/#website"
         },
-
         "about": {
             "@id": "https://danieljacobmorris.com/#person"
         }
@@ -84,6 +82,10 @@
 
     <style>
 
+        /* =========================================================
+           RESEARCH PAGE
+           ========================================================= */
+
         .research-page {
             width: calc(100% - 96px);
             max-width: 1180px;
@@ -91,6 +93,10 @@
             margin: 80px auto 130px;
         }
 
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
 
         .research-header {
             display: grid;
@@ -183,12 +189,9 @@
         }
 
 
-        .research-team-section {
-            padding: 65px 0 80px;
-
-            border-bottom: 1px solid var(--line);
-        }
-
+        /* =========================================================
+           SHARED SECTION TITLE
+           ========================================================= */
 
         .research-section-title {
             margin: 0 0 40px;
@@ -206,6 +209,101 @@
             letter-spacing: -1.3px;
 
             color: var(--text);
+        }
+
+
+        /* =========================================================
+           CURRENT PROJECTS
+           ========================================================= */
+
+        .current-projects-section {
+            padding: 65px 0 80px;
+
+            border-bottom: 1px solid var(--line);
+        }
+
+
+        .current-projects-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, minmax(0, 1fr));
+
+            gap: 30px;
+        }
+
+
+        .current-project-group {
+            padding: 32px 34px;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 6px;
+        }
+
+
+        .current-project-group h3 {
+            margin: 0 0 24px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 25px;
+            font-weight: 600;
+
+            line-height: 1.3;
+
+            color: var(--text);
+        }
+
+
+        .current-project-group ol {
+            margin: 0;
+
+            padding-left: 25px;
+        }
+
+
+        .current-project-group li {
+            margin-bottom: 16px;
+
+            padding-left: 5px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+            line-height: 1.6;
+
+            color: var(--muted-text);
+        }
+
+
+        .current-project-group li:last-child {
+            margin-bottom: 0;
+        }
+
+
+        .current-project-group li::marker {
+            color: var(--accent);
+
+            font-weight: 600;
+        }
+
+
+        /* =========================================================
+           LAB & COLLABORATORS
+           ========================================================= */
+
+        .research-team-section {
+            padding: 65px 0 80px;
+
+            border-bottom: 1px solid var(--line);
         }
 
 
@@ -311,6 +409,10 @@
         }
 
 
+        /* =========================================================
+           RESEARCH AREAS
+           ========================================================= */
+
         .research-projects-section {
             padding: 70px 0 20px;
         }
@@ -389,6 +491,10 @@
         }
 
 
+        /* =========================================================
+           TABLET
+           ========================================================= */
+
         @media (max-width: 950px) {
 
             .research-page {
@@ -412,6 +518,10 @@
 
         }
 
+
+        /* =========================================================
+           MOBILE
+           ========================================================= */
 
         @media (max-width: 750px) {
 
@@ -440,6 +550,7 @@
             }
 
 
+            .current-projects-section,
             .research-team-section {
                 padding: 52px 0 62px;
             }
@@ -447,6 +558,21 @@
 
             .research-section-title {
                 font-size: 39px;
+            }
+
+
+            .current-projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .current-project-group {
+                padding: 27px;
+            }
+
+
+            .current-project-group h3 {
+                font-size: 23px;
             }
 
 
@@ -561,6 +687,10 @@
     class="research-page">
 
 
+    <!-- =========================================================
+         RESEARCH INTRO
+         ========================================================= -->
+
     <section class="research-header">
 
 
@@ -597,6 +727,86 @@
 
     </section>
 
+
+    <!-- =========================================================
+         CURRENT PROJECTS
+         ========================================================= -->
+
+    <section class="current-projects-section">
+
+        <h2 class="research-section-title">
+            Current Projects
+        </h2>
+
+
+        <div class="current-projects-grid">
+
+
+            <div class="current-project-group">
+
+                <h3>
+                    Manuscripts in preparation
+                </h3>
+
+
+                <ol>
+
+                    <li>
+                        Development of a Multimodal Dream Yoga Intervention:
+                        Feasibility, Acceptability, and Preliminary Outcomes
+                    </li>
+
+                    <li>
+                        Real-time behavioral responses to auditory stimuli during sleep.
+                    </li>
+
+                    <li>
+                        A Dream-Engineering Database.
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <div class="current-project-group">
+
+                <h3>
+                    Data collection ongoing
+                </h3>
+
+
+                <ol>
+
+                    <li>
+                        Dissertation: Alleviating nightmares with lucid dreaming training.
+                    </li>
+
+                    <li>
+                        Dark retreat.
+                    </li>
+
+                    <li>
+                        Sleep onset responsiveness.
+                    </li>
+
+                    <li>
+                        Galantamine and lucid dreaming.
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         LAB & COLLABORATORS
+         ========================================================= -->
 
     <section class="research-team-section">
 
@@ -760,6 +970,10 @@
 
     </section>
 
+
+    <!-- =========================================================
+         RESEARCH AREAS
+         ========================================================= -->
 
     <section class="research-projects-section">
 
