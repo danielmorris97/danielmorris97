@@ -56,6 +56,7 @@
         property="og:image"
         content="https://danieljacobmorris.com/images/profile.jpg">
 
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -75,6 +76,7 @@
     }
     </script>
 
+
     <link
         rel="stylesheet"
         href="/style.css">
@@ -85,8 +87,10 @@
         .publications-page {
             width: calc(100% - 96px);
             max-width: 1180px;
+
             margin: 85px auto 130px;
         }
+
 
         .publications-title {
             margin: 0 0 24px;
@@ -98,13 +102,18 @@
 
             font-size: clamp(58px, 7vw, 86px);
             font-weight: 600;
+
             line-height: 1;
+
             letter-spacing: -2.5px;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .publications-intro {
             max-width: 720px;
+
             margin: 0 0 65px;
 
             font-family:
@@ -114,13 +123,17 @@
 
             font-size: 19px;
             font-style: italic;
+
             line-height: 1.65;
-            color: #40585c;
+
+            color: var(--muted-text);
         }
+
 
         .publication-year-section {
             margin-bottom: 48px;
         }
+
 
         .publication-year-heading {
             margin: 0 0 20px;
@@ -132,17 +145,23 @@
 
             font-size: 29px;
             font-weight: 700;
+
             line-height: 1.2;
-            color: #1f292b;
+
+            color: var(--text);
         }
+
 
         .publication-entries {
             margin: 0;
+
             padding-left: 34px;
         }
 
+
         .publication-entries li {
             margin: 0 0 22px;
+
             padding-left: 8px;
 
             font-family:
@@ -152,91 +171,124 @@
 
             font-size: 17px;
             line-height: 1.65;
-            color: #253235;
+
+            color: var(--text);
         }
 
+
         .publication-entries li::marker {
+            color: var(--muted-text);
+
             font-weight: 700;
         }
+
 
         .my-name {
             font-weight: 700;
+
+            color: #ffffff;
         }
 
+
         .paper-title {
-            color: #253235;
+            color: var(--accent);
+
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
-            transition: opacity 0.2s ease;
+
+            transition: color 0.2s ease;
         }
 
+
         .paper-title:hover {
-            opacity: 0.58;
+            color: var(--accent-soft);
         }
+
 
         .journal {
             font-style: italic;
         }
 
+
         .pdf-link {
             display: inline-block;
+
             margin-left: 5px;
-            color: #253235;
+
+            color: var(--accent);
+
             text-decoration: underline;
             text-decoration-thickness: 1px;
             text-underline-offset: 3px;
+
             white-space: nowrap;
-            transition: opacity 0.2s ease;
+
+            transition: color 0.2s ease;
         }
 
+
         .pdf-link:hover {
-            opacity: 0.58;
+            color: var(--accent-soft);
         }
+
 
         @media (max-width: 950px) {
 
             .publications-page {
                 width: calc(100% - 64px);
+
                 margin-top: 65px;
             }
 
         }
 
+
         @media (max-width: 750px) {
 
             .publications-page {
                 width: calc(100% - 44px);
+
                 margin-top: 48px;
                 margin-bottom: 90px;
             }
 
+
             .publications-title {
                 font-size: 56px;
+
                 letter-spacing: -1.7px;
             }
 
+
             .publications-intro {
                 margin-bottom: 52px;
+
                 font-size: 18px;
             }
+
 
             .publication-year-heading {
                 font-size: 27px;
             }
 
+
             .publication-entries {
                 padding-left: 26px;
             }
 
+
             .publication-entries li {
                 padding-left: 4px;
+
                 margin-bottom: 24px;
+
                 font-size: 16px;
                 line-height: 1.65;
             }
 
         }
+
 
         @media (max-width: 420px) {
 
@@ -313,9 +365,11 @@
     id="main-content"
     class="publications-page">
 
+
     <h1 class="publications-title">
         Publications
     </h1>
+
 
     <p class="publications-intro">
         Peer-reviewed publications by Daniel Morris.
@@ -328,9 +382,11 @@
             2026
         </h2>
 
+
         <ol
             class="publication-entries"
             start="1">
+
 
             <li>
 
@@ -474,9 +530,11 @@
             2025
         </h2>
 
+
         <ol
             class="publication-entries"
             start="4">
+
 
             <li>
 
@@ -670,9 +728,11 @@
             2024
         </h2>
 
+
         <ol
             class="publication-entries"
             start="8">
+
 
             <li>
 
@@ -726,9 +786,11 @@
             2023
         </h2>
 
+
         <ol
             class="publication-entries"
             start="9">
+
 
             <li>
 
@@ -779,9 +841,11 @@
             2021
         </h2>
 
+
         <ol
             class="publication-entries"
             start="10">
+
 
             <li>
 
@@ -825,6 +889,7 @@
         </ol>
 
     </section>
+
 
 </main>
 
