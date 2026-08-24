@@ -17,7 +17,7 @@
 
     <meta
         name="robots"
-        content="index, follow">
+        content="index, follow, max-image-preview:large">
 
     <link
         rel="canonical"
@@ -64,7 +64,10 @@
         "@id": "https://danieljacobmorris.com/#website",
         "url": "https://danieljacobmorris.com/",
         "name": "Daniel Morris",
-        "alternateName": "Daniel J. Morris"
+        "alternateName": [
+            "Daniel J. Morris",
+            "Daniel Jacob Morris"
+        ]
     }
     </script>
 
@@ -81,6 +84,14 @@
 
         "description": "Daniel Morris is a dream scientist and PhD candidate in cognitive neuroscience at Northwestern University studying sleep, lucid dreaming, and contemplative practices.",
 
+        "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "@id": "https://danieljacobmorris.com/#primaryimage",
+            "url": "https://danieljacobmorris.com/images/profile.jpg",
+            "contentUrl": "https://danieljacobmorris.com/images/profile.jpg",
+            "caption": "Daniel Morris"
+        },
+
         "isPartOf": {
             "@id": "https://danieljacobmorris.com/#website"
         },
@@ -91,16 +102,22 @@
 
             "@id": "https://danieljacobmorris.com/#person",
 
-            "name": "Daniel Jacob Morris",
+            "name": "Daniel Morris",
 
             "alternateName": [
-                "Daniel Morris",
-                "Daniel J. Morris"
+                "Daniel J. Morris",
+                "Daniel Jacob Morris"
             ],
 
             "url": "https://danieljacobmorris.com/",
 
-            "image": "https://danieljacobmorris.com/images/profile.jpg",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "https://danieljacobmorris.com/#primaryimage",
+                "url": "https://danieljacobmorris.com/images/profile.jpg",
+                "contentUrl": "https://danieljacobmorris.com/images/profile.jpg",
+                "caption": "Daniel Morris"
+            },
 
             "jobTitle": "PhD Candidate in Cognitive Neuroscience",
 
@@ -208,7 +225,7 @@
         <div class="hero-image">
 
             <img
-                src="images/profile-blended.png"
+                src="/images/profile-blended.png"
                 alt="Daniel Morris">
 
         </div>
@@ -229,7 +246,7 @@
 
 
             <p>
-                I collaborate with Tibetan monastic scholars through the Emory-Tibet Science Initiative 
+                I collaborate with Tibetan monastic scholars through the Emory-Tibet Science Initiative
                 to study advanced sleep and dreaming practices.
             </p>
 
