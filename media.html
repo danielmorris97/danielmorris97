@@ -217,6 +217,114 @@
 
 
         /* =========================================================
+           FEATURED AASM MONTAGE ARTICLE
+           ========================================================= */
+
+        .montage-feature {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1fr)
+                auto;
+
+            gap: 42px;
+
+            align-items: center;
+
+            padding: 34px 38px;
+
+            background: var(--panel);
+
+            border: 1px solid var(--line);
+            border-radius: 7px;
+        }
+
+
+        .montage-feature-copy {
+            min-width: 0;
+        }
+
+
+        .montage-feature-label {
+            margin: 0 0 10px;
+
+            color: var(--accent);
+
+            font-size: 13px;
+            font-weight: 600;
+
+            letter-spacing: 0.08em;
+
+            text-transform: uppercase;
+        }
+
+
+        .montage-feature-title {
+            margin: 0 0 14px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: clamp(28px, 3vw, 36px);
+            font-weight: 600;
+
+            line-height: 1.2;
+
+            color: var(--text);
+        }
+
+
+        .montage-feature-description {
+            margin: 0;
+
+            max-width: 760px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 18px;
+            line-height: 1.65;
+
+            color: var(--muted-text);
+        }
+
+
+        .montage-feature-link {
+            display: inline-block;
+
+            white-space: nowrap;
+
+            color: var(--accent);
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+
+            text-decoration: none;
+
+            border-bottom:
+                1px solid
+                rgba(139, 203, 243, 0.65);
+
+            padding-bottom: 3px;
+        }
+
+
+        .montage-feature-link:hover {
+            color: var(--accent-soft);
+
+            border-color: var(--accent-soft);
+        }
+
+
+        /* =========================================================
            VIDEOS
            ========================================================= */
 
@@ -1121,6 +1229,13 @@
             }
 
 
+            .montage-feature {
+                grid-template-columns: 1fr;
+
+                gap: 24px;
+            }
+
+
             .video-blog-promo {
                 grid-template-columns:
                     minmax(190px, 0.7fr)
@@ -1202,6 +1317,21 @@
 
             .media-section-title {
                 font-size: 42px;
+            }
+
+
+            .montage-feature {
+                padding: 28px 24px;
+            }
+
+
+            .montage-feature-title {
+                font-size: 29px;
+            }
+
+
+            .montage-feature-description {
+                font-size: 17px;
             }
 
 
@@ -1415,6 +1545,52 @@
             <p>
                 Selected articles, videos, interviews, and public discussions about my research.
             </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         AASM MONTAGE
+         ========================================================= -->
+
+    <section class="media-section">
+
+        <div class="montage-feature">
+
+            <div class="montage-feature-copy">
+
+                <p class="montage-feature-label">
+                    AASM Montage Magazine · 2026 Issue 3
+                </p>
+
+
+                <h2 class="montage-feature-title">
+                    Engineering healthier dreams
+                </h2>
+
+
+                <p class="montage-feature-description">
+                    Check out our recent article in the AASM Montage magazine on dream engineering!
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <a
+                    class="montage-feature-link"
+                    href="/files/Montage_2026_Iss3-DIGITAL_Dream_Engineering.pdf"
+                    target="_blank"
+                    rel="noopener">
+
+                    Read the article →
+
+                </a>
+
+            </div>
 
         </div>
 
@@ -2653,5 +2829,4 @@
 
 
 </body>
-
 </html>
