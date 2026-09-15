@@ -114,7 +114,7 @@
         .publications-intro {
             max-width: 720px;
 
-            margin: 0 0 65px;
+            margin: 0 0 8px;
 
             font-family:
                 Georgia,
@@ -127,6 +127,41 @@
             line-height: 1.65;
 
             color: var(--muted-text);
+        }
+
+
+        .scholar-link {
+            max-width: 900px;
+
+            margin: 0 0 65px;
+
+            font-family:
+                Georgia,
+                "Times New Roman",
+                serif;
+
+            font-size: 17px;
+            line-height: 1.6;
+
+            color: var(--muted-text);
+        }
+
+
+        .scholar-link a {
+            color: var(--accent);
+
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+
+            overflow-wrap: anywhere;
+
+            transition: color 0.2s ease;
+        }
+
+
+        .scholar-link a:hover {
+            color: var(--accent-soft);
         }
 
 
@@ -265,9 +300,16 @@
 
 
             .publications-intro {
-                margin-bottom: 52px;
+                margin-bottom: 8px;
 
                 font-size: 18px;
+            }
+
+
+            .scholar-link {
+                margin-bottom: 52px;
+
+                font-size: 16px;
             }
 
 
@@ -376,6 +418,19 @@
 
     <p class="publications-intro">
         Peer-reviewed publications by Daniel Morris.
+    </p>
+
+
+    <p class="scholar-link">
+        Google Scholar:
+        <a
+            href="https://scholar.google.com/citations?user=UMp7wjQAAAAJ&amp;hl=en"
+            target="_blank"
+            rel="noopener">
+
+            https://scholar.google.com/citations?user=UMp7wjQAAAAJ&amp;hl=en
+
+        </a>
     </p>
 
 
