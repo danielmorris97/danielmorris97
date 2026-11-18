@@ -207,6 +207,9 @@
     @media (max-width: 750px) { .essays-grid { grid-template-columns: 1fr; }
     .essay-card { padding: 26px 24px; }
     }
+    .essay-image-link { display: block; width: 100%; overflow: hidden; margin-bottom: 24px; border-radius: 4px; border: 1px solid var(--line); background: var(--deep); }
+    .essay-image { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: center; transition: transform .25s ease; }
+    .essay-image-link:hover .essay-image { transform: scale(1.025); }
     </style>
 </head>
 <body>
@@ -267,44 +270,23 @@
         <h2 class="media-section-title" id="essays-title">Essays &amp; Field Reports</h2>
         <div class="essays-grid">
         <article class="essay-card">
+        <a class="essay-image-link" href="https://oneros.org/essays/lucid-dreaming-nightmares/" target="_blank" rel="noopener" aria-label="Read interview about lucid dreaming and nightmares">
+        <img class="essay-image" src="/images/IMG_3782.jpg" alt="Photograph accompanying the lucid dreaming and nightmares interview" loading="lazy" decoding="async">
+        </a>
         <p class="featured-outlet">Oneros</p>
         <h3><a href="https://oneros.org/essays/lucid-dreaming-nightmares/" target="_blank" rel="noopener">Lucid Dreaming and Nightmares</a></h3>
-        <p class="essay-description">An essay exploring lucid dreaming and nightmares.</p>
+        <p class="essay-description">An interview about lucid dreaming and nightmares.</p>
         <a class="featured-link" href="https://oneros.org/essays/lucid-dreaming-nightmares/" target="_blank" rel="noopener">Read essay →</a>
         </article>
         <article class="essay-card">
+        <a class="essay-image-link" href="https://oneros.org/essays/bhutan-project-2026/" target="_blank" rel="noopener" aria-label="Read about the Bhutan project">
+        <img class="essay-image" src="/images/team-group-photo-768x576.jpg" alt="Group photo of the Bhutan project team" loading="lazy" decoding="async">
+        </a>
         <p class="featured-outlet">Oneros</p>
         <h3><a href="https://oneros.org/essays/bhutan-project-2026/" target="_blank" rel="noopener">The Bhutan Project, 2026</a></h3>
         <p class="essay-description">A field report on the 2026 Bhutan sleep research project.</p>
         <a class="featured-link" href="https://oneros.org/essays/bhutan-project-2026/" target="_blank" rel="noopener">Read field report →</a>
         </article>
-        </div>
-    </section>
-    <!-- =========================================================
-        AASM MONTAGE
-        ========================================================= -->
-    <section class="media-section">
-        <div class="montage-feature">
-        <div class="montage-feature-copy">
-        <p class="montage-feature-label">
-        AASM Montage Magazine · 2026 Issue 3
-        </p>
-        <h2 class="montage-feature-title">
-        Engineering healthier dreams
-        </h2>
-        <p class="montage-feature-description">
-        Check out our recent article in the AASM Montage magazine on dream engineering!
-        </p>
-        </div>
-        <div>
-        <a
-        class="montage-feature-link"
-        href="/files/Montage_2026_Iss3-DIGITAL_Dream_Engineering.pdf"
-        target="_blank"
-        rel="noopener">
-        Read the article →
-        </a>
-        </div>
         </div>
     </section>
     <!-- =========================================================
@@ -514,6 +496,33 @@
         </article>
         </div>
     </section>
+    <!-- =========================================================
+        AASM MONTAGE
+        ========================================================= -->
+    <section class="media-section">
+        <div class="montage-feature">
+        <div class="montage-feature-copy">
+        <p class="montage-feature-label">
+        AASM Montage Magazine · 2026 Issue 3
+        </p>
+        <h2 class="montage-feature-title">
+        Engineering healthier dreams
+        </h2>
+        <p class="montage-feature-description">
+        Check out our recent article in the AASM Montage magazine on dream engineering!
+        </p>
+        </div>
+        <div>
+        <a
+        class="montage-feature-link"
+        href="/files/Montage_2026_Iss3-DIGITAL_Dream_Engineering.pdf"
+        target="_blank"
+        rel="noopener">
+        Read the article →
+        </a>
+        </div>
+        </div>
+    </section>
     <!-- NEW: ADDITIONAL COVERAGE -->
     <section class="media-section" aria-labelledby="additional-coverage-title">
         <h2 class="media-section-title" id="additional-coverage-title">Additional Coverage</h2>
@@ -522,12 +531,6 @@
         <a href="https://www.livescience.com/health/neuroscience/neuroscientists-reveal-method-to-train-people-to-have-lucid-dreams-and-it-involves-virtual-reality-and-mediation" target="_blank" rel="noopener">
         <span class="research-coverage-outlet">Live Science:</span>
         Neuroscientists reveal method to train people to have lucid dreams — and it involves virtual reality and meditation
-        </a>
-        </li>
-        <li>
-        <a href="https://www.facebook.com/share/1CWydkXSFZ/?mibextid=wwXIfr" target="_blank" rel="noopener">
-        <span class="research-coverage-outlet">Facebook:</span>
-        View Facebook post
         </a>
         </li>
         </ul>
