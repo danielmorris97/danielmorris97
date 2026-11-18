@@ -1017,3 +1017,110 @@ footer p {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+
+/* ============================================
+   ATMOSPHERIC BACKGROUND
+   ============================================ */
+
+body {
+  background-color: #030A12;
+
+  background-image:
+
+    /* Luminous ocean-blue area on the right */
+    radial-gradient(
+      ellipse 65% 65% at 90% 28%,
+      rgba(48, 103, 143, 0.53) 0%,
+      rgba(20, 63, 98, 0.28) 48%,
+      transparent 85%
+    ),
+
+    /* Subtle blue illumination lower left */
+    radial-gradient(
+      ellipse 58% 65% at 4% 85%,
+      rgba(24, 77, 111, 0.45) 0%,
+      transparent 80%
+    ),
+
+    /* Faint, widely spaced ripple contours */
+    repeating-radial-gradient(
+      ellipse 70vw 55vw at 100% 35%,
+      transparent 0px,
+      transparent 68px,
+      rgba(139, 203, 243, 0.035) 69px,
+      transparent 70px,
+      transparent 125px
+    ),
+
+    /* Base midnight blue to near-black */
+    linear-gradient(
+      135deg,
+      #020813 0%,
+      #0B2233 38%,
+      #071B2B 70%,
+      #020812 100%
+    );
+
+  background-attachment: fixed;
+}
+
+/* ============================================
+   SEAMLESS PORTRAIT BLENDING
+   ============================================ */
+
+/* Fade the left and right edges */
+
+.hero-image {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 14%,
+    black 86%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 14%,
+    black 86%,
+    transparent 100%
+  );
+}
+
+/* Independently fade the top and bottom */
+
+.hero-image img {
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 7%,
+    black 78%,
+    transparent 100%
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 7%,
+    black 78%,
+    transparent 100%
+  );
+
+  /* Override earlier multi-mask settings */
+  -webkit-mask-composite: source-over;
+  mask-composite: add;
+}
+
+/* Soft ambient glow around portrait */
+
+.hero-image::before {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(54, 118, 163, 0.24) 0%,
+    rgba(25, 74, 113, 0.12) 48%,
+    transparent 75%
+  );
+}
