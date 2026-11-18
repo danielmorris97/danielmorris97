@@ -1,4 +1,9 @@
 
+/* ============================================
+   DANIEL MORRIS — WEBSITE STYLES
+   Midnight Navy Theme
+   ============================================ */
+
 :root {
   --black: #030A12;
   --deep: #071923;
@@ -16,6 +21,8 @@
   --field-focus: rgba(255, 255, 255, 0.11);
 }
 
+/* GENERAL RESET */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -24,43 +31,51 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ATMOSPHERIC NAVY BACKGROUND */
+
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #020812;
+  background-color: #030A12;
 
-  /* More pronounced midnight-blue atmosphere */
   background-image:
     radial-gradient(
-      ellipse 64% 66% at 88% 25%,
-      rgba(47, 103, 145, 0.55) 0%,
-      rgba(22, 64, 99, 0.34) 39%,
-      transparent 76%
+      ellipse 65% 65% at 90% 28%,
+      rgba(48, 103, 143, 0.53) 0%,
+      rgba(20, 63, 98, 0.28) 48%,
+      transparent 85%
     ),
+
     radial-gradient(
-      ellipse 58% 67% at 5% 75%,
-      rgba(22, 75, 112, 0.44) 0%,
-      rgba(12, 46, 76, 0.20) 47%,
-      transparent 83%
+      ellipse 58% 65% at 4% 85%,
+      rgba(24, 77, 111, 0.45) 0%,
+      transparent 80%
     ),
-    radial-gradient(
-      ellipse 54% 42% at 47% 0%,
-      rgba(23, 54, 89, 0.34) 0%,
-      transparent 78%
+
+    repeating-radial-gradient(
+      ellipse 70vw 55vw at 100% 35%,
+      transparent 0px,
+      transparent 68px,
+      rgba(139, 203, 243, 0.035) 69px,
+      transparent 70px,
+      transparent 125px
     ),
+
     linear-gradient(
-      132deg,
-      #020812 0%,
-      #0C2940 33%,
-      #081A2B 67%,
-      #02070E 100%
+      135deg,
+      #020813 0%,
+      #0B2233 38%,
+      #071B2B 70%,
+      #020812 100%
     );
 
   background-attachment: fixed;
   color: var(--text);
+
   font-family:
     -apple-system, BlinkMacSystemFont,
     "Segoe UI", Helvetica, Arial, sans-serif;
+
   font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -181,7 +196,9 @@ nav a[aria-current="page"]::after {
   transform: scaleX(1);
 }
 
-/* HOMEPAGE HERO */
+/* ============================================
+   HOMEPAGE HERO
+   ============================================ */
 
 .hero {
   width: calc(100% - 96px);
@@ -212,25 +229,28 @@ nav a[aria-current="page"]::after {
   justify-content: center;
 }
 
-/* Soft ambient blue glow behind the portrait */
+/* EXTRA-SUBTLE AMBIENT GLOW */
+/* Approximately 90% less intense than original */
 
 .hero-image::before {
   content: "";
   position: absolute;
-  inset: -8%;
+  inset: -2%;
   z-index: 0;
   pointer-events: none;
+
   background: radial-gradient(
     ellipse at center,
-    rgba(55, 119, 165, 0.36) 0%,
-    rgba(25, 72, 112, 0.21) 45%,
+    rgba(54, 118, 163, 0.035) 0%,
+    rgba(25, 74, 113, 0.015) 50%,
     transparent 72%
   );
-  filter: blur(30px);
+
+  filter: blur(14px);
   animation: ambient-glow 16s ease-in-out infinite alternate;
 }
 
-/* Softly fade all four edges of the photograph */
+/* PORTRAIT EDGE FEATHERING */
 
 .hero-image img {
   position: relative;
@@ -242,46 +262,28 @@ nav a[aria-current="page"]::after {
   object-position: center;
   border-radius: 0;
 
-  -webkit-mask-image:
-    linear-gradient(
-      to right,
-      transparent 0%,
-      #000 15%,
-      #000 85%,
-      transparent 100%
-    ),
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      #000 9%,
-      #000 77%,
-      transparent 100%
-    );
+  -webkit-mask-image: radial-gradient(
+    ellipse 52% 53% at 50% 51%,
+    black 0%,
+    black 62%,
+    rgba(0, 0, 0, 0.85) 75%,
+    rgba(0, 0, 0, 0.35) 90%,
+    transparent 100%
+  );
 
-  -webkit-mask-composite: source-in;
-
-  mask-image:
-    linear-gradient(
-      to right,
-      transparent 0%,
-      #000 15%,
-      #000 85%,
-      transparent 100%
-    ),
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      #000 9%,
-      #000 77%,
-      transparent 100%
-    );
-
-  mask-composite: intersect;
+  mask-image: radial-gradient(
+    ellipse 52% 53% at 50% 51%,
+    black 0%,
+    black 62%,
+    rgba(0, 0, 0, 0.85) 75%,
+    rgba(0, 0, 0, 0.35) 90%,
+    transparent 100%
+  );
 
   filter: saturate(0.96) contrast(1.02);
 }
 
-/* Original all-white headline */
+/* ORIGINAL WHITE HEADLINE */
 
 .hero h1 {
   margin: 0 0 30px;
@@ -299,6 +301,8 @@ nav a[aria-current="page"]::after {
   font-size: 19px;
   line-height: 1.7;
 }
+
+/* SUBTLE AMBIENT ANIMATION */
 
 @keyframes ambient-glow {
   from {
@@ -320,6 +324,7 @@ nav a[aria-current="page"]::after {
   text-decoration: none;
   border-bottom: 1px solid rgba(139, 203, 243, 0.65);
   padding-bottom: 2px;
+
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
@@ -331,7 +336,9 @@ nav a[aria-current="page"]::after {
   border-color: var(--accent-soft);
 }
 
-/* STANDARD INTERIOR PAGES */
+/* ============================================
+   STANDARD INTERIOR PAGES
+   ============================================ */
 
 .page {
   width: calc(100% - 96px);
@@ -506,6 +513,7 @@ nav a[aria-current="page"]::after {
   color: var(--text);
   text-decoration: none;
   font-size: 15px;
+
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -522,7 +530,9 @@ nav a[aria-current="page"]::after {
   border-color: rgba(244, 246, 247, 0.36);
 }
 
-/* CV PAGE */
+/* ============================================
+   CV PAGE
+   ============================================ */
 
 .cv-page {
   width: calc(100% - 96px);
@@ -586,7 +596,9 @@ nav a[aria-current="page"]::after {
   text-underline-offset: 3px;
 }
 
-/* CONTACT PAGE */
+/* ============================================
+   CONTACT PAGE
+   ============================================ */
 
 .contact-body {
   color: var(--text);
@@ -721,6 +733,7 @@ nav a[aria-current="page"]::after {
   border-radius: 5px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 17px;
+
   transition:
     border-color 0.2s ease,
     background 0.2s ease,
@@ -768,6 +781,7 @@ nav a[aria-current="page"]::after {
   font-size: 15px;
   letter-spacing: 0.7px;
   cursor: pointer;
+
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -797,7 +811,9 @@ footer p {
   margin: 0;
 }
 
-/* INTERIOR PAGE REFINEMENTS */
+/* ============================================
+   INTERIOR PAGE REFINEMENTS
+   ============================================ */
 
 .research-page .research-team-section,
 .media-page .media-section:nth-of-type(even) {
@@ -814,6 +830,7 @@ footer p {
 .media-page .montage-feature,
 .media-page .video-blog-promo {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
   transition:
     background 0.25s ease,
     border-color 0.25s ease,
@@ -831,7 +848,9 @@ footer p {
   transform: translateY(-2px);
 }
 
-/* TABLET */
+/* ============================================
+   TABLET
+   ============================================ */
 
 @media (max-width: 950px) {
   .site-header,
@@ -855,7 +874,9 @@ footer p {
   }
 }
 
-/* MOBILE */
+/* ============================================
+   MOBILE
+   ============================================ */
 
 @media (max-width: 750px) {
   body {
@@ -1016,111 +1037,4 @@ footer p {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
   }
-}
-
-
-
-/* ============================================
-   ATMOSPHERIC BACKGROUND
-   ============================================ */
-
-body {
-  background-color: #030A12;
-
-  background-image:
-
-    /* Luminous ocean-blue area on the right */
-    radial-gradient(
-      ellipse 65% 65% at 90% 28%,
-      rgba(48, 103, 143, 0.53) 0%,
-      rgba(20, 63, 98, 0.28) 48%,
-      transparent 85%
-    ),
-
-    /* Subtle blue illumination lower left */
-    radial-gradient(
-      ellipse 58% 65% at 4% 85%,
-      rgba(24, 77, 111, 0.45) 0%,
-      transparent 80%
-    ),
-
-    /* Faint, widely spaced ripple contours */
-    repeating-radial-gradient(
-      ellipse 70vw 55vw at 100% 35%,
-      transparent 0px,
-      transparent 68px,
-      rgba(139, 203, 243, 0.035) 69px,
-      transparent 70px,
-      transparent 125px
-    ),
-
-    /* Base midnight blue to near-black */
-    linear-gradient(
-      135deg,
-      #020813 0%,
-      #0B2233 38%,
-      #071B2B 70%,
-      #020812 100%
-    );
-
-  background-attachment: fixed;
-}
-
-/* ============================================
-   SEAMLESS PORTRAIT BLENDING
-   ============================================ */
-
-/* Fade the left and right edges */
-
-.hero-image {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 14%,
-    black 86%,
-    transparent 100%
-  );
-
-  mask-image: linear-gradient(
-    to right,
-    transparent 0%,
-    black 14%,
-    black 86%,
-    transparent 100%
-  );
-}
-
-/* Independently fade the top and bottom */
-
-.hero-image img {
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 7%,
-    black 78%,
-    transparent 100%
-  );
-
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 7%,
-    black 78%,
-    transparent 100%
-  );
-
-  /* Override earlier multi-mask settings */
-  -webkit-mask-composite: source-over;
-  mask-composite: add;
-}
-
-/* Soft ambient glow around portrait */
-
-.hero-image::before {
-  background: radial-gradient(
-    ellipse at center,
-    rgba(54, 118, 163, 0.24) 0%,
-    rgba(25, 74, 113, 0.12) 48%,
-    transparent 75%
-  );
 }
