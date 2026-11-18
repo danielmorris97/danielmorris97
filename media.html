@@ -1,66 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0">
-
     <title>Media | Daniel Morris</title>
-
     <meta
         name="description"
         content="Selected articles, videos, interviews, and public discussions about Daniel Morris's research.">
-
     <meta
         name="robots"
         content="index, follow">
-
     <meta
         name="theme-color"
         content="#0B2233">
-
     <link
         rel="canonical"
         href="https://danieljacobmorris.com/media.html">
-
     <link
         rel="icon"
         type="image/png"
         href="/favicon.png">
-
     <link
         rel="apple-touch-icon"
         href="/favicon.png">
-
     <meta
         property="og:title"
         content="Media | Daniel Morris">
-
     <meta
         property="og:description"
         content="Selected articles, videos, interviews, and public discussions about Daniel Morris's research.">
-
     <meta
         property="og:url"
         content="https://danieljacobmorris.com/media.html">
-
     <meta
         property="og:type"
         content="website">
-
     <meta
         property="og:site_name"
         content="Daniel Morris">
-
     <meta
         property="og:image"
         content="https://danieljacobmorris.com/images/profile.jpg">
-
-
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -70,2763 +52,979 @@
         "name": "Media | Daniel Morris",
         "description": "Selected articles, videos, interviews, and public discussions about Daniel Morris's research.",
         "isPartOf": {
-            "@id": "https://danieljacobmorris.com/#website"
+        "@id": "https://danieljacobmorris.com/#website"
         },
         "about": {
-            "@id": "https://danieljacobmorris.com/#person"
+        "@id": "https://danieljacobmorris.com/#person"
         }
     }
     </script>
-
-
     <link
         rel="stylesheet"
         href="/style.css">
-
-
     <style>
-
-        /* =========================================================
-           MEDIA PAGE
-           ========================================================= */
-
-        .media-page {
-            width: 100%;
-            margin: 0;
-        }
-
-
-        /* =========================================================
-           INTRO
-           ========================================================= */
-
-        .media-intro {
-            width: calc(100% - 96px);
-            max-width: 1180px;
-
-            margin: 70px auto 0;
-            padding: 65px 0 75px;
-
-            display: grid;
-
-            grid-template-columns:
-                0.8fr
-                1.2fr;
-
-            gap: 85px;
-
-            align-items: center;
-
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
-        }
-
-
-        .media-intro h1 {
-            margin: 0;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(60px, 7vw, 88px);
-            font-weight: 600;
-
-            line-height: 0.98;
-
-            letter-spacing: -2.8px;
-
-            color: var(--text);
-        }
-
-
-        .media-intro-text {
-            max-width: 680px;
-        }
-
-
-        .media-intro-text p {
-            margin: 0;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 24px;
-            line-height: 1.55;
-
-            color: var(--text);
-        }
-
-
-        /* =========================================================
-           GENERAL SECTIONS
-           ========================================================= */
-
-        .media-section {
-            width: calc(100% - 96px);
-            max-width: 1180px;
-
-            margin: 0 auto;
-
-            padding: 70px 0 85px;
-        }
-
-
-        .media-section + .media-section {
-            border-top: 1px solid var(--line);
-        }
-
-
-        .media-section-title {
-            margin: 0 0 32px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(42px, 5vw, 58px);
-            font-weight: 600;
-
-            line-height: 1.05;
-
-            letter-spacing: -1.5px;
-
-            color: var(--text);
-        }
-
-
-        .media-section-intro {
-            max-width: 780px;
-
-            margin: -14px 0 38px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 18px;
-            line-height: 1.7;
-
-            color: var(--muted-text);
-        }
-
-
-        /* =========================================================
-           FEATURED AASM MONTAGE ARTICLE
-           ========================================================= */
-
-        .montage-feature {
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1fr)
-                auto;
-
-            gap: 42px;
-
-            align-items: center;
-
-            padding: 34px 38px;
-
-            background: var(--panel);
-
-            border: 1px solid var(--line);
-            border-radius: 7px;
-        }
-
-
-        .montage-feature-copy {
-            min-width: 0;
-        }
-
-
-        .montage-feature-label {
-            margin: 0 0 10px;
-
-            color: var(--accent);
-
-            font-size: 13px;
-            font-weight: 600;
-
-            letter-spacing: 0.08em;
-
-            text-transform: uppercase;
-        }
-
-
-        .montage-feature-title {
-            margin: 0 0 14px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(28px, 3vw, 36px);
-            font-weight: 600;
-
-            line-height: 1.2;
-
-            color: var(--text);
-        }
-
-
-        .montage-feature-description {
-            margin: 0;
-
-            max-width: 760px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 18px;
-            line-height: 1.65;
-
-            color: var(--muted-text);
-        }
-
-
-        .montage-feature-link {
-            display: inline-block;
-
-            white-space: nowrap;
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-
-            text-decoration: none;
-
-            border-bottom:
-                1px solid
-                rgba(139, 203, 243, 0.65);
-
-            padding-bottom: 3px;
-        }
-
-
-        .montage-feature-link:hover {
-            color: var(--accent-soft);
-
-            border-color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
-           VIDEOS
-           ========================================================= */
-
-        .video-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
-
-            gap: 38px;
-        }
-
-
-        .video-card {
-            min-width: 0;
-        }
-
-
-        .video-embed {
-            position: relative;
-
-            width: 100%;
-
-            aspect-ratio: 16 / 9;
-
-            overflow: hidden;
-
-            background: var(--deep);
-
-            border: 1px solid var(--line);
-            border-radius: 5px;
-        }
-
-
-        .video-embed iframe {
-            position: absolute;
-
-            top: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-
-            border: 0;
-        }
-
-
-        .video-card h3 {
-            margin: 16px 0 0;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 19px;
-            font-weight: 600;
-
-            line-height: 1.45;
-
-            color: var(--text);
-        }
-
-
-        .video-card h3 a {
-            color: var(--accent);
-
-            text-decoration: underline;
-
-            text-decoration-thickness: 1px;
-            text-underline-offset: 4px;
-        }
-
-
-        .video-card h3 a:hover {
-            color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
-           KDLABS VIDEO BLOG
-           ========================================================= */
-
-        .video-blog-promo {
-            display: grid;
-
-            grid-template-columns:
-                minmax(220px, 0.72fr)
-                minmax(0, 1.1fr)
-                auto;
-
-            align-items: center;
-
-            gap: 30px;
-
-            overflow: hidden;
-
-            background: var(--panel);
-
-            border: 1px solid var(--line);
-            border-radius: 7px;
-        }
-
-
-        .video-blog-image-link {
-            display: block;
-
-            align-self: stretch;
-
-            min-height: 220px;
-
-            overflow: hidden;
-
-            background: var(--deep);
-        }
-
-
-        .video-blog-image {
-            width: 100%;
-            height: 100%;
-
-            min-height: 220px;
-
-            display: block;
-
-            object-fit: cover;
-            object-position: center;
-
-            transition:
-                opacity 0.2s ease,
-                transform 0.2s ease;
-        }
-
-
-        .video-blog-image-link:hover .video-blog-image {
-            opacity: 0.9;
-
-            transform: scale(1.015);
-        }
-
-
-        .video-blog-copy {
-            min-width: 0;
-
-            padding: 26px 0;
-        }
-
-
-        .video-blog-label {
-            margin: 0 0 8px;
-
-            color: var(--accent);
-
-            font-size: 13px;
-            font-weight: 600;
-
-            letter-spacing: 0.08em;
-
-            text-transform: uppercase;
-        }
-
-
-        .video-blog-promo h3 {
-            margin: 0 0 10px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 27px;
-            font-weight: 600;
-
-            line-height: 1.3;
-
-            color: var(--text);
-        }
-
-
-        .video-blog-promo p {
-            margin: 0;
-
-            color: var(--muted-text);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-            line-height: 1.6;
-        }
-
-
-        .video-blog-action {
-            padding-right: 30px;
-        }
-
-
-        .video-blog-link {
-            display: inline-block;
-
-            white-space: nowrap;
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 16px;
-
-            text-decoration: none;
-
-            border-bottom:
-                1px solid
-                rgba(139, 203, 243, 0.60);
-
-            padding-bottom: 2px;
-        }
-
-
-        .video-blog-link:hover {
-            color: var(--accent-soft);
-
-            border-color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
-           REDDIT AMA
-           ========================================================= */
-
-        .reddit-feature {
-            display: grid;
-
-            grid-template-columns:
-                minmax(0, 1.05fr)
-                minmax(0, 0.95fr);
-
-            gap: 70px;
-
-            align-items: center;
-        }
-
-
-        .reddit-image-link {
-            display: block;
-        }
-
-
-        .reddit-image {
-            width: 100%;
-
-            display: block;
-
-            border: 1px solid var(--line);
-            border-radius: 5px;
-
-            transition:
-                opacity 0.2s ease,
-                transform 0.2s ease;
-        }
-
-
-        .reddit-image-link:hover .reddit-image {
-            opacity: 0.88;
-
-            transform: translateY(-2px);
-        }
-
-
-        .reddit-copy {
-            max-width: 530px;
-        }
-
-
-        .reddit-label {
-            margin: 0 0 15px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 16px;
-            font-style: italic;
-
-            color: var(--muted-text);
-        }
-
-
-        .reddit-title {
-            margin: 0 0 22px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(38px, 5vw, 57px);
-            font-weight: 600;
-
-            line-height: 1.08;
-
-            letter-spacing: -1.5px;
-        }
-
-
-        .reddit-title a {
-            color: var(--text);
-
-            text-decoration: underline;
-
-            text-decoration-thickness: 1.5px;
-            text-underline-offset: 6px;
-        }
-
-
-        .reddit-title a:hover {
-            color: var(--accent);
-        }
-
-
-        .reddit-description {
-            margin: 0 0 24px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 18px;
-            line-height: 1.65;
-
-            color: var(--muted-text);
-        }
-
-
-        .reddit-link {
-            display: inline-block;
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-
-            text-decoration: none;
-
-            border-bottom:
-                1px solid
-                rgba(139, 203, 243, 0.65);
-
-            padding-bottom: 3px;
-        }
-
-
-        .reddit-link:hover {
-            color: var(--accent-soft);
-
-            border-color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
-           FEATURED COVERAGE
-           ========================================================= */
-
-        .featured-grid {
-            display: grid;
-
-            grid-template-columns: 1fr;
-
-            gap: 24px;
-        }
-
-
-        .featured-card {
-            display: grid;
-
-            grid-template-columns:
-                minmax(260px, 0.8fr)
-                minmax(0, 1.2fr);
-
-            min-height: 250px;
-
-            overflow: hidden;
-
-            background: var(--panel);
-
-            border: 1px solid var(--line);
-            border-radius: 7px;
-
-            transition:
-                background 0.2s ease,
-                border-color 0.2s ease,
-                transform 0.2s ease;
-        }
-
-
-        .featured-card:hover {
-            background: var(--panel-hover);
-
-            border-color:
-                rgba(139, 203, 243, 0.30);
-
-            transform: translateY(-2px);
-        }
-
-
-        .featured-image-link {
-            display: block;
-
-            min-height: 250px;
-
-            overflow: hidden;
-
-            background: var(--deep);
-        }
-
-
-        .featured-image {
-            width: 100%;
-            height: 100%;
-
-            min-height: 250px;
-
-            display: block;
-
-            object-fit: cover;
-            object-position: center;
-
-            transition:
-                transform 0.25s ease,
-                opacity 0.25s ease;
-        }
-
-
-        .featured-image-link:hover .featured-image {
-            transform: scale(1.015);
-
-            opacity: 0.92;
-        }
-
-
-        .featured-copy {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            padding: 32px 36px;
-        }
-
-
-        .featured-outlet {
-            margin: 0 0 12px;
-
-            color: var(--accent);
-
-            font-size: 13px;
-            font-weight: 600;
-
-            letter-spacing: 0.08em;
-
-            text-transform: uppercase;
-        }
-
-
-        .featured-copy h3 {
-            margin: 0 0 22px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: clamp(24px, 3vw, 31px);
-            font-weight: 600;
-
-            line-height: 1.25;
-
-            color: var(--text);
-        }
-
-
-        .featured-copy h3 a {
-            color: inherit;
-
-            text-decoration: none;
-
-            transition: color 0.2s ease;
-        }
-
-
-        .featured-copy h3 a:hover {
-            color: var(--accent-soft);
-        }
-
-
-        .featured-link {
-            display: inline-block;
-
-            align-self: flex-start;
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 16px;
-
-            text-decoration: none;
-
-            border-bottom:
-                1px solid
-                rgba(139, 203, 243, 0.60);
-
-            padding-bottom: 2px;
-        }
-
-
-        .featured-link:hover {
-            color: var(--accent-soft);
-
-            border-color: var(--accent-soft);
-        }
-
-
-        /* =========================================================
-           FIRST-AUTHOR RESEARCH COVERAGE
-           ========================================================= */
-
-        .research-coverage-group {
-            margin-top: 46px;
-        }
-
-
-        .research-coverage-group:first-of-type {
-            margin-top: 0;
-        }
-
-
-        .research-coverage-title {
-            max-width: 900px;
-
-            margin: 0 0 8px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 27px;
-            font-weight: 600;
-
-            line-height: 1.35;
-
-            color: var(--text);
-        }
-
-
-        .research-coverage-meta {
-            margin: 0 0 20px;
-
-            color: var(--muted-text);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 15px;
-            font-style: italic;
-
-            line-height: 1.5;
-        }
-
-
-        .research-coverage-list {
-            margin: 0;
-            padding: 0;
-
-            list-style: none;
-
-            border-top: 1px solid var(--line);
-        }
-
-
-        .research-coverage-list li {
-            padding: 18px 0;
-
-            border-bottom: 1px solid var(--line);
-
-            line-height: 1.55;
-        }
-
-
-        .research-coverage-list a {
-            color: var(--text);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-
-            text-decoration: none;
-
-            transition: color 0.2s ease;
-        }
-
-
-        .research-coverage-list a:hover {
-            color: var(--accent);
-        }
-
-
-        .research-coverage-outlet {
-            color: var(--accent);
-
-            font-weight: 600;
-        }
-
-
-        /* =========================================================
-           PROBLEM SOLVING COVERAGE
-           ========================================================= */
-
-        .problem-feature-grid {
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, minmax(0, 1fr));
-
-            gap: 22px;
-
-            margin-bottom: 38px;
-        }
-
-
-        .problem-feature {
-            padding: 26px;
-
-            background:
-                rgba(139, 203, 243, 0.045);
-
-            border:
-                1px solid
-                rgba(139, 203, 243, 0.16);
-
-            border-radius: 6px;
-        }
-
-
-        .problem-feature-outlet {
-            margin: 0 0 10px;
-
-            color: var(--accent);
-
-            font-size: 13px;
-            font-weight: 600;
-
-            letter-spacing: 0.06em;
-
-            text-transform: uppercase;
-        }
-
-
-        .problem-feature h3 {
-            margin: 0;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 21px;
-            font-weight: 600;
-
-            line-height: 1.4;
-        }
-
-
-        .problem-feature h3 a {
-            color: var(--text);
-
-            text-decoration: underline;
-
-            text-decoration-thickness: 1px;
-            text-underline-offset: 4px;
-        }
-
-
-        .problem-feature h3 a:hover {
-            color: var(--accent);
-        }
-
-
-        /* =========================================================
-           PRESS DROPDOWN
-           ========================================================= */
-
-        .press-dropdown {
-            margin-top: 32px;
-
-            overflow: hidden;
-
-            background: var(--panel);
-
-            border: 1px solid var(--line);
-            border-radius: 7px;
-        }
-
-
-        .press-dropdown summary {
-            position: relative;
-
-            padding: 23px 64px 23px 25px;
-
-            color: var(--text);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 19px;
-            font-weight: 600;
-
-            cursor: pointer;
-
-            list-style: none;
-
-            transition:
-                background 0.2s ease,
-                color 0.2s ease;
-        }
-
-
-        .press-dropdown summary::-webkit-details-marker {
-            display: none;
-        }
-
-
-        .press-dropdown summary::after {
-            content: "+";
-
-            position: absolute;
-
-            top: 50%;
-            right: 26px;
-
-            transform: translateY(-52%);
-
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 30px;
-
-            line-height: 1;
-        }
-
-
-        .press-dropdown[open] summary::after {
-            content: "−";
-        }
-
-
-        .press-dropdown summary:hover {
-            background: var(--panel-hover);
-
-            color: var(--accent-soft);
-        }
-
-
-        .press-dropdown-content {
-            padding: 8px 26px 32px;
-
-            border-top: 1px solid var(--line);
-        }
-
-
-        .press-roundup-link {
-            margin: 24px 0 32px;
-        }
-
-
-        .press-roundup-link a {
-            color: var(--accent);
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 17px;
-
-            text-decoration: underline;
-
-            text-underline-offset: 4px;
-        }
-
-
-        .press-group {
-            margin-top: 34px;
-        }
-
-
-        .press-group:first-of-type {
-            margin-top: 0;
-        }
-
-
-        .press-group h3 {
-            margin: 0 0 16px;
-
-            font-family:
-                Georgia,
-                "Times New Roman",
-                serif;
-
-            font-size: 23px;
-            font-weight: 600;
-
-            color: var(--text);
-        }
-
-
-        .press-list {
-            margin: 0;
-            padding: 0;
-
-            list-style: none;
-
-            border-top: 1px solid var(--line);
-        }
-
-
-        .press-list li {
-            padding: 15px 0;
-
-            border-bottom: 1px solid var(--line);
-
-            line-height: 1.55;
-        }
-
-
-        .press-list a {
-            color: var(--text);
-
-            text-decoration: none;
-
-            transition: color 0.2s ease;
-        }
-
-
-        .press-list a:hover {
-            color: var(--accent);
-        }
-
-
-        .press-outlet {
-            color: var(--accent);
-
-            font-weight: 600;
-        }
-
-
-        /* =========================================================
-           TABLET
-           ========================================================= */
-
-        @media (max-width: 950px) {
-
-            .media-intro,
-            .media-section {
-                width: calc(100% - 64px);
-            }
-
-
-            .media-intro {
-                grid-template-columns: 1fr;
-
-                gap: 35px;
-            }
-
-
-            .media-intro-text {
-                max-width: 720px;
-            }
-
-
-            .montage-feature {
-                grid-template-columns: 1fr;
-
-                gap: 24px;
-            }
-
-
-            .video-blog-promo {
-                grid-template-columns:
-                    minmax(190px, 0.7fr)
-                    minmax(0, 1.3fr);
-
-                gap: 25px;
-            }
-
-
-            .video-blog-action {
-                grid-column: 2;
-
-                padding: 0 25px 25px 0;
-            }
-
-
-            .video-blog-image-link {
-                grid-row: 1 / span 2;
-            }
-
-
-            .featured-card {
-                grid-template-columns:
-                    minmax(220px, 0.8fr)
-                    minmax(0, 1.2fr);
-            }
-
-
-            .problem-feature-grid {
-                grid-template-columns:
-                    repeat(2, minmax(0, 1fr));
-            }
-
-
-            .reddit-feature {
-                gap: 45px;
-            }
-
-        }
-
-
-        /* =========================================================
-           MOBILE
-           ========================================================= */
-
-        @media (max-width: 750px) {
-
-            .media-intro,
-            .media-section {
-                width: calc(100% - 44px);
-            }
-
-
-            .media-intro {
-                margin-top: 35px;
-
-                padding: 45px 0 55px;
-
-                gap: 28px;
-            }
-
-
-            .media-intro h1 {
-                font-size: 56px;
-
-                letter-spacing: -1.8px;
-            }
-
-
-            .media-intro-text p {
-                font-size: 20px;
-            }
-
-
-            .media-section {
-                padding: 50px 0 65px;
-            }
-
-
-            .media-section-title {
-                font-size: 42px;
-            }
-
-
-            .montage-feature {
-                padding: 28px 24px;
-            }
-
-
-            .montage-feature-title {
-                font-size: 29px;
-            }
-
-
-            .montage-feature-description {
-                font-size: 17px;
-            }
-
-
-            .video-grid,
-            .problem-feature-grid {
-                grid-template-columns: 1fr;
-            }
-
-
-            .video-blog-promo {
-                grid-template-columns: 1fr;
-
-                gap: 0;
-            }
-
-
-            .video-blog-image-link {
-                grid-row: auto;
-
-                min-height: 0;
-
-                aspect-ratio: 16 / 10;
-            }
-
-
-            .video-blog-image {
-                min-height: 0;
-            }
-
-
-            .video-blog-copy {
-                padding: 24px 24px 15px;
-            }
-
-
-            .video-blog-action {
-                grid-column: auto;
-
-                padding: 0 24px 26px;
-            }
-
-
-            .reddit-feature {
-                grid-template-columns: 1fr;
-
-                gap: 35px;
-            }
-
-
-            .reddit-copy {
-                max-width: none;
-            }
-
-
-            .reddit-title {
-                font-size: 39px;
-            }
-
-
-            .featured-card {
-                grid-template-columns: 1fr;
-            }
-
-
-            .featured-image-link {
-                min-height: 220px;
-
-                aspect-ratio: 16 / 9;
-            }
-
-
-            .featured-image {
-                min-height: 220px;
-            }
-
-
-            .featured-copy {
-                padding: 26px 24px 30px;
-            }
-
-
-            .research-coverage-title {
-                font-size: 23px;
-            }
-
-
-            .press-dropdown summary {
-                padding:
-                    20px
-                    56px
-                    20px
-                    20px;
-
-                font-size: 17px;
-            }
-
-
-            .press-dropdown summary::after {
-                right: 20px;
-            }
-
-
-            .press-dropdown-content {
-                padding:
-                    5px
-                    20px
-                    28px;
-            }
-
-        }
-
-
-        @media (max-width: 420px) {
-
-            .media-intro h1 {
-                font-size: 48px;
-            }
-
-
-            .reddit-title {
-                font-size: 34px;
-            }
-
-        }
-
+    .media-page { width: 100%; margin: 0; }
+    .media-intro { width: calc(100% - 96px); max-width: 1180px; margin: 70px auto 0; padding: 65px 0 75px; display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 85px; align-items: center; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .media-intro h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(60px, 7vw, 88px); font-weight: 600; line-height: 0.98; letter-spacing: -2.8px; color: var(--text); }
+    .media-intro-text { max-width: 680px; }
+    .media-intro-text p { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 24px; line-height: 1.55; color: var(--text); }
+    .media-section { width: calc(100% - 96px); max-width: 1180px; margin: 0 auto; padding: 70px 0 85px; }
+    .media-section + .media-section { border-top: 1px solid var(--line); }
+    .media-section-title { margin: 0 0 32px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(42px, 5vw, 58px); font-weight: 600; line-height: 1.05; letter-spacing: -1.5px; color: var(--text); }
+    .media-section-intro { max-width: 780px; margin: -14px 0 38px; font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.7; color: var(--muted-text); }
+    .montage-feature { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 42px; align-items: center; padding: 34px 38px; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; }
+    .montage-feature-copy { min-width: 0; }
+    .montage-feature-label { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .montage-feature-title { margin: 0 0 14px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(28px, 3vw, 36px); font-weight: 600; line-height: 1.2; color: var(--text); }
+    .montage-feature-description { margin: 0; max-width: 760px; font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.65; color: var(--muted-text); }
+    .montage-feature-link { display: inline-block; white-space: nowrap; color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 17px; text-decoration: none; border-bottom: 1px solid rgba(139, 203, 243, 0.65); padding-bottom: 3px; }
+    .montage-feature-link:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
+    .video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 38px; }
+    .video-card { min-width: 0; }
+    .video-embed { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--deep); border: 1px solid var(--line); border-radius: 5px; }
+    .video-embed iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+    .video-card h3 { margin: 16px 0 0; font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; line-height: 1.45; color: var(--text); }
+    .video-card h3 a { color: var(--accent); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .video-card h3 a:hover { color: var(--accent-soft); }
+    .video-blog-promo { display: grid; grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.1fr) auto; align-items: center; gap: 30px; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; }
+    .video-blog-image-link { display: block; align-self: stretch; min-height: 220px; overflow: hidden; background: var(--deep); }
+    .video-blog-image { width: 100%; height: 100%; min-height: 220px; display: block; object-fit: cover; object-position: center; transition: opacity 0.2s ease, transform 0.2s ease; }
+    .video-blog-image-link:hover .video-blog-image { opacity: 0.9; transform: scale(1.015); }
+    .video-blog-copy { min-width: 0; padding: 26px 0; }
+    .video-blog-label { margin: 0 0 8px; color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .video-blog-promo h3 { margin: 0 0 10px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 600; line-height: 1.3; color: var(--text); }
+    .video-blog-promo p { margin: 0; color: var(--muted-text); font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.6; }
+    .video-blog-action { padding-right: 30px; }
+    .video-blog-link { display: inline-block; white-space: nowrap; color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 16px; text-decoration: none; border-bottom: 1px solid rgba(139, 203, 243, 0.60); padding-bottom: 2px; }
+    .video-blog-link:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
+    .reddit-feature { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 70px; align-items: center; }
+    .reddit-image-link { display: block; }
+    .reddit-image { width: 100%; display: block; border: 1px solid var(--line); border-radius: 5px; transition: opacity 0.2s ease, transform 0.2s ease; }
+    .reddit-image-link:hover .reddit-image { opacity: 0.88; transform: translateY(-2px); }
+    .reddit-copy { max-width: 530px; }
+    .reddit-label { margin: 0 0 15px; font-family: Georgia, "Times New Roman", serif; font-size: 16px; font-style: italic; color: var(--muted-text); }
+    .reddit-title { margin: 0 0 22px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(38px, 5vw, 57px); font-weight: 600; line-height: 1.08; letter-spacing: -1.5px; }
+    .reddit-title a { color: var(--text); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 6px; }
+    .reddit-title a:hover { color: var(--accent); }
+    .reddit-description { margin: 0 0 24px; font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.65; color: var(--muted-text); }
+    .reddit-link { display: inline-block; color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 17px; text-decoration: none; border-bottom: 1px solid rgba(139, 203, 243, 0.65); padding-bottom: 3px; }
+    .reddit-link:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
+    .featured-grid { display: grid; grid-template-columns: 1fr; gap: 24px; }
+    .featured-card { display: grid; grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr); min-height: 250px; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+    .featured-card:hover { background: var(--panel-hover); border-color: rgba(139, 203, 243, 0.30); transform: translateY(-2px); }
+    .featured-image-link { display: block; min-height: 250px; overflow: hidden; background: var(--deep); }
+    .featured-image { width: 100%; height: 100%; min-height: 250px; display: block; object-fit: cover; object-position: center; transition: transform 0.25s ease, opacity 0.25s ease; }
+    .featured-image-link:hover .featured-image { transform: scale(1.015); opacity: 0.92; }
+    .featured-copy { display: flex; flex-direction: column; justify-content: center; padding: 32px 36px; }
+    .featured-outlet { margin: 0 0 12px; color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; }
+    .featured-copy h3 { margin: 0 0 22px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(24px, 3vw, 31px); font-weight: 600; line-height: 1.25; color: var(--text); }
+    .featured-copy h3 a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+    .featured-copy h3 a:hover { color: var(--accent-soft); }
+    .featured-link { display: inline-block; align-self: flex-start; color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 16px; text-decoration: none; border-bottom: 1px solid rgba(139, 203, 243, 0.60); padding-bottom: 2px; }
+    .featured-link:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
+    .research-coverage-group { margin-top: 46px; }
+    .research-coverage-group:first-of-type { margin-top: 0; }
+    .research-coverage-title { max-width: 900px; margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: 27px; font-weight: 600; line-height: 1.35; color: var(--text); }
+    .research-coverage-meta { margin: 0 0 20px; color: var(--muted-text); font-family: Georgia, "Times New Roman", serif; font-size: 15px; font-style: italic; line-height: 1.5; }
+    .research-coverage-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .research-coverage-list li { padding: 18px 0; border-bottom: 1px solid var(--line); line-height: 1.55; }
+    .research-coverage-list a { color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 17px; text-decoration: none; transition: color 0.2s ease; }
+    .research-coverage-list a:hover { color: var(--accent); }
+    .research-coverage-outlet { color: var(--accent); font-weight: 600; }
+    .problem-feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-bottom: 38px; }
+    .problem-feature { padding: 26px; background: rgba(139, 203, 243, 0.045); border: 1px solid rgba(139, 203, 243, 0.16); border-radius: 6px; }
+    .problem-feature-outlet { margin: 0 0 10px; color: var(--accent); font-size: 13px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+    .problem-feature h3 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 21px; font-weight: 600; line-height: 1.4; }
+    .problem-feature h3 a { color: var(--text); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .problem-feature h3 a:hover { color: var(--accent); }
+    .press-dropdown { margin-top: 32px; overflow: hidden; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; }
+    .press-dropdown summary { position: relative; padding: 23px 64px 23px 25px; color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 19px; font-weight: 600; cursor: pointer; list-style: none; transition: background 0.2s ease, color 0.2s ease; }
+    .press-dropdown summary::-webkit-details-marker { display: none; }
+    .press-dropdown summary::after { content: "+"; position: absolute; top: 50%; right: 26px; transform: translateY(-52%); color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 30px; line-height: 1; }
+    .press-dropdown[open] summary::after { content: "−"; }
+    .press-dropdown summary:hover { background: var(--panel-hover); color: var(--accent-soft); }
+    .press-dropdown-content { padding: 8px 26px 32px; border-top: 1px solid var(--line); }
+    .press-roundup-link { margin: 24px 0 32px; }
+    .press-roundup-link a { color: var(--accent); font-family: Georgia, "Times New Roman", serif; font-size: 17px; text-decoration: underline; text-underline-offset: 4px; }
+    .press-group { margin-top: 34px; }
+    .press-group:first-of-type { margin-top: 0; }
+    .press-group h3 { margin: 0 0 16px; font-family: Georgia, "Times New Roman", serif; font-size: 23px; font-weight: 600; color: var(--text); }
+    .press-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .press-list li { padding: 15px 0; border-bottom: 1px solid var(--line); line-height: 1.55; }
+    .press-list a { color: var(--text); text-decoration: none; transition: color 0.2s ease; }
+    .press-list a:hover { color: var(--accent); }
+    .press-outlet { color: var(--accent); font-weight: 600; }
+    @media (max-width: 950px) { .media-intro, .media-section { width: calc(100% - 64px); }
+    .media-intro { grid-template-columns: 1fr; gap: 35px; }
+    .media-intro-text { max-width: 720px; }
+    .montage-feature { grid-template-columns: 1fr; gap: 24px; }
+    .video-blog-promo { grid-template-columns: minmax(190px, 0.7fr) minmax(0, 1.3fr); gap: 25px; }
+    .video-blog-action { grid-column: 2; padding: 0 25px 25px 0; }
+    .video-blog-image-link { grid-row: 1 / span 2; }
+    .featured-card { grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.2fr); }
+    .problem-feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .reddit-feature { gap: 45px; }
+    }
+    @media (max-width: 750px) { .media-intro, .media-section { width: calc(100% - 44px); }
+    .media-intro { margin-top: 35px; padding: 45px 0 55px; gap: 28px; }
+    .media-intro h1 { font-size: 56px; letter-spacing: -1.8px; }
+    .media-intro-text p { font-size: 20px; }
+    .media-section { padding: 50px 0 65px; }
+    .media-section-title { font-size: 42px; }
+    .montage-feature { padding: 28px 24px; }
+    .montage-feature-title { font-size: 29px; }
+    .montage-feature-description { font-size: 17px; }
+    .video-grid, .problem-feature-grid { grid-template-columns: 1fr; }
+    .video-blog-promo { grid-template-columns: 1fr; gap: 0; }
+    .video-blog-image-link { grid-row: auto; min-height: 0; aspect-ratio: 16 / 10; }
+    .video-blog-image { min-height: 0; }
+    .video-blog-copy { padding: 24px 24px 15px; }
+    .video-blog-action { grid-column: auto; padding: 0 24px 26px; }
+    .reddit-feature { grid-template-columns: 1fr; gap: 35px; }
+    .reddit-copy { max-width: none; }
+    .reddit-title { font-size: 39px; }
+    .featured-card { grid-template-columns: 1fr; }
+    .featured-image-link { min-height: 220px; aspect-ratio: 16 / 9; }
+    .featured-image { min-height: 220px; }
+    .featured-copy { padding: 26px 24px 30px; }
+    .research-coverage-title { font-size: 23px; }
+    .press-dropdown summary { padding: 20px 56px 20px 20px; font-size: 17px; }
+    .press-dropdown summary::after { right: 20px; }
+    .press-dropdown-content { padding: 5px 20px 28px; }
+    }
+    @media (max-width: 420px) { .media-intro h1 { font-size: 48px; }
+    .reddit-title { font-size: 34px; }
+    }
+    .essays-section { padding-top: 50px; }
+    .essays-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; }
+    .essay-card { display: flex; flex-direction: column; align-items: flex-start; padding: 34px 36px; background: var(--panel); border: 1px solid var(--line); border-radius: 7px; transition: background .2s ease, border-color .2s ease, transform .2s ease; }
+    .essay-card:hover { background: var(--panel-hover); border-color: rgba(139, 203, 243, .30); transform: translateY(-2px); }
+    .essay-card h3 { margin: 0 0 16px; color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: clamp(25px, 3vw, 32px); line-height: 1.2; }
+    .essay-card h3 a { color: inherit; text-decoration: none; }
+    .essay-card h3 a:hover { color: var(--accent-soft); }
+    .essay-description { margin: 0 0 26px; color: var(--muted-text); font-family: Georgia, "Times New Roman", serif; font-size: 17px; line-height: 1.6; }
+    .essay-card .featured-link { margin-top: auto; }
+    @media (max-width: 750px) { .essays-grid { grid-template-columns: 1fr; }
+    .essay-card { padding: 26px 24px; }
+    }
     </style>
-
 </head>
-
-
 <body>
-
-
 <a
     class="skip-link"
     href="#main-content">
-
     Skip to main content
-
 </a>
-
-
 <header class="site-header">
-
     <a
         class="site-name"
         href="/">
-
         Daniel Morris
-
     </a>
-
-
     <nav aria-label="Main navigation">
-
         <a href="/">
-            About
+        About
         </a>
-
         <a href="/research.html">
-            Research
+        Research
         </a>
-
         <a href="/publications.html">
-            Publications
+        Publications
         </a>
-
         <a
-            href="/media.html"
-            aria-current="page">
-
-            Media
-
+        href="/media.html"
+        aria-current="page">
+        Media
         </a>
-
         <a href="/cv.html">
-            CV
+        CV
         </a>
-
         <a href="/contact.html">
-            Contact
+        Contact
         </a>
-
     </nav>
-
 </header>
-
-
 <main
     id="main-content"
     class="media-page">
-
-
     <!-- =========================================================
-         INTRO
-         ========================================================= -->
-
+        INTRO
+        ========================================================= -->
     <section class="media-intro">
-
         <div>
-
-            <h1>
-                Media
-            </h1>
-
+        <h1>
+        Media
+        </h1>
         </div>
-
-
         <div class="media-intro-text">
-
-            <p>
-                Selected articles, videos, interviews, and public discussions about my research.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         AASM MONTAGE
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <div class="montage-feature">
-
-            <div class="montage-feature-copy">
-
-                <p class="montage-feature-label">
-                    AASM Montage Magazine · 2026 Issue 3
-                </p>
-
-
-                <h2 class="montage-feature-title">
-                    Engineering healthier dreams
-                </h2>
-
-
-                <p class="montage-feature-description">
-                    Check out our recent article in the AASM Montage magazine on dream engineering!
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <a
-                    class="montage-feature-link"
-                    href="/files/Montage_2026_Iss3-DIGITAL_Dream_Engineering.pdf"
-                    target="_blank"
-                    rel="noopener">
-
-                    Read the article →
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         VIDEOS
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <h2 class="media-section-title">
-            Videos
-        </h2>
-
-
-        <div class="video-grid">
-
-
-            <article class="video-card">
-
-                <div class="video-embed">
-
-                    <iframe
-                        src="https://www.youtube.com/embed/gX2MahHd2JQ"
-                        title="Mind Science BrainStorm Neuroscience Pitch 2026"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-
-
-                <h3>
-
-                    <a
-                        href="https://www.youtube.com/watch?v=pwhMux8DX34"
-                        target="_blank"
-                        rel="noopener">
-
-                        Mind Science BrainStorm Pitch 2026
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-            <article class="video-card">
-
-                <div class="video-embed">
-
-                    <iframe
-                        src="https://www.youtube.com/embed/sVft1XmctpQ"
-                        title="YouTube video featuring Daniel Morris"
-                        loading="lazy"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen>
-                    </iframe>
-
-                </div>
-
-
-                <h3>
-
-                    <a
-                        href="https://www.youtube.com/watch?v=sVft1XmctpQ"
-                        target="_blank"
-                        rel="noopener">
-
-                        Dream Engineering 2026 Conference
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         REDDIT AMA
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <div class="reddit-feature">
-
-
-            <div>
-
-                <a
-                    class="reddit-image-link"
-                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="reddit-image"
-                        src="images/reddit_ama_daniel_morris.png"
-                        alt="DUST Reddit Ask Me Anything with Karen Konkoly and Daniel Morris">
-
-                </a>
-
-            </div>
-
-
-            <div class="reddit-copy">
-
-                <p class="reddit-label">
-                    Public Q&amp;A
-                </p>
-
-
-                <h2 class="reddit-title">
-
-                    <a
-                        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Ask Me Anything Reddit event
-
-                    </a>
-
-                </h2>
-
-
-                <p class="reddit-description">
-                    Public Q&amp;A about dreaming, lucid dreaming,
-                    sleep learning, dream communication, and
-                    dream engineering.
-                </p>
-
-
-                <a
-                    class="reddit-link"
-                    href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
-                    target="_blank"
-                    rel="noopener">
-
-                    View the Reddit AMA →
-
-                </a>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         FEATURED COVERAGE
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <h2 class="media-section-title">
-            Featured Coverage
-        </h2>
-
-
-        <div class="featured-grid">
-
-
-            <!-- MIND & LIFE -->
-
-            <article class="featured-card">
-
-                <a
-                    class="featured-image-link"
-                    href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="featured-image"
-                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.mindandlife.org%2Finsight%2Fbridging-science-and-buddhism-the-dalai-lamas-100-year-vision%2F&amp;embed=image.url"
-                        alt="Mind and Life article image"
-                        loading="lazy"
-                        decoding="async">
-
-                </a>
-
-
-                <div class="featured-copy">
-
-                    <p class="featured-outlet">
-                        Mind &amp; Life Institute
-                    </p>
-
-
-                    <h3>
-
-                        <a
-                            href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                            target="_blank"
-                            rel="noopener">
-
-                            Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
-
-                        </a>
-
-                    </h3>
-
-
-                    <a
-                        class="featured-link"
-                        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Read article →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- NEW YORKER -->
-
-            <article class="featured-card">
-
-                <a
-                    class="featured-image-link"
-                    href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="featured-image"
-                        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fannals-of-inquiry%2Fits-possible-to-learn-in-our-sleep-should-we&amp;embed=image.url"
-                        alt="The New Yorker article image"
-                        loading="lazy"
-                        decoding="async">
-
-                </a>
-
-
-                <div class="featured-copy">
-
-                    <p class="featured-outlet">
-                        The New Yorker
-                    </p>
-
-
-                    <h3>
-
-                        <a
-                            href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
-                            target="_blank"
-                            rel="noopener">
-
-                            It’s Possible to Learn in Our Sleep. Should We?
-
-                        </a>
-
-                    </h3>
-
-
-                    <a
-                        class="featured-link"
-                        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
-                        target="_blank"
-                        rel="noopener">
-
-                        Read article →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- TIME -->
-
-            <article class="featured-card">
-
-                <a
-                    class="featured-image-link"
-                    href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="featured-image"
-                        src="https://static.time.com/v3/assets/bltea6093859af6183b/blta4df9a2fcfb7ab82/69b0488de2697a7837473e20/dreams-solving-problems.jpg?auto=webp&amp;branch=production&amp;crop=16%3A9&amp;quality=75&amp;width=1200"
-                        alt="TIME article image"
-                        loading="lazy"
-                        decoding="async">
-
-                </a>
-
-
-                <div class="featured-copy">
-
-                    <p class="featured-outlet">
-                        TIME
-                    </p>
-
-
-                    <h3>
-
-                        <a
-                            href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                            target="_blank"
-                            rel="noopener">
-
-                            Can Dreams Help You Solve Problems?
-
-                        </a>
-
-                    </h3>
-
-
-                    <a
-                        class="featured-link"
-                        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Read article →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- BETWEEN TWO WORLDS -->
-
-            <article class="featured-card">
-
-                <a
-                    class="featured-image-link"
-                    href="https://betweentwoworlds.tv/experts/daniel-morris"
-                    target="_blank"
-                    rel="noopener">
-
-                    <img
-                        class="featured-image"
-                        src="https://api.microlink.io/?url=https%3A%2F%2Fbetweentwoworlds.tv%2Fexperts%2Fdaniel-morris&amp;embed=image.url"
-                        alt="Daniel Morris on Between Two Worlds"
-                        loading="lazy"
-                        decoding="async">
-
-                </a>
-
-
-                <div class="featured-copy">
-
-                    <p class="featured-outlet">
-                        Between Two Worlds
-                    </p>
-
-
-                    <h3>
-
-                        <a
-                            href="https://betweentwoworlds.tv/experts/daniel-morris"
-                            target="_blank"
-                            rel="noopener">
-
-                            Daniel Morris
-
-                        </a>
-
-                    </h3>
-
-
-                    <a
-                        class="featured-link"
-                        href="https://betweentwoworlds.tv/experts/daniel-morris"
-                        target="_blank"
-                        rel="noopener">
-
-                        View profile →
-
-                    </a>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         FIRST-AUTHOR RESEARCH COVERAGE
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <h2 class="media-section-title">
-            First-Author Research Coverage
-        </h2>
-
-
-        <div class="research-coverage-group">
-
-            <h3 class="research-coverage-title">
-                Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
-            </h3>
-
-            <p class="research-coverage-meta">
-                Brain Sciences · 2026
-            </p>
-
-
-            <ul class="research-coverage-list">
-
-                <li>
-
-                    <a
-                        href="https://visualize.jove.com/41892658-inducing-lucid-dreaming-based-on-a-contemplative-practice-of-compassion"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            JoVE Visualize:
-                        </span>
-
-                        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
-
-                    </a>
-
-                </li>
-
-
-                <li>
-
-                    <a
-                        href="https://synapsesocial.com/papers/69ba425c4e9516ffd37a282b"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            Synapse:
-                        </span>
-
-                        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
-
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <div class="research-coverage-group">
-
-            <h3 class="research-coverage-title">
-                Lucid Dreaming of a Prior Virtual-Reality Experience with Ego-Transcendent Qualities
-            </h3>
-
-            <p class="research-coverage-meta">
-                Neuroscience of Consciousness · 2025
-            </p>
-
-
-            <ul class="research-coverage-list">
-
-                <li>
-
-                    <a
-                        href="https://phasetoday.com/how-can-you-program-a-ld-in-vr/"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            Phase Today:
-                        </span>
-
-                        How Can You Program a Lucid Dream in VR?
-
-                    </a>
-
-                </li>
-
-
-                <li>
-
-                    <a
-                        href="https://www.iflscience.com/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat-80345"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            IFLScience:
-                        </span>
-
-                        Scientists Used Virtual Reality To Alter People’s Lucid Dreams In Mindboggling Feat
-
-                    </a>
-
-                </li>
-
-
-                <li>
-
-                    <a
-                        href="https://ispr.info/2025/08/12/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat/"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            ISPR:
-                        </span>
-
-                        Scientists used virtual reality to alter people’s lucid dreams in mindboggling feat
-
-                    </a>
-
-                </li>
-
-
-                <li>
-
-                    <a
-                        href="https://www.xrom.in/post/scientists-used-virtual-reality-to-alter-people-s-lucid-dreams"
-                        target="_blank"
-                        rel="noopener">
-
-                        <span class="research-coverage-outlet">
-                            XROM:
-                        </span>
-
-                        Scientists Used Virtual Reality To Alter People’s Lucid Dreams
-
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================================================
-         DREAM ENGINEERING & PROBLEM SOLVING
-         ========================================================= -->
-
-    <section class="media-section">
-
-        <h2 class="media-section-title">
-            Dream Engineering &amp; Problem Solving
-        </h2>
-
-
-        <p class="media-section-intro">
-            Coverage of our February 2026 study on dreaming and creative problem solving.
+        <p>
+        Selected articles, videos, interviews, and public discussions about my research.
         </p>
-
-
-        <div class="problem-feature-grid">
-
-
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    The Washington Post
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
-                        target="_blank"
-                        rel="noopener">
-
-                        Why your most creative ideas may come after a night of sleep
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    Northwestern Now
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
-                        target="_blank"
-                        rel="noopener">
-
-                        Dream engineering can help solve ‘puzzling’ questions
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    NPR
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
-                        target="_blank"
-                        rel="noopener">
-
-                        Can’t solve a puzzle? Sleep on it, a new study suggests
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    FOX 32 Chicago
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
-                        target="_blank"
-                        rel="noopener">
-
-                        Northwestern study reveals how sleep can boost creativity
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
-            <article class="problem-feature">
-
-                <p class="problem-feature-outlet">
-                    Gizmodo
-                </p>
-
-                <h3>
-
-                    <a
-                        href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
-                        target="_blank"
-                        rel="noopener">
-
-                        Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
-
-                    </a>
-
-                </h3>
-
-            </article>
-
-
         </div>
-
-
-        <details class="press-dropdown">
-
-            <summary>
-                View all media coverage of the February 2026 study
-            </summary>
-
-
-            <div class="press-dropdown-content">
-
-
-                <p class="press-roundup-link">
-
-                    <a
-                        href="https://sites.northwestern.edu/pallerlab/popular-press/"
-                        target="_blank"
-                        rel="noopener">
-
-                        More media from the Paller Lab →
-
-                    </a>
-
-                </p>
-
-
-                <div class="press-group">
-
-                    <h3>
-                        Major &amp; Broadcast
-                    </h3>
-
-
-                    <ul class="press-list">
-
-
-                        <li>
-
-                            <a
-                                href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    NPR:
-                                </span>
-
-                                Can’t solve a puzzle? Sleep on it, a new study suggests
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    The Washington Post:
-                                </span>
-
-                                Why your most creative ideas may come after a night of sleep
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    TIME:
-                                </span>
-
-                                Can Dreams Help You Solve Problems?
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    FOX 32 Chicago:
-                                </span>
-
-                                Northwestern study reveals how sleep can boost creativity
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Northwestern Now:
-                                </span>
-
-                                Dream engineering can help solve ‘puzzling’ questions
-
-                            </a>
-
-                        </li>
-
-
-                    </ul>
-
-                </div>
-
-
-                <div class="press-group">
-
-                    <h3>
-                        Science &amp; Technology
-                    </h3>
-
-
-                    <ul class="press-list">
-
-
-                        <li>
-
-                            <a
-                                href="https://www.vice.com/en/article/how-scientists-hacked-peoples-dreams-to-help-them-solve-real-life-puzzles/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Vice:
-                                </span>
-
-                                How Scientists Hacked People’s Dreams to Help Them Solve Real-Life Puzzles
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://nautil.us/dream-engineering-could-help-you-solve-problems-while-you-sleep-1265958"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Nautilus:
-                                </span>
-
-                                Dream Engineering Could Help You Solve Problems While You Sleep
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.livescience.com/health/sleep/scientists-infiltrated-volunteers-dreams-to-boost-their-creative-thinking"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    LiveScience:
-                                </span>
-
-                                Scientists infiltrated volunteers’ dreams to boost their creative thinking
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.psypost.org/scientists-use-dream-engineering-to-boost-creative-problem-solving-during-rem-sleep/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    PsyPost:
-                                </span>
-
-                                Scientists use “dream engineering” to boost creative problem-solving during REM sleep
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://thefreesheet.com/2026/02/05/real-life-inception-study-uses-sound-to-hack-dreams-and-help-solve-problems/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    The Free Sheet:
-                                </span>
-
-                                Real-life Inception study uses sound to hack dreams and help solve problems
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.thebrighterside.news/post/guided-dreams-during-rem-sleep-can-boost-problem-solving/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    The Brighter Side:
-                                </span>
-
-                                Guided dreams during REM sleep can boost problem solving
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.techexplorist.com/dream-engineering-improve-creative-problem-solving/102072/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Tech Explorist:
-                                </span>
-
-                                Dream engineering may improve creative problem-solving
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Gizmodo:
-                                </span>
-
-                                Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.sciencealert.com/dream-engineering-can-boost-your-puzzle-solving-study-suggests"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    ScienceAlert:
-                                </span>
-
-                                ‘Dream Engineering’ Can Boost Your Puzzle-Solving, Study Suggests
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://thedebrief.org/did-scientists-just-achieve-inception-experiments-show-dream-engineering-may-be-a-reality/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    The Debrief:
-                                </span>
-
-                                Did Scientists Just Achieve “Inception”? Experiments Show “Dream Engineering” May Be a Reality
-
-                            </a>
-
-                        </li>
-
-
-                    </ul>
-
-                </div>
-
-
-                <div class="press-group">
-
-                    <h3>
-                        International
-                    </h3>
-
-
-                    <ul class="press-list">
-
-
-                        <li>
-
-                            <a
-                                href="https://www.thetimes.com/uk/science/article/dream-engineering-solve-problems-sleep-jj8j958n8"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    The Times (UK):
-                                </span>
-
-                                Could dream engineering help you solve problems while you sleep?
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.express.co.uk/news/weird/2171523/scientists-crack-dream-hacking-boost-creativity-solve-problems"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Express (UK):
-                                </span>
-
-                                Scientists crack Inception ‘dream hacking’ and can now plant ideas in your sleep
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.mirror.co.uk/news/us-news/inception-style-dream-hacking-helps-36729654"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Mirror (UK):
-                                </span>
-
-                                Inception-style ‘dream hacking’ helps people solve life’s hardest problems
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://sciencepost.fr/inception-pour-moins-de-10-euros-lexperience-qui-prouve-quon-peut-pirater-vos-reves-avec-un-simple-bruit-de-fond/"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Science Post (France):
-                                </span>
-
-                                « Inception pour moins de 10 euros » : l’expérience qui prouve qu’on peut pirater vos rêves avec un simple bruit de fond
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.science-et-vie.com/cerveau-et-intelligence/inception-nest-plus-seulement-de-la-fiction-des-scientifiques-parviennent-a-orienter-certains-contenus-des-reves-pendant-le-sommeil-226921.html"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Science &amp; Vie (France):
-                                </span>
-
-                                Inception n’est plus seulement de la fiction… des scientifiques parviennent à orienter certains contenus des rêves pendant le sommeil
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://www.spiegel.de/wissenschaft/mensch/luzides-traeumen-probleme-im-schlaf-loesen-laut-studie-klappt-das-a-49a78125-a7e7-4974-b9b2-9702500c79df"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Der Spiegel (Germany):
-                                </span>
-
-                                Träumen hilft, Probleme zu lösen
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a
-                                href="https://timesofindia.indiatimes.com/science/stuck-on-a-puzzle-sleeping-may-help-you-solve-it-study-finds/articleshow/128143685.cms"
-                                target="_blank"
-                                rel="noopener">
-
-                                <span class="press-outlet">
-                                    Times of India:
-                                </span>
-
-                                Stuck on a puzzle? Sleeping may help you solve it, study finds
-
-                            </a>
-
-                        </li>
-
-
-                    </ul>
-
-                </div>
-
-
-            </div>
-
-        </details>
-
     </section>
-
-
+    <!-- NEW: ONEROS ESSAYS -->
+    <section class="media-section essays-section" aria-labelledby="essays-title">
+        <h2 class="media-section-title" id="essays-title">Essays &amp; Field Reports</h2>
+        <div class="essays-grid">
+        <article class="essay-card">
+        <p class="featured-outlet">Oneros</p>
+        <h3><a href="https://oneros.org/essays/lucid-dreaming-nightmares/" target="_blank" rel="noopener">Lucid Dreaming and Nightmares</a></h3>
+        <p class="essay-description">An essay exploring lucid dreaming and nightmares.</p>
+        <a class="featured-link" href="https://oneros.org/essays/lucid-dreaming-nightmares/" target="_blank" rel="noopener">Read essay →</a>
+        </article>
+        <article class="essay-card">
+        <p class="featured-outlet">Oneros</p>
+        <h3><a href="https://oneros.org/essays/bhutan-project-2026/" target="_blank" rel="noopener">The Bhutan Project, 2026</a></h3>
+        <p class="essay-description">A field report on the 2026 Bhutan sleep research project.</p>
+        <a class="featured-link" href="https://oneros.org/essays/bhutan-project-2026/" target="_blank" rel="noopener">Read field report →</a>
+        </article>
+        </div>
+    </section>
     <!-- =========================================================
-         KDLABS VIDEO BLOG
-         ========================================================= -->
-
+        AASM MONTAGE
+        ========================================================= -->
     <section class="media-section">
-
-        <div class="video-blog-promo">
-
-
-            <a
-                class="video-blog-image-link"
-                href="https://kdlabs.substack.com/"
-                target="_blank"
-                rel="noopener">
-
-                <img
-                    class="video-blog-image"
-                    src="/images/kdlabs-video-blog.png"
-                    alt="Group photo associated with the KDLabs video blog"
-                    loading="lazy">
-
-            </a>
-
-
-            <div class="video-blog-copy">
-
-                <p class="video-blog-label">
-                    Video blog
-                </p>
-
-
-                <h3>
-                    KDLabs
-                </h3>
-
-
-                <p>
-                    Karen Konkoly and Dashiell Bark-Huss's informal video blog where I am a frequent collaborator!
-                </p>
-
-            </div>
-
-
-            <div class="video-blog-action">
-
-                <a
-                    class="video-blog-link"
-                    href="https://kdlabs.substack.com/"
-                    target="_blank"
-                    rel="noopener">
-
-                    Visit KDLabs on Substack →
-
-                </a>
-
-            </div>
-
-
+        <div class="montage-feature">
+        <div class="montage-feature-copy">
+        <p class="montage-feature-label">
+        AASM Montage Magazine · 2026 Issue 3
+        </p>
+        <h2 class="montage-feature-title">
+        Engineering healthier dreams
+        </h2>
+        <p class="montage-feature-description">
+        Check out our recent article in the AASM Montage magazine on dream engineering!
+        </p>
         </div>
-
+        <div>
+        <a
+        class="montage-feature-link"
+        href="/files/Montage_2026_Iss3-DIGITAL_Dream_Engineering.pdf"
+        target="_blank"
+        rel="noopener">
+        Read the article →
+        </a>
+        </div>
+        </div>
     </section>
-
-
+    <!-- =========================================================
+        VIDEOS
+        ========================================================= -->
+    <section class="media-section">
+        <h2 class="media-section-title">
+        Videos
+        </h2>
+        <div class="video-grid">
+        <article class="video-card">
+        <div class="video-embed">
+        <iframe
+        src="https://www.youtube.com/embed/gX2MahHd2JQ"
+        title="Mind Science BrainStorm Neuroscience Pitch 2026"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        </div>
+        <h3>
+        <a
+        href="https://www.youtube.com/watch?v=pwhMux8DX34"
+        target="_blank"
+        rel="noopener">
+        Mind Science BrainStorm Pitch 2026
+        </a>
+        </h3>
+        </article>
+        <article class="video-card">
+        <div class="video-embed">
+        <iframe
+        src="https://www.youtube.com/embed/sVft1XmctpQ"
+        title="YouTube video featuring Daniel Morris"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+        </div>
+        <h3>
+        <a
+        href="https://www.youtube.com/watch?v=sVft1XmctpQ"
+        target="_blank"
+        rel="noopener">
+        Dream Engineering 2026 Conference
+        </a>
+        </h3>
+        </article>
+        </div>
+    </section>
+    <!-- =========================================================
+        REDDIT AMA
+        ========================================================= -->
+    <section class="media-section">
+        <div class="reddit-feature">
+        <div>
+        <a
+        class="reddit-image-link"
+        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+        target="_blank"
+        rel="noopener">
+        <img
+        class="reddit-image"
+        src="images/reddit_ama_daniel_morris.png"
+        alt="DUST Reddit Ask Me Anything with Karen Konkoly and Daniel Morris">
+        </a>
+        </div>
+        <div class="reddit-copy">
+        <p class="reddit-label">
+        Public Q&amp;A
+        </p>
+        <h2 class="reddit-title">
+        <a
+        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+        target="_blank"
+        rel="noopener">
+        Ask Me Anything Reddit event
+        </a>
+        </h2>
+        <p class="reddit-description">
+        Public Q&amp;A about dreaming, lucid dreaming,
+        sleep learning, dream communication, and
+        dream engineering.
+        </p>
+        <a
+        class="reddit-link"
+        href="https://www.reddit.com/r/LucidDreaming/comments/1tx2ob4/dust_presents_an_ama_with_karen_konkoly_daniel/"
+        target="_blank"
+        rel="noopener">
+        View the Reddit AMA →
+        </a>
+        </div>
+        </div>
+    </section>
+    <!-- =========================================================
+        FEATURED COVERAGE
+        ========================================================= -->
+    <section class="media-section">
+        <h2 class="media-section-title">
+        Featured Coverage
+        </h2>
+        <div class="featured-grid">
+        <!-- MIND & LIFE -->
+        <article class="featured-card">
+        <a
+        class="featured-image-link"
+        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+        target="_blank"
+        rel="noopener">
+        <img
+        class="featured-image"
+        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.mindandlife.org%2Finsight%2Fbridging-science-and-buddhism-the-dalai-lamas-100-year-vision%2F&amp;embed=image.url"
+        alt="Mind and Life article image"
+        loading="lazy"
+        decoding="async">
+        </a>
+        <div class="featured-copy">
+        <p class="featured-outlet">
+        Mind &amp; Life Institute
+        </p>
+        <h3>
+        <a
+        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+        target="_blank"
+        rel="noopener">
+        Bridging Science and Buddhism: The Dalai Lama’s 100 Year Vision
+        </a>
+        </h3>
+        <a
+        class="featured-link"
+        href="https://www.mindandlife.org/insight/bridging-science-and-buddhism-the-dalai-lamas-100-year-vision/"
+        target="_blank"
+        rel="noopener">
+        Read article →
+        </a>
+        </div>
+        </article>
+        <!-- NEW YORKER -->
+        <article class="featured-card">
+        <a
+        class="featured-image-link"
+        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+        target="_blank"
+        rel="noopener">
+        <img
+        class="featured-image"
+        src="https://api.microlink.io/?url=https%3A%2F%2Fwww.newyorker.com%2Fculture%2Fannals-of-inquiry%2Fits-possible-to-learn-in-our-sleep-should-we&amp;embed=image.url"
+        alt="The New Yorker article image"
+        loading="lazy"
+        decoding="async">
+        </a>
+        <div class="featured-copy">
+        <p class="featured-outlet">
+        The New Yorker
+        </p>
+        <h3>
+        <a
+        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+        target="_blank"
+        rel="noopener">
+        It’s Possible to Learn in Our Sleep. Should We?
+        </a>
+        </h3>
+        <a
+        class="featured-link"
+        href="https://www.newyorker.com/culture/annals-of-inquiry/its-possible-to-learn-in-our-sleep-should-we"
+        target="_blank"
+        rel="noopener">
+        Read article →
+        </a>
+        </div>
+        </article>
+        <!-- TIME -->
+        <article class="featured-card">
+        <a
+        class="featured-image-link"
+        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+        target="_blank"
+        rel="noopener">
+        <img
+        class="featured-image"
+        src="https://static.time.com/v3/assets/bltea6093859af6183b/blta4df9a2fcfb7ab82/69b0488de2697a7837473e20/dreams-solving-problems.jpg?auto=webp&amp;branch=production&amp;crop=16%3A9&amp;quality=75&amp;width=1200"
+        alt="TIME article image"
+        loading="lazy"
+        decoding="async">
+        </a>
+        <div class="featured-copy">
+        <p class="featured-outlet">
+        TIME
+        </p>
+        <h3>
+        <a
+        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+        target="_blank"
+        rel="noopener">
+        Can Dreams Help You Solve Problems?
+        </a>
+        </h3>
+        <a
+        class="featured-link"
+        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+        target="_blank"
+        rel="noopener">
+        Read article →
+        </a>
+        </div>
+        </article>
+        </div>
+    </section>
+    <!-- NEW: ADDITIONAL COVERAGE -->
+    <section class="media-section" aria-labelledby="additional-coverage-title">
+        <h2 class="media-section-title" id="additional-coverage-title">Additional Coverage</h2>
+        <ul class="research-coverage-list">
+        <li>
+        <a href="https://www.livescience.com/health/neuroscience/neuroscientists-reveal-method-to-train-people-to-have-lucid-dreams-and-it-involves-virtual-reality-and-mediation" target="_blank" rel="noopener">
+        <span class="research-coverage-outlet">Live Science:</span>
+        Neuroscientists reveal method to train people to have lucid dreams — and it involves virtual reality and meditation
+        </a>
+        </li>
+        <li>
+        <a href="https://www.facebook.com/share/1CWydkXSFZ/?mibextid=wwXIfr" target="_blank" rel="noopener">
+        <span class="research-coverage-outlet">Facebook:</span>
+        View Facebook post
+        </a>
+        </li>
+        </ul>
+    </section>
+    <!-- =========================================================
+        FIRST-AUTHOR RESEARCH COVERAGE
+        ========================================================= -->
+    <section class="media-section">
+        <h2 class="media-section-title">
+        First-Author Research Coverage
+        </h2>
+        <div class="research-coverage-group">
+        <h3 class="research-coverage-title">
+        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+        </h3>
+        <p class="research-coverage-meta">
+        Brain Sciences · 2026
+        </p>
+        <ul class="research-coverage-list">
+        <li>
+        <a
+        href="https://visualize.jove.com/41892658-inducing-lucid-dreaming-based-on-a-contemplative-practice-of-compassion"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        JoVE Visualize:
+        </span>
+        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://synapsesocial.com/papers/69ba425c4e9516ffd37a282b"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        Synapse:
+        </span>
+        Inducing Lucid Dreaming Based on a Contemplative Practice of Compassion
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="research-coverage-group">
+        <h3 class="research-coverage-title">
+        Lucid Dreaming of a Prior Virtual-Reality Experience with Ego-Transcendent Qualities
+        </h3>
+        <p class="research-coverage-meta">
+        Neuroscience of Consciousness · 2025
+        </p>
+        <ul class="research-coverage-list">
+        <li>
+        <a
+        href="https://phasetoday.com/how-can-you-program-a-ld-in-vr/"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        Phase Today:
+        </span>
+        How Can You Program a Lucid Dream in VR?
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.iflscience.com/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat-80345"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        IFLScience:
+        </span>
+        Scientists Used Virtual Reality To Alter People’s Lucid Dreams In Mindboggling Feat
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://ispr.info/2025/08/12/scientists-used-virtual-reality-to-alter-peoples-lucid-dreams-in-mindboggling-feat/"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        ISPR:
+        </span>
+        Scientists used virtual reality to alter people’s lucid dreams in mindboggling feat
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.xrom.in/post/scientists-used-virtual-reality-to-alter-people-s-lucid-dreams"
+        target="_blank"
+        rel="noopener">
+        <span class="research-coverage-outlet">
+        XROM:
+        </span>
+        Scientists Used Virtual Reality To Alter People’s Lucid Dreams
+        </a>
+        </li>
+        </ul>
+        </div>
+    </section>
+    <!-- =========================================================
+        DREAM ENGINEERING & PROBLEM SOLVING
+        ========================================================= -->
+    <section class="media-section">
+        <h2 class="media-section-title">
+        Dream Engineering &amp; Problem Solving
+        </h2>
+        <p class="media-section-intro">
+        Coverage of our February 2026 study on dreaming and creative problem solving.
+        </p>
+        <div class="problem-feature-grid">
+        <article class="problem-feature">
+        <p class="problem-feature-outlet">
+        The Washington Post
+        </p>
+        <h3>
+        <a
+        href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
+        target="_blank"
+        rel="noopener">
+        Why your most creative ideas may come after a night of sleep
+        </a>
+        </h3>
+        </article>
+        <article class="problem-feature">
+        <p class="problem-feature-outlet">
+        Northwestern Now
+        </p>
+        <h3>
+        <a
+        href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
+        target="_blank"
+        rel="noopener">
+        Dream engineering can help solve ‘puzzling’ questions
+        </a>
+        </h3>
+        </article>
+        <article class="problem-feature">
+        <p class="problem-feature-outlet">
+        NPR
+        </p>
+        <h3>
+        <a
+        href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
+        target="_blank"
+        rel="noopener">
+        Can’t solve a puzzle? Sleep on it, a new study suggests
+        </a>
+        </h3>
+        </article>
+        <article class="problem-feature">
+        <p class="problem-feature-outlet">
+        FOX 32 Chicago
+        </p>
+        <h3>
+        <a
+        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+        target="_blank"
+        rel="noopener">
+        Northwestern study reveals how sleep can boost creativity
+        </a>
+        </h3>
+        </article>
+        <article class="problem-feature">
+        <p class="problem-feature-outlet">
+        Gizmodo
+        </p>
+        <h3>
+        <a
+        href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
+        target="_blank"
+        rel="noopener">
+        Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
+        </a>
+        </h3>
+        </article>
+        </div>
+        <details class="press-dropdown">
+        <summary>
+        View all media coverage of the February 2026 study
+        </summary>
+        <div class="press-dropdown-content">
+        <p class="press-roundup-link">
+        <a
+        href="https://sites.northwestern.edu/pallerlab/popular-press/"
+        target="_blank"
+        rel="noopener">
+        More media from the Paller Lab →
+        </a>
+        </p>
+        <div class="press-group">
+        <h3>
+        Major &amp; Broadcast
+        </h3>
+        <ul class="press-list">
+        <li>
+        <a
+        href="https://www.npr.org/2026/02/05/nx-s1-5696784/cant-solve-a-puzzle-sleep-on-it-a-new-study-suggests"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        NPR:
+        </span>
+        Can’t solve a puzzle? Sleep on it, a new study suggests
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.washingtonpost.com/science/2026/02/17/sleep-dreams-creativity-problem-solving/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        The Washington Post:
+        </span>
+        Why your most creative ideas may come after a night of sleep
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://time.com/7381398/can-dreams-help-you-solve-problems/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        TIME:
+        </span>
+        Can Dreams Help You Solve Problems?
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.fox32chicago.com/video/fmc-ga6hu2s9ssc76qe1"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        FOX 32 Chicago:
+        </span>
+        Northwestern study reveals how sleep can boost creativity
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://news.northwestern.edu/stories/2026/02/dream-engineering-can-help-solve-puzzling-questions"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Northwestern Now:
+        </span>
+        Dream engineering can help solve ‘puzzling’ questions
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="press-group">
+        <h3>
+        Science &amp; Technology
+        </h3>
+        <ul class="press-list">
+        <li>
+        <a
+        href="https://www.vice.com/en/article/how-scientists-hacked-peoples-dreams-to-help-them-solve-real-life-puzzles/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Vice:
+        </span>
+        How Scientists Hacked People’s Dreams to Help Them Solve Real-Life Puzzles
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://nautil.us/dream-engineering-could-help-you-solve-problems-while-you-sleep-1265958"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Nautilus:
+        </span>
+        Dream Engineering Could Help You Solve Problems While You Sleep
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.livescience.com/health/sleep/scientists-infiltrated-volunteers-dreams-to-boost-their-creative-thinking"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        LiveScience:
+        </span>
+        Scientists infiltrated volunteers’ dreams to boost their creative thinking
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.psypost.org/scientists-use-dream-engineering-to-boost-creative-problem-solving-during-rem-sleep/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        PsyPost:
+        </span>
+        Scientists use “dream engineering” to boost creative problem-solving during REM sleep
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://thefreesheet.com/2026/02/05/real-life-inception-study-uses-sound-to-hack-dreams-and-help-solve-problems/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        The Free Sheet:
+        </span>
+        Real-life Inception study uses sound to hack dreams and help solve problems
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.thebrighterside.news/post/guided-dreams-during-rem-sleep-can-boost-problem-solving/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        The Brighter Side:
+        </span>
+        Guided dreams during REM sleep can boost problem solving
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.techexplorist.com/dream-engineering-improve-creative-problem-solving/102072/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Tech Explorist:
+        </span>
+        Dream engineering may improve creative problem-solving
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://gizmodo.com/researchers-are-basically-inceptioning-lucid-dreamers-with-brain-teasers-2000718065"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Gizmodo:
+        </span>
+        Researchers Are Basically Inceptioning Lucid Dreamers With Brain Teasers
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.sciencealert.com/dream-engineering-can-boost-your-puzzle-solving-study-suggests"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        ScienceAlert:
+        </span>
+        ‘Dream Engineering’ Can Boost Your Puzzle-Solving, Study Suggests
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://thedebrief.org/did-scientists-just-achieve-inception-experiments-show-dream-engineering-may-be-a-reality/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        The Debrief:
+        </span>
+        Did Scientists Just Achieve “Inception”? Experiments Show “Dream Engineering” May Be a Reality
+        </a>
+        </li>
+        </ul>
+        </div>
+        <div class="press-group">
+        <h3>
+        International
+        </h3>
+        <ul class="press-list">
+        <li>
+        <a
+        href="https://www.thetimes.com/uk/science/article/dream-engineering-solve-problems-sleep-jj8j958n8"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        The Times (UK):
+        </span>
+        Could dream engineering help you solve problems while you sleep?
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.express.co.uk/news/weird/2171523/scientists-crack-dream-hacking-boost-creativity-solve-problems"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Express (UK):
+        </span>
+        Scientists crack Inception ‘dream hacking’ and can now plant ideas in your sleep
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.mirror.co.uk/news/us-news/inception-style-dream-hacking-helps-36729654"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Mirror (UK):
+        </span>
+        Inception-style ‘dream hacking’ helps people solve life’s hardest problems
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://sciencepost.fr/inception-pour-moins-de-10-euros-lexperience-qui-prouve-quon-peut-pirater-vos-reves-avec-un-simple-bruit-de-fond/"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Science Post (France):
+        </span>
+        « Inception pour moins de 10 euros » : l’expérience qui prouve qu’on peut pirater vos rêves avec un simple bruit de fond
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.science-et-vie.com/cerveau-et-intelligence/inception-nest-plus-seulement-de-la-fiction-des-scientifiques-parviennent-a-orienter-certains-contenus-des-reves-pendant-le-sommeil-226921.html"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Science &amp; Vie (France):
+        </span>
+        Inception n’est plus seulement de la fiction… des scientifiques parviennent à orienter certains contenus des rêves pendant le sommeil
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://www.spiegel.de/wissenschaft/mensch/luzides-traeumen-probleme-im-schlaf-loesen-laut-studie-klappt-das-a-49a78125-a7e7-4974-b9b2-9702500c79df"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Der Spiegel (Germany):
+        </span>
+        Träumen hilft, Probleme zu lösen
+        </a>
+        </li>
+        <li>
+        <a
+        href="https://timesofindia.indiatimes.com/science/stuck-on-a-puzzle-sleeping-may-help-you-solve-it-study-finds/articleshow/128143685.cms"
+        target="_blank"
+        rel="noopener">
+        <span class="press-outlet">
+        Times of India:
+        </span>
+        Stuck on a puzzle? Sleeping may help you solve it, study finds
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </details>
+    </section>
+    <!-- =========================================================
+        KDLABS VIDEO BLOG
+        ========================================================= -->
+    <section class="media-section">
+        <div class="video-blog-promo">
+        <a
+        class="video-blog-image-link"
+        href="https://kdlabs.substack.com/"
+        target="_blank"
+        rel="noopener">
+        <img
+        class="video-blog-image"
+        src="/images/kdlabs-video-blog.png"
+        alt="Group photo associated with the KDLabs video blog"
+        loading="lazy">
+        </a>
+        <div class="video-blog-copy">
+        <p class="video-blog-label">
+        Video blog
+        </p>
+        <h3>
+        KDLabs
+        </h3>
+        <p>
+        Karen Konkoly and Dashiell Bark-Huss's informal video blog where I am a frequent collaborator!
+        </p>
+        </div>
+        <div class="video-blog-action">
+        <a
+        class="video-blog-link"
+        href="https://kdlabs.substack.com/"
+        target="_blank"
+        rel="noopener">
+        Visit KDLabs on Substack →
+        </a>
+        </div>
+        </div>
+    </section>
 </main>
-
-
 <footer>
-
     <p>
         © Daniel Morris
     </p>
-
 </footer>
-
-
 </body>
 </html>
