@@ -31,7 +31,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ATMOSPHERIC NAVY BACKGROUND */
+/* ============================================
+   ATMOSPHERIC NAVY BACKGROUND
+   ============================================ */
 
 body {
   margin: 0;
@@ -94,7 +96,9 @@ main {
   width: 100%;
 }
 
-/* ACCESSIBILITY */
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
 
 .skip-link {
   position: absolute;
@@ -120,7 +124,9 @@ textarea:focus-visible {
   outline-offset: 3px;
 }
 
-/* HEADER */
+/* ============================================
+   HEADER
+   ============================================ */
 
 .site-header {
   width: calc(100% - 96px);
@@ -150,7 +156,9 @@ textarea:focus-visible {
   opacity: 0.68;
 }
 
-/* NAVIGATION */
+/* ============================================
+   NAVIGATION
+   ============================================ */
 
 nav {
   display: flex;
@@ -230,7 +238,6 @@ nav a[aria-current="page"]::after {
 }
 
 /* EXTRA-SUBTLE AMBIENT GLOW */
-/* Approximately 90% less intense than original */
 
 .hero-image::before {
   content: "";
@@ -250,7 +257,11 @@ nav a[aria-current="page"]::after {
   animation: ambient-glow 16s ease-in-out infinite alternate;
 }
 
-/* PORTRAIT EDGE FEATHERING */
+/* ============================================
+   PORTRAIT — TINY CORNER SOFTENING
+   Almost entirely crisp, with only
+   minimal feathering near the corners.
+   ============================================ */
 
 .hero-image img {
   position: relative;
@@ -263,27 +274,27 @@ nav a[aria-current="page"]::after {
   border-radius: 0;
 
   -webkit-mask-image: radial-gradient(
-    ellipse 52% 53% at 50% 51%,
+    ellipse 60% 60% at 50% 50%,
     black 0%,
-    black 62%,
-    rgba(0, 0, 0, 0.85) 75%,
-    rgba(0, 0, 0, 0.35) 90%,
+    black 96%,
+    rgba(0, 0, 0, 0.96) 98%,
     transparent 100%
   );
 
   mask-image: radial-gradient(
-    ellipse 52% 53% at 50% 51%,
+    ellipse 60% 60% at 50% 50%,
     black 0%,
-    black 62%,
-    rgba(0, 0, 0, 0.85) 75%,
-    rgba(0, 0, 0, 0.35) 90%,
+    black 96%,
+    rgba(0, 0, 0, 0.96) 98%,
     transparent 100%
   );
 
   filter: saturate(0.96) contrast(1.02);
 }
 
-/* ORIGINAL WHITE HEADLINE */
+/* ============================================
+   ORIGINAL WHITE HEADLINE
+   ============================================ */
 
 .hero h1 {
   margin: 0 0 30px;
@@ -316,7 +327,9 @@ nav a[aria-current="page"]::after {
   }
 }
 
-/* TEXT LINKS */
+/* ============================================
+   TEXT LINKS
+   ============================================ */
 
 .text-link {
   display: inline-block;
@@ -399,7 +412,9 @@ nav a[aria-current="page"]::after {
   border-top: 1px solid var(--line);
 }
 
-/* GENERIC RESEARCH GRID */
+/* ============================================
+   GENERIC RESEARCH GRID
+   ============================================ */
 
 .intro {
   width: calc(100% - 96px);
@@ -444,7 +459,9 @@ nav a[aria-current="page"]::after {
   line-height: 1.7;
 }
 
-/* PROJECT CARDS */
+/* ============================================
+   PROJECT CARDS
+   ============================================ */
 
 .project-list {
   display: grid;
@@ -467,7 +484,9 @@ nav a[aria-current="page"]::after {
   border-radius: 3px;
 }
 
-/* GENERIC PUBLICATIONS */
+/* ============================================
+   GENERIC PUBLICATIONS
+   ============================================ */
 
 .publication-list {
   display: flex;
@@ -502,7 +521,9 @@ nav a[aria-current="page"]::after {
   gap: 14px;
 }
 
-/* BUTTONS */
+/* ============================================
+   BUTTONS
+   ============================================ */
 
 .button {
   display: inline-block;
@@ -659,7 +680,9 @@ nav a[aria-current="page"]::after {
   color: var(--accent-soft);
 }
 
-/* CONTACT FORM */
+/* ============================================
+   CONTACT FORM
+   ============================================ */
 
 .contact-form-section {
   width: 100%;
@@ -795,7 +818,9 @@ nav a[aria-current="page"]::after {
   transform: translateY(-1px);
 }
 
-/* FOOTER */
+/* ============================================
+   FOOTER
+   ============================================ */
 
 footer {
   width: calc(100% - 96px);
@@ -1002,7 +1027,9 @@ footer p {
   }
 }
 
-/* VERY SMALL PHONES */
+/* ============================================
+   VERY SMALL PHONES
+   ============================================ */
 
 @media (max-width: 420px) {
   .site-name,
@@ -1023,7 +1050,9 @@ footer p {
   }
 }
 
-/* REDUCED MOTION */
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
   html {
